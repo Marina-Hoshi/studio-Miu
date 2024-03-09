@@ -9,22 +9,22 @@ $sp: 320px;
 }
 
 .l-wrapper{
-    background-color: #FFFFFF;
-    width: 100%;
-		@include sp {
-			width: 100%;
-		}
-  }
-
-.l-header{
-    width: 100%;
-    height: 700px;
+  background-color: #FFFFFF;
+  width: 100%;
+	@include sp {
+		width: 100%;
+	}
 }
 
-.l-header__keyvisual{
-    position: relative;
-    width: 100%;
-    height: 670px;
+.l-header{
+	width: 100%;
+	height: 700px;
+
+		&__keyvisual{
+		position: relative;
+		width: 100%;
+		height: 670px;
+	}
 }
 
 .l-main{

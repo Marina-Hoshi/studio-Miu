@@ -1,9 +1,20 @@
 @charset "UTF-8";
 
+$sp: 320px;
+
+@mixin sp {
+  @media screen and (max-width: ($sp)) {
+    @content;
+  }
+}
+
 .l-wrapper{
     background-color: #FFFFFF;
     width: 100%;
-}
+		@include sp {
+			width: 100%;
+		}
+  }
 
 .l-header{
     width: 100%;

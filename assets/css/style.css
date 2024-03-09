@@ -2,6 +2,11 @@
   background-color: #FFFFFF;
   width: 100%;
 }
+@media screen and (max-width: 320px) {
+  .l-wrapper {
+    width: 100%;
+  }
+}
 
 .l-header {
   width: 100%;

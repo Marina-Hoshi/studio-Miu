@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .l-wrapper{
     background-color: #FFFFFF;
     width: 100%;
@@ -5,10 +7,21 @@
 
 .l-header{
     width: 100%;
+    height: 700px;
 }
 
 .l-header__keyvisual{
     position: relative;
     width: 100%;
     height: 670px;
+}
+
+.l-main{
+    height: 2000px;
+    background-color: #f8f8f8;
+}
+
+.l-footer{
+    height: 200px;
+    background-color: #ECF4D9;
 }

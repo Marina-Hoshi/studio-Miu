@@ -5,16 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Portfolio_01</title>
 		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/reset.css">
   </head>
   <body>
 		<div class="l-wrapper">
 			<header class="l-header">
 				<div class="l-header__keyvisual">
-					<img class=c-image src="assets/img/keyVisual.jpg" alt=キービジュアル>
+					<img class=c-keyvisual src="assets/img/keyVisual.jpg" alt=キービジュアル>
 						<div class="l-header__container">
 							<div class="l-header__containerTop">
 								<div class="l-header__inner">
-									<h1 class="c-header__inner">TONARI NO<br>CHEESE</h1>
+									<h1 class="c-header__heading">TONARI NO<br>CHEESE</h1>
 								</div>
 								<nav class="l-header__nav">
 									<ul class="p-nav__menu">
@@ -32,7 +33,7 @@
 								<div class="black_bg" id="js-black-bg"></div>
 							</div>
 							<div class="l-header__containerBottom">
-								<p class="c-header__product">CHEESE CAKE </p>
+								<p class="c-header__product">CHEESE CAKE</p>
 							</div>
 						</div>
 					</div>
@@ -41,39 +42,39 @@
 			<main class="l-main">
 				<section class="l-main__about">
 					<div class="l-main__aboutTop">
-						<h2 class="l-main__title">おうち時間をちょっとよくする<br>クリームチーズたっぷりのケーキ</h2>
+						<h2 class="c-aboutTop__title">おうち時間をちょっとよくする<br>クリームチーズたっぷりのケーキ</h2>
 					</div>
 
 					<div class="l-main__aboutMiddle">
-						<div class="p-about__post">
-							<div class="c-image"><!--左画像-->
-								<img class=c-image src="assets/img/creamCheese.jpg" alt=クリームチーズ></img>
+						<div class="p-about__content">
+							<div class="p-about__img"><!--左画像-->
+								<img class=c-about__img src="assets/img/creamCheese.jpg" alt=クリームチーズ></img>
 							</div>
-							<div class="p-introduce"><!--右説明文-->
-								<h3 class=p-introduce__title>○○なクリームチーズ</h3>
-								<p class="p-introduce__text">
+							<div class="p-about__box"><!--右説明文-->
+								<h3 class=p-about__title>○○なクリームチーズ</h3>
+								<p class="p-about__text">
 									ccccccccccccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccccccccccccc
 								</p>
 							</div>
 						</div>
-						<div class="p-about__post">
-							<div class="c-image"><!--左画像-->
-								<img class=c-image src="" alt=調理></img>
+						<div class="p-about__content">
+							<div class="p-about__img"><!--左画像-->
+								<img class=c-about__img src="" alt=調理></img>
 							</div>
-							<div class="p-introduce"><!--右説明文-->
-								<h3 class=p-introduce__title>シンプルな材料で作ったケーキ</h3>
-								<p class="p-introduce__text">
+							<div class="p-about__box"><!--右説明文-->
+								<h3 class=p-about__title>シンプルな材料で作ったケーキ</h3>
+								<p class="p-about__text">
 									ccccccccccccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccccccccccccc
 								</p>
 							</div>
 						</div>
-						<div class="p-about__post">
-							<div class="c-image"><!--左画像-->
-								<img class=c-image src="" alt=ケーキ></img>
+						<div class="p-about__content">
+							<div class="p-about__img"><!--左画像-->
+								<img class=c-about__img src="" alt=ケーキ></img>
 							</div>
-							<div class="p-introduce"><!--右説明文-->
-								<h3 class=p-introduce__title>○○もおいしさのひとつ</h3>
-								<p class="p-introduce__text">
+							<div class="p-about__box"><!--右説明文-->
+								<h3 class=p-about__title>○○もおいしさのひとつ</h3>
+								<p class="p-about__text">
 									ccccccccccccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccccccccccccc
 								</p>
 							</div>
@@ -81,14 +82,57 @@
 					</div>
 
 					<div class="l-main__aboutBottom">
-							<div class="l-main__picture">
-									<img class="c-main__picture" src="" alt="ケーキ" >
-							</div>
+						<div class="l-main__picture">
+							<img class="c-main__picture" src="" alt="ケーキ" >
+						</div>
 					</div>
 				</section>
 
 				<section class="l-main__slide"></section>
-				<section class="l-main__lineUp">
+				<section class="l-main__lineup">
+					<div class="l-main__lineupTop">
+						<div class="c-lineupTop__title">
+							<h3 class="c-lineupTop__headding">LINEUP</h>
+						</div>
+					</div>
+					<div class="l-main__lineupMiddle">
+						<div class="p-lineup__container">
+							<div class="p-lineup__img">
+								<img class="c-lineup__img" src="" alt="商品">
+								<div class="p-lineup__description">
+									<p class="p-lineup__product">TONARI NO<br>CHEESE<span> BITTER</p>
+									<p class="p-lineup__price">￥680 (税込)</p>
+								</div>
+							</div>
+						</div>
+						<div class="p-lineup__button">
+							<p class="c-button">SOLD OUT</p>
+						</div>
+						<div class="p-lineup__description">
+							<p class="p-lineup__text">ccccccccccccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccccccccccccc</p>
+						</div>
+					</div>
+					<div class="l-main__lineupBottom">
+						<ul class="p-lineup__box">
+							<li class="c-lineup__list">
+								<div class="c-lineup__item">原材料</div>
+								<div class="c-lineup__content">クリームチーズ（北海道）、生クリーム、卵、てんさい糖、バター、レモン</div>
+							</li>
+							<li class="c-lineup__list">
+								<div class="c-lineup__item">内容量</div>
+								<div class="c-lineup__content">400g</div>
+							</li>
+							<li class="c-lineup__list">
+								<div class="c-lineup__item">賞味期限</div>
+								<div class="c-lineup__content">冷蔵:5日 冷凍:3週間</div>
+							</li>
+							<li class="c-lineup__list">
+								<div class="c-lineup__item">保存方法</div>
+								<div class="c-lineup__content">冷蔵庫にて保管して下さい。</div>
+							</li>
+						</ul>
+						</div>
+					</div>
 				</section>
 				<section class="l-main__creator">
 					<div class="p-main__creatorTop">
@@ -97,16 +141,18 @@
 					</div>
 					<div class="p-main__creatorBottom">
 						<div class="p-creator__profile">
-							<p class="c-creator__profileName">星 茉利奈    Marina Hoshi</p>
+							<p class="c-creator__name">星 茉利奈    Marina Hoshi</p>
 							<p class="c-creator__description">
 								パティシエ / カフェオーナー<br>ccccccccccccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccccccccccccc
 							</p>
 							<div class="p-creator__SNS">
-								<img class=c-instagram__icon src="" alt=インスタ></img>
-								<img class=c-instagram__title src="" alt=Instagram></img>
+								<a href="#">
+									<img class=c-instagram__icon src="" alt=インスタ></img>
+									<img class=c-instagram__title src="" alt=Instagram></img>
+								</a>
 							</div>
 						</div>
-						<div class="c-creator__icon">
+						<div class="c-creator__img">
 							<img class=c-creator__woman src="" alt=プロフィール写真></img>
 						</div>
 					</div>
@@ -115,7 +161,7 @@
 			<footer class="l-footer">
 				<div class="l-footer__container">
 					<div class="l-footer__containerTop">
-						<p class="l-footer__logo"><a href="#">MARINA KITCHEN</a></p>
+						<p class="c-footer__name"><a href="#">MARINA KITCHEN</a></p>
 					</div>
 					<div class="l-footer__containerMiddle">
 						<nav class="l-footer__nav">
@@ -134,4 +180,6 @@
 		</div>
 	</body>
 </html>
+
+
 

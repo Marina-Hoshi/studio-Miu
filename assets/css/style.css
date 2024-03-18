@@ -35,7 +35,7 @@
 }
 .l-wrapper .l-header__inner {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -45,7 +45,7 @@
 }
 @media screen and (max-width: 320px) {
   .l-wrapper .l-header__inner {
-    top: 18%;
+    top: 24%;
   }
 }
 .l-wrapper .l-header__inner .c-heading {
@@ -84,8 +84,8 @@
 @media screen and (max-width: 320px) {
   .l-wrapper .l-header .p-hamburger {
     position: absolute;
-    right: 15px;
-    top: 20px;
+    right: 5px;
+    top: 10px;
     width: 40px; /* クリックしやすい幅 */
     height: 40px; /* クリックしやすい高さ */
     cursor: pointer;
@@ -170,16 +170,103 @@
 @media screen and (max-width: 320px) {
   .l-wrapper .l-main__aboutMiddle .p-about__content {
     display: block;
+    margin-bottom: 40%;
   }
 }
 .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__img {
   width: 60%;
 }
+@media screen and (max-width: 320px) {
+  .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__img {
+    width: 90%;
+  }
+}
 .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__img .c-about__img {
   width: 100%;
 }
+.l-wrapper .l-main__aboutMiddle .p-about__content .p-about__img:nth-of-type(2) {
+  margin-left: auto;
+}
 .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box {
-  width: 45%;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 55%;
+  background-color: #f8f8f8;
+}
+@media screen and (max-width: 320px) {
+  .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box {
+    top: 110%;
+    left: 55%;
+    width: 90%;
+    height: 55%;
+  }
+}
+.l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner {
+  padding: 7%;
+}
+@media screen and (max-width: 320px) {
+  .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner {
+    padding: 10%;
+  }
+}
+.l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner .p-about__title {
+  height: 35%;
+  margin-bottom: 5%;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 320px) {
+  .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner .p-about__title {
+    margin-bottom: 3%;
+    font-size: 0.7em;
+  }
+}
+.l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner .p-about__text {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 320px) {
+  .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner .p-about__text {
+    font-size: 0.5em;
+    line-height: 1.8em;
+  }
+}
+.l-wrapper .l-main__aboutMiddle .p-about__content:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+.l-wrapper .l-main__aboutMiddle .p-about__content:nth-of-type(2) .p-about__box {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 320px) {
+  .l-wrapper .l-main__aboutMiddle .p-about__content:nth-of-type(2) .p-about__box {
+    top: 110%;
+    left: 47%;
+    width: 90%;
+    height: 55%;
+  }
+}
+.l-wrapper .l-main__aboutMiddle .p-about__content:nth-of-type(3) .p-about__box {
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 320px) {
+  .l-wrapper .l-main__aboutMiddle .p-about__content:nth-of-type(3) .p-about__box {
+    top: 110%;
+    left: 55%;
+    width: 90%;
+    height: 55%;
+  }
 }
 .l-wrapper .l-main__aboutBottom {
   width: 90%;
@@ -208,10 +295,131 @@
   width: auto;
 }
 .l-wrapper .l-main__lineup {
-  height: 25%;
+  height: auto;
+}
+.l-wrapper .l-main__lineupTop {
+  height: 10%;
+  padding: 10% 0;
+}
+.l-wrapper .l-main__lineupTop .c-lineupTop__title {
+  width: 10%;
+  margin: 0 auto;
+  text-align: center;
+}
+.l-wrapper .l-main__lineupTop .c-lineupTop__title .c-lineupTop__headding {
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 320px) {
+  .l-wrapper .l-main__lineupTop .c-lineupTop__title .c-lineupTop__headding {
+    font-size: 0.8em;
+  }
+}
+.l-wrapper .l-main__lineupMiddle {
+  width: 40%;
+  height: auto;
+  padding-bottom: 8%;
+  margin: 0 auto;
+}
+.l-wrapper .l-main__lineupMiddle .p-lineup__container {
+  height: auto;
+}
+.l-wrapper .l-main__lineupMiddle .p-lineup__container .p-lineup__img {
+  position: relative;
+}
+.l-wrapper .l-main__lineupMiddle .p-lineup__container .p-lineup__img .p-lineup__product {
+  position: absolute;
+  top: 94%;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 2.5%;
+}
+.l-wrapper .l-main__lineupMiddle .p-lineup__container .p-lineup__img .p-lineup__product .c-lineup__product {
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
+.l-wrapper .l-main__lineupMiddle .p-lineup__container .p-lineup__img .p-lineup__product .c-lineup__price {
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
+.l-wrapper .l-main__lineupMiddle .p-lineup__button {
+  width: 40%;
+  height: 20%;
+  background-color: #666666;
+  margin: 15% 30% 0 30%;
+  text-align: center;
+}
+.l-wrapper .l-main__lineupMiddle .p-lineup__button .c-button {
+  padding: 10%;
+  color: #e8e8e8;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+.l-wrapper .l-main__lineupMiddle .p-lineup__description {
+  width: 60%;
+  height: 20%;
+  margin: 10% 20% 0 20%;
+  text-align: center;
+}
+.l-wrapper .l-main__lineupMiddle .p-lineup__description .p-lineup__text {
+  width: 100%;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  overflow-wrap: break-word;
+}
+.l-wrapper .l-main__lineupBottom {
+  width: 70%;
+  height: 20%;
+  margin: 0 auto;
+  padding-bottom: 10%;
+  border: 1px solid #C6C9CC;
 }
 .l-wrapper .l-main__creator {
-  height: 15%;
+  height: auto;
+}
+.l-wrapper .l-main .p-main__creatorTop {
+  width: 60%;
+  height: 40%;
+  padding: 10% 0;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (max-width: 320px) {
+  .l-wrapper .l-main .p-main__creatorTop {
+    width: 90%;
+  }
+}
+.l-wrapper .l-main .p-main__creatorTop .c-creator__heading {
+  height: 35%;
+  margin-bottom: 8%;
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 320px) {
+  .l-wrapper .l-main .p-main__creatorTop .c-creator__heading {
+    font-size: 0.8em;
+  }
+}
+.l-wrapper .l-main .p-main__creatorTop .c-creator__description {
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 320px) {
+  .l-wrapper .l-main .p-main__creatorTop .c-creator__description {
+    font-size: 0.5em;
+    line-height: 1.8em;
+  }
 }
 .l-wrapper .l-footer {
   height: 280px;

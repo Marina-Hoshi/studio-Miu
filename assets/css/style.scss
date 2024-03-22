@@ -193,6 +193,8 @@ $sp: 320px;
 
         .p-about__img:nth-of-type(2){
           margin-left: auto;
+          position: relative; /* 重なり順序を設定するために相対配置を指定 */
+          z-index: 1; /* 初期の重なり順序 */
         }
 
         .p-about__box{
@@ -251,6 +253,7 @@ $sp: 320px;
         top: 45%;
         left: 25%;
         transform: translate(-50%, -50%);
+        z-index: 2;
         @include sp {
           top: 110%;
           left: 47%;

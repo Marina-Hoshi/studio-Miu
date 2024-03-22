@@ -5,56 +5,58 @@ $(() => {
 
   fadeInPage();
 
-  const checkScrollSlideUp = (scrollBottom) => {
-    const scrollSlideUp = $("._scrollSlideUp")
-
-    scrollSlideUp.each((index, element) => {
-      const isActive = $(element).offset().top < scrollBottom
-
-      if (isActive) {
-        $(element).addClass("_isActiveSlideUp")
-      } else {
-        $(element).removeClass("_isActiveSlideUp")
-      }
-    })
-  }
-
-  const checkScrollSlideDown = (scrollBottom) => {
-    const scrollSlideDown = $("._scrollSlideDown")
-
-    scrollSlideDown.each((index, element) => {
-      const isActive = $(element).offset().top < scrollBottom
-
-      if (isActive) {
-        $(element).addClass("_isActiveSlideDown")
-      } else {
-        $(element).removeClass("_isActiveSlideDown")
-      }
-    })
-  }
-
   const checkScrollFadeIn = (scrollBottom) => {
-    const scrollFadeIn = $("._scrollFadeIn")
+    const scrollFadeIn = $("._scrollFadeIn");
 
     scrollFadeIn.each((index, element) => {
-      const isActive = $(element).offset().top < scrollBottom
+      const $element = $(element);
+      const elementTop = $element.offset().top;
 
-      if (isActive) {
-        $(element).addClass("_isActiveFadeIn")
+      if (elementTop < scrollBottom) {
+        $element.addClass("_isActiveFadeIn");
       } else {
-        $(element).removeClass("_isActiveFadeIn")
+        $element.removeClass("_isActiveFadeIn");
       }
-    })
-  }
+    });
+  };
+
+  const checkScrollSlideFadeLeft = (scrollBottom) => {
+    const scrollSlideFadeLeft = $("._scrollSlideFadeLeft");
+
+    scrollSlideFadeLeft.each((index, element) => {
+      const $element = $(element);
+      const elementTop = $element.offset().top;
+
+      if (elementTop < scrollBottom) {
+        $element.addClass("_isActiveSlideFadeLeft");
+      } else {
+        $element.removeClass("_isActiveSlideFadeLeft");
+      }
+    });
+  };
+
+  const checkScrollSlideFadeRight = (scrollBottom) => {
+    const scrollSlideFadeRight = $("._scrollSlideFadeRight");
+
+    scrollSlideFadeRight.each((index, element) => {
+      const $element = $(element);
+      const elementTop = $element.offset().top;
+
+      if (elementTop < scrollBottom) {
+        $element.addClass("_isActiveSlideFadeRight");
+      } else {
+        $element.removeClass("_isActiveSlideFadeRight");
+      }
+    });
+  };
 
   $(window).scroll(() => {
-    const scrollTop = $(window).scrollTop()
-    const windowHeight = $(window).height()
-    const scrollBottom = scrollTop + windowHeight
+    const scrollTop = $(window).scrollTop();
+    const windowHeight = $(window).height();
+    const scrollBottom = scrollTop + windowHeight;
 
-    checkScrollSlideUp(scrollBottom)
-    checkScrollSlideDown(scrollBottom)
-    checkScrollFadeIn(scrollBottom)
-  })
-})
-
+    checkScrollFadeIn(scrollBottom);
+    checkScrollSlideFadeLeft(scrollBottom);
+    checkScrollSlideFadeRight(scrollBottom);
+  });
+});

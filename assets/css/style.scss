@@ -9,13 +9,12 @@ $sp: 320px;
 }
 
 .l-wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ビューポートの高さと同じに設定 */
   background-color: #FFFFFF;
   width: 100%;
   color: #333333;
-  // font-family: 'Noto Sans JP', sans-serif;
-	// @include sp {
-	// 	width: 100%;
-	// }
 
   a{
     color: #333333;
@@ -23,7 +22,7 @@ $sp: 320px;
 
 .l-header {
   width: 100%;
-  height: auto;
+  height: 10%;
 
   &__keyvisual {
     position: relative;
@@ -135,8 +134,8 @@ $sp: 320px;
 }
 
 .l-main{
-  height: 85%;
-  background-color: #f8f8f8;
+    flex: 1;
+    background-color: #f8f8f8;
 
   &__about{
     height: auto;
@@ -298,14 +297,15 @@ $sp: 320px;
 
   &__slide{
     width: 100%;
-    height: 470px;
+    height: auto;
     background-color: #C6C9CC;
-    @include sp {
-      height: 200px;
-    }
 
     .p-main__slide{
       width: auto;
+      height: 500px
+      // @include sp {
+      //   height: 180px; 確認！
+      // }
     }
   }
 
@@ -611,81 +611,83 @@ $sp: 320px;
 }
 
 .l-footer{
-  height: 280px;
+  height: 10%;
   border-top: 1px solid #e0e0e0;
 
   &__container{
     width: 60%;
     height: 70%;
     margin: 0 auto;
-    padding-top: 50px;
+    padding: 10% 0;
   }
 
-  &__containerTop{
-    width: 65%;
-    height: 45%;
-    margin: 0 auto;
-    text-align: center;
-    @include sp {
-      width: 100%;
-      height: 25%;
-    }
-
-    .c-footer__name{
-      display: block;
-      width: 100%;
-      font-size: 1.4em;
-      line-height: 1.8em;
-      letter-spacing: 0.05em;
+    &__containerTop{
+      width: 65%;
+      height: 45%;
+      margin: 0 auto;
+      text-align: center;
       @include sp {
-        font-size: 1.0em;
+        width: 100%;
+        height: 25%;
       }
-    }
-  }
 
-  &__containerMiddle{
-    width: 100%;
-    height: 35%;
-    @include sp {
-      height: 50%;
-    }
-
-    .p-nav__menu{
-      display: flex;
-      justify-content: space-around;
-      @include sp {
+      .c-footer__name{
         display: block;
-      }
-    }
-
-      .c-nav__menu{
-        font-size: 0.75em;
+        width: 100%;
+        font-size: 1.4em;
+        line-height: 1.8em;
         letter-spacing: 0.05em;
         @include sp {
-          font-size: 0.01em;
-          line-height: 150em;
-          letter-spacing: 0.01em;
-          text-align: center;
+          font-size: 0.8em;
         }
       }
     }
 
-  &__containerBottom{
-    width: 75%;
-    height: 10%;
-    margin: 0 auto;
-    text-align: center;
-    @include sp {
+    &__containerMiddle{
       width: 100%;
-    }
-
-    .c-footer__copyright{
-      font-size: 0.5em;
-      letter-spacing: 0.09em;
+      height: 35%;
+      padding-top: 10%;
       @include sp {
-        font-size: 6px;
+        height: 50%;
+      }
+
+      .p-nav__menu{
+        display: flex;
+        justify-content: space-around;
+        @include sp {
+          display: block;
+        }
+
+        .c-nav__menu{
+          font-size: 0.75em;
+          letter-spacing: 0.05em;
+          @include sp {
+            font-size: 0.01em;
+            line-height: 150em;
+            letter-spacing: 0.01em;
+            text-align: center;
+          }
+        }
       }
     }
-  }
+
+    &__containerBottom{
+      width: 75%;
+      height: 10%;
+      margin: 0 auto;
+      padding-top: 10%;
+      text-align: center;
+      @include sp {
+        width: 100%;
+      }
+
+      .c-footer__copyright{
+        font-size: 0.5em;
+        letter-spacing: 0.09em;
+        @include sp {
+          font-size: 6px;
+        }
+      }
+    }
 }
 }

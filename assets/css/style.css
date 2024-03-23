@@ -1,5 +1,8 @@
 @charset "UTF-8";
 .l-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ビューポートの高さと同じに設定 */
   background-color: #FFFFFF;
   width: 100%;
   color: #333333;
@@ -9,7 +12,7 @@
 }
 .l-wrapper .l-header {
   width: 100%;
-  height: auto;
+  height: 10%;
 }
 .l-wrapper .l-header__keyvisual {
   position: relative;
@@ -118,7 +121,7 @@
   }
 }
 .l-wrapper .l-main {
-  height: 85%;
+  flex: 1;
   background-color: #f8f8f8;
 }
 .l-wrapper .l-main__about {
@@ -286,16 +289,12 @@
 }
 .l-wrapper .l-main__slide {
   width: 100%;
-  height: 470px;
+  height: auto;
   background-color: #C6C9CC;
-}
-@media screen and (max-width: 320px) {
-  .l-wrapper .l-main__slide {
-    height: 200px;
-  }
 }
 .l-wrapper .l-main__slide .p-main__slide {
   width: auto;
+  height: 500px;
 }
 .l-wrapper .l-main__lineup {
   height: auto;
@@ -612,14 +611,14 @@
   }
 }
 .l-wrapper .l-footer {
-  height: 280px;
+  height: 10%;
   border-top: 1px solid #e0e0e0;
 }
 .l-wrapper .l-footer__container {
   width: 60%;
   height: 70%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding: 10% 0;
 }
 .l-wrapper .l-footer__containerTop {
   width: 65%;
@@ -642,12 +641,13 @@
 }
 @media screen and (max-width: 320px) {
   .l-wrapper .l-footer__containerTop .c-footer__name {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }
 .l-wrapper .l-footer__containerMiddle {
   width: 100%;
   height: 35%;
+  padding-top: 10%;
 }
 @media screen and (max-width: 320px) {
   .l-wrapper .l-footer__containerMiddle {
@@ -663,12 +663,12 @@
     display: block;
   }
 }
-.l-wrapper .l-footer__containerMiddle .c-nav__menu {
+.l-wrapper .l-footer__containerMiddle .p-nav__menu .c-nav__menu {
   font-size: 0.75em;
   letter-spacing: 0.05em;
 }
 @media screen and (max-width: 320px) {
-  .l-wrapper .l-footer__containerMiddle .c-nav__menu {
+  .l-wrapper .l-footer__containerMiddle .p-nav__menu .c-nav__menu {
     font-size: 0.01em;
     line-height: 150em;
     letter-spacing: 0.01em;
@@ -679,6 +679,7 @@
   width: 75%;
   height: 10%;
   margin: 0 auto;
+  padding-top: 10%;
   text-align: center;
 }
 @media screen and (max-width: 320px) {

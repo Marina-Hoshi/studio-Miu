@@ -307,6 +307,30 @@ $sp: 320px;
       //   height: 180px; 確認！
       // }
     }
+
+    .c-slider {
+      position: relative;
+
+      &__container {
+          position: relative;
+      }
+
+      &__slide {
+          position: relative;
+
+          // &--next {
+              /* 次のスライドのスタイルを追加 */
+          // }
+      }
+
+      &__image-container {
+          overflow: hidden;
+      }
+    }
+
+    .u-overflow-hidden {
+      overflow: hidden;
+    }
   }
 
   &__lineup{

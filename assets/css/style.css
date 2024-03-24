@@ -296,6 +296,22 @@
   width: auto;
   height: 500px;
 }
+.l-wrapper .l-main__slide .c-slider {
+  position: relative;
+}
+.l-wrapper .l-main__slide .c-slider__container {
+  position: relative;
+}
+.l-wrapper .l-main__slide .c-slider__slide {
+  position: relative;
+  /* 次のスライドのスタイルを追加 */
+}
+.l-wrapper .l-main__slide .c-slider__image-container {
+  overflow: hidden;
+}
+.l-wrapper .l-main__slide .u-overflow-hidden {
+  overflow: hidden;
+}
 .l-wrapper .l-main__lineup {
   height: auto;
   background-color: #E0E5E5;

@@ -59,4 +59,11 @@ $(() => {
     checkScrollSlideFadeLeft(scrollBottom);
     checkScrollSlideFadeRight(scrollBottom);
   });
+
+  $('.c-left__img:nth-child(n+2)').hide();
+  setInterval(function() {
+    $(".c-left__img:first-child").fadeOut(2000);
+    $(".c-left__img:nth-child(2)").fadeIn(2000);
+    $(".c-left__img:first-child").appendTo(".img-wrap");
+  }, 4000);
 });

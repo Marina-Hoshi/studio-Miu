@@ -289,28 +289,40 @@
 }
 .l-wrapper .l-main__slide {
   width: 100%;
-  height: auto;
+  height: 470px;
   background-color: #C6C9CC;
 }
 .l-wrapper .l-main__slide .p-main__slide {
   width: auto;
-  height: 500px;
 }
-.l-wrapper .l-main__slide .c-slider {
+.l-wrapper .l-main__slide {
+  width: 100%;
+  height: 400px;
+  background-color: #C6C9CC;
+}
+.l-wrapper .l-main__slide .p-main__slide {
+  display: flex;
+  width: auto;
+  height: 100%;
+}
+.l-wrapper .l-main__slide .c-slide__left {
   position: relative;
+  flex: 1;
+  width: 100%;
+  height: 100%;
 }
-.l-wrapper .l-main__slide .c-slider__container {
+.l-wrapper .l-main__slide .c-slide__left .c-left__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.l-wrapper .l-main__slide .c-slide__right {
   position: relative;
-}
-.l-wrapper .l-main__slide .c-slider__slide {
-  position: relative;
-  /* 次のスライドのスタイルを追加 */
-}
-.l-wrapper .l-main__slide .c-slider__image-container {
-  overflow: hidden;
-}
-.l-wrapper .l-main__slide .u-overflow-hidden {
-  overflow: hidden;
+  flex: 1;
+  width: auto;
+  height: 100%;
 }
 .l-wrapper .l-main__lineup {
   height: auto;
@@ -501,10 +513,10 @@
 .l-wrapper .l-main__lineupBottom .p-lineup__box .c-lineup__list .c-lineup__list:last-child {
   margin-bottom: 0;
 }
-.l-wrapper .l-main__shop {
+.l-wrapper__shop {
   height: auto;
 }
-.l-wrapper .l-main .p-main__shopTop {
+.l-wrapper .p-main__shopTop {
   width: 20%;
   height: 40%;
   padding: 10% 0;
@@ -512,11 +524,11 @@
   text-align: center;
 }
 @media screen and (max-width: 320px) {
-  .l-wrapper .l-main .p-main__shopTop {
+  .l-wrapper .p-main__shopTop {
     width: 30%;
   }
 }
-.l-wrapper .l-main .p-main__shopTop .c-shop__heading {
+.l-wrapper .p-main__shopTop .c-shop__heading {
   height: 35%;
   margin-bottom: 8%;
   font-size: 2em;
@@ -524,52 +536,52 @@
   letter-spacing: 0.2em;
 }
 @media screen and (max-width: 320px) {
-  .l-wrapper .l-main .p-main__shopTop .c-shop__heading {
+  .l-wrapper .p-main__shopTop .c-shop__heading {
     margin-bottom: 5%;
     font-size: 0.8em;
   }
 }
-.l-wrapper .l-main .p-main__shopTop .c-shop__description {
+.l-wrapper .p-main__shopTop .c-shop__description {
   font-size: 0.9em;
   font-weight: 300;
   letter-spacing: 0.1em;
 }
 @media screen and (max-width: 320px) {
-  .l-wrapper .l-main .p-main__shopTop .c-shop__description {
+  .l-wrapper .p-main__shopTop .c-shop__description {
     font-size: 7px;
   }
 }
-.l-wrapper .l-main .p-main__shopBottom {
+.l-wrapper .p-main__shopBottom {
   width: 70%;
   margin: 0 auto;
   padding-bottom: 10%;
   text-align: center;
 }
 @media screen and (max-width: 320px) {
-  .l-wrapper .l-main .p-main__shopBottom {
+  .l-wrapper .p-main__shopBottom {
     width: 80%;
   }
 }
-.l-wrapper .l-main .p-main__shopBottom .p-shop__information {
+.l-wrapper .p-main__shopBottom .p-shop__information {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
 @media screen and (max-width: 320px) {
-  .l-wrapper .l-main .p-main__shopBottom .p-shop__information {
+  .l-wrapper .p-main__shopBottom .p-shop__information {
     display: block;
   }
 }
-.l-wrapper .l-main .p-main__shopBottom .p-shop__information .p-shop__list {
+.l-wrapper .p-main__shopBottom .p-shop__information .p-shop__list {
   width: 45%;
   height: auto;
 }
 @media screen and (max-width: 320px) {
-  .l-wrapper .l-main .p-main__shopBottom .p-shop__information .p-shop__list {
+  .l-wrapper .p-main__shopBottom .p-shop__information .p-shop__list {
     width: 100%;
   }
 }
-.l-wrapper .l-main .p-main__shopBottom .p-shop__information .p-shop__list .c-shop__name {
+.l-wrapper .p-main__shopBottom .p-shop__information .p-shop__list .c-shop__name {
   border-bottom: 1px solid #C6C9CC;
   padding: 5% 0;
   font-size: 1.2em;
@@ -578,41 +590,41 @@
   text-align: left;
 }
 @media screen and (max-width: 320px) {
-  .l-wrapper .l-main .p-main__shopBottom .p-shop__information .p-shop__list .c-shop__name {
+  .l-wrapper .p-main__shopBottom .p-shop__information .p-shop__list .c-shop__name {
     padding: 3% 0;
     font-size: 8px;
   }
 }
-.l-wrapper .l-main .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box {
+.l-wrapper .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box {
   margin: 10% 0;
   list-style: none;
 }
 @media screen and (max-width: 320px) {
-  .l-wrapper .l-main .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box {
+  .l-wrapper .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box {
     margin: 5% 0 12%;
   }
 }
-.l-wrapper .l-main .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box .c-shop__list {
+.l-wrapper .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box .c-shop__list {
   display: flex;
   margin-bottom: 6%;
 }
 @media screen and (max-width: 320px) {
-  .l-wrapper .l-main .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box .c-shop__list {
+  .l-wrapper .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box .c-shop__list {
     margin-bottom: 2%;
   }
 }
-.l-wrapper .l-main .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box .c-shop__list .c-shop__item {
+.l-wrapper .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box .c-shop__list .c-shop__item {
   width: 25%;
   font-size: 1em;
   letter-spacing: 0.2em;
   text-align: left;
 }
 @media screen and (max-width: 320px) {
-  .l-wrapper .l-main .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box .c-shop__list .c-shop__item {
+  .l-wrapper .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box .c-shop__list .c-shop__item {
     font-size: 7px;
   }
 }
-.l-wrapper .l-main .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box .c-shop__list .c-shop__content {
+.l-wrapper .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box .c-shop__list .c-shop__content {
   width: 85%;
   margin-left: 5%;
   font-size: 1em;
@@ -621,7 +633,7 @@
   text-align: left;
 }
 @media screen and (max-width: 320px) {
-  .l-wrapper .l-main .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box .c-shop__list .c-shop__content {
+  .l-wrapper .p-main__shopBottom .p-shop__information .p-shop__list .p-shop__box .c-shop__list .c-shop__content {
     font-size: 7px;
     line-height: 1.5em;
   }

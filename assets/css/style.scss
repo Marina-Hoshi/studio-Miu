@@ -295,43 +295,56 @@ $sp: 320px;
         }
       }
 
-  &__slide{
+      &__slide{
     width: 100%;
-    height: auto;
+    height: 470px;
     background-color: #C6C9CC;
 
     .p-main__slide{
       width: auto;
-      height: 500px
-      // @include sp {
-      //   height: 180px; 確認！
-      // }
-    }
-
-    .c-slider {
-      position: relative;
-
-      &__container {
-          position: relative;
-      }
-
-      &__slide {
-          position: relative;
-
-          // &--next {
-              /* 次のスライドのスタイルを追加 */
-          // }
-      }
-
-      &__image-container {
-          overflow: hidden;
-      }
-    }
-
-    .u-overflow-hidden {
-      overflow: hidden;
     }
   }
+
+
+
+  &__slide{
+    width: 100%;
+    height: 400px;
+    background-color: #C6C9CC;
+
+    .p-main__slide{
+      display: flex;
+      width: auto;
+      height: 100%;
+    }
+
+      .c-slide__left{
+        position: relative;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+
+        .c-left__img{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .c-slide__right{
+        position: relative;
+        flex: 1;
+        width: auto;
+        height: 100%;
+
+        // .c-right__img{
+        //   position: absolute;
+        //   width: 100%;
+        //   height: auto;
+        // }
+      }
+    }
 
   &__lineup{
     height: auto;
@@ -514,6 +527,7 @@ $sp: 320px;
         .c-lineup__list:last-child{
           margin-bottom: 0;
         }
+        }
       }
     }
   }
@@ -632,7 +646,6 @@ $sp: 320px;
       }
     }
   }
-}
 
 .l-footer{
   height: 10%;
@@ -713,5 +726,5 @@ $sp: 320px;
         }
       }
     }
-}
+  }
 }

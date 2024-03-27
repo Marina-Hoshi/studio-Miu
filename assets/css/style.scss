@@ -316,48 +316,17 @@ $sp: 320px;
 
       .c-slide__left{
         position: relative;
-        overflow: hidden; /* 枠線の内側に収まるように */
         flex: 1;
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        overflow: hidden;
 
-        .c-circle__outline {
+        .c-left__img{
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 300px;
-          height: 300px;
-          border: 2px solid #333333; /* 枠線の色と太さ */
-          border-radius: 50%; /* 丸の形状 */
-        }
-
-        .c-filled__circle {
-          position: absolute;
-          top: -200px; /* 初期位置を画面外に */
-          left: 50%;
-          transform: translate(-50%, 0);
-          width: 296px; /* 丸の直径 - 枠線の太さ * 2 */
-          height: 296px; /* 丸の直径 - 枠線の太さ * 2 */
-          background-color: #333333; /* グレーに変更 */
-          border: 2px solid transparent; /* 透明な枠線 */
-          border-radius: 50%; /* 丸の形状 */
-          box-sizing: border-box; /* 枠線を要素の内側に含める */
-          transition: top 0.5s ease; /* スライドイン・アウトのアニメーション */
-        }
-
-        .c-yellow__background {
-          position: absolute;
-          top: -200px; /* 初期位置を画面外に */
-          left: 50%;
-          transform: translate(-50%, 0);
-          width: 100%; /* 親要素に対しての幅 */
-          height: 100%; /* 親要素に対しての高さ */
-          background-color: yellow; /* 背景色を黄色に変更 */
-          transition: top 0.5s ease; /* スライドイン・アウトのアニメーション */
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          top: 0%;
         }
       }
     }

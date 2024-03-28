@@ -314,62 +314,44 @@ $sp: 320px;
       width: auto;
       height: 100%;
 
-      .c-slide__left {
-        position: relative;
+      .c-slide__left, .c-slide__right {
         flex: 1;
-        width: 100%;
-        height: 100%;
+        display: flex;
+        align-items: center;
       }
 
-      .c-slide__left {
-        position: relative;
-        width: 100%;
-        height: 100%;
+      .c-slide__left{
+        justify-content: flex-end;
       }
 
-      #circle-container {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100px;
-        height: 100px;
-        border: 2px solid #a9a9a9;
-        border-radius: 50%;
-        background-color: #c6c9cc;
-        overflow: hidden;
-      }
+        .c-circle-container {
+          position: relative;
+          width: 250px;
+          height: 250px;
 
-      #inner-circle {
-        width: 100%;
-        height: 100%;
-        background-color: #a9a9a9;
-        position: relative;
-        top: -100%;
-      }
+          .c-circle {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 100%;
+            border: 2px solid #a9a9a9; /* 外枠 */
+            border-radius: 50%;
+            overflow: hidden;
 
-      #yellow-background {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 0, 0.5);
-        top: -100%;
+            .c-inner-circle {
+              position: absolute;
+              top: -100%; /* 上からスライドインするための初期位置 */
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: #a9a9a9;  /* 内側を塗りつぶす色 */
+            }
+          }
+        }
       }
     }
 
-      .c-slide__right{
-        position: relative;
-        flex: 1;
-        width: auto;
-        height: 100%;
-
-        // .c-right__img{
-        //   position: absolute;
-        //   width: 100%;
-        //   height: auto;
-        // }
-      }
-    }
 
   &__lineup{
     height: auto;

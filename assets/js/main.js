@@ -52,49 +52,52 @@ $(() => {
 
 
 
-  $('#circle-container').append('<div id="inner-circle"></div>');
-  $('#inner-circle').animate({
-    'top': '0'
-  }, 1000, function() {
-    setTimeout(function() {
-      $('.c-slide__left').append('<div id="yellow-background"></div>');
-      $('#yellow-background').animate({
-        'top': '0'
-      }, 1000, function() {
-        $('#circle-container, #yellow-background').animate({
-          'top': '100%'
-        }, 1000, function() {
-          $('#inner-circle').css('top', '-100%');
-          $('#yellow-background').remove();
-          $('#circle-container').animate({
-            'top': '50%'
-          }, 1000);
-        });
-      });
-    }, 2000);
-  });
+  const $leftInnerCircle = $(".c-slide__left .c-inner-circle");
+  const $rightInnerCircle = $(".c-slide__right .c-inner-circle");
 
-  setInterval(function() {
-    $('#inner-circle').animate({
-      'top': '0'
-    }, 1000, function() {
-      setTimeout(function() {
-        $('#yellow-background').animate({
-          'top': '0'
-        }, 1000, function() {
-          $('#circle-container, #yellow-background').animate({
-            'top': '100%'
-          }, 1000, function() {
-            $('#inner-circle').css('top', '-100%');
-            $('#yellow-background').remove();
-            $('#circle-container').animate({
-              'top': '50%'
-            }, 1000);
+  function animateLeft() {
+    $leftInnerCircle.animate({
+      top: "100%" // 上から下にスライドイン
+    }, {
+      duration: 1500,
+      complete: function() {
+        setTimeout(function() {
+          $leftInnerCircle.animate({
+            top: "-100%" // 下から上にスライドアウト
+          }, {
+            duration: 1500,
+            complete: function() {
+              animateLeft();
+            }
           });
-        });
-      }, 2000);
+        }, 1500);
+      }
     });
-  }, 7000);
+  }
+
+  function animateRight() {
+    $rightInnerCircle.animate({
+      top: "-100%" // 下から上にスライドイン
+    }, {
+      duration: 1500,
+      complete: function() {
+        setTimeout(function() {
+          $rightInnerCircle.animate({
+            top: "100%" // 上から下にスライドアウト
+          }, {
+            duration: 1500,
+            complete: function() {
+              animateRight();
+            }
+          });
+        }, 1500);
+      }
+    });
+  }
+
+  animateLeft(); // 左側のアニメーションを開始
+  animateRight(); // 右側のアニメーションを開始
+
 
   $(window).scroll(() => {
     const scrollTop = $(window).scrollTop();

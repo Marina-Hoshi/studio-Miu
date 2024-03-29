@@ -67,10 +67,12 @@ $(() => {
           }, {
             duration: 1500,
             complete: function() {
-              animateLeft();
+              setTimeout(function() {
+                animateLeft(); // 再帰的に自身を呼び出す
+              }, 5000); // 5秒待機
             }
           });
-        }, 1500);
+        }, 5000); // 5秒待機
       }
     });
   }
@@ -87,16 +89,21 @@ $(() => {
           }, {
             duration: 1500,
             complete: function() {
-              animateRight();
+              setTimeout(function() {
+                animateRight(); // 再帰的に自身を呼び出す
+              }, 5000); // 5秒待機
             }
           });
-        }, 1500);
+        }, 5000); // 5秒待機
       }
     });
   }
 
-  animateLeft(); // 左側のアニメーションを開始
-  animateRight(); // 右側のアニメーションを開始
+  // 初回呼び出し
+  setTimeout(function() {
+    animateLeft(); // 左側のアニメーションを開始
+    animateRight(); // 右側のアニメーションを開始
+  }, 5000); // 最初のアニメーションを待つ時間
 
 
   $(window).scroll(() => {

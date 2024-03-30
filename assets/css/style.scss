@@ -35,7 +35,7 @@ $sp: 320px;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(119, 119, 119, 0.3); /* #777777の50%透過 */
+      background-color: rgba(119, 119, 119, 0.3);
     }
 
     .c-header__img {
@@ -146,17 +146,17 @@ $sp: 320px;
 }
 
 .l-main{
-    flex: 1;
+    height: 85%;
     background-color: #f8f8f8;
 
   &__about{
-    height: auto;
+    height: 50%;
   }
 
     &__aboutTop{
     width: 40%;
     height: 10%;
-    padding: 10% 0;
+    padding: 8% 0;
     margin: 0 auto;
     text-align: center;
     @include sp {
@@ -203,7 +203,7 @@ $sp: 320px;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(119, 119, 119, 0.3); /* #777777の50%透過 */
+            background-color: rgba(119, 119, 119, 0.3);
           }
 
           .c-about__img{
@@ -257,8 +257,9 @@ $sp: 320px;
               line-height: 1.5em;
               letter-spacing: 0.1em;
               @include sp {
-                font-size: 0.5em;
+                font-size: 9px;
                 line-height: 1.8em;
+                letter-spacing: 0.04em;
               }
             }
           }
@@ -301,21 +302,23 @@ $sp: 320px;
       width: 90%;
       height: 20%;
       margin: 0 auto;
-      padding-bottom: 10%;
+      padding-bottom: 8%;
     }
 
       &__picture{
+        position: relative;
         width: 100%;
         height: 100%;
 
-        // .c-main__overlay{
-        //   position: absolute;
-        //   top: 0;
-        //   left: 0;
-        //   width: 100%;
-        //   height: 100%;
-        //   background-color: rgba(255, 255, 255, 0.3); /* 白色の透過シェイプ */
-        // }
+        .c-main__overlay{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(119, 119, 119, 0.2);
+          z-index: 1;
+        }
 
         .c-main__picture{
           width: 100%;
@@ -326,63 +329,14 @@ $sp: 320px;
         }
       }
 
-  &__slide{
-    width: 100%;
-    height: 400px;
-    background-color: #C6C9CC;
-
-    .p-main__slide{
-      display: flex;
-      width: auto;
-      height: 100%;
-
-      .c-slide__left, .c-slide__right {
-        flex: 1;
-        display: flex;
-        align-items: center;
-      }
-
-      .c-slide__left{
-        justify-content: flex-end;
-      }
-
-        .c-circle-container {
-          position: relative;
-          width: 250px;
-          height: 250px;
-
-          .c-circle {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
-            height: 100%;
-            border: 2px solid #a9a9a9; /* 外枠 */
-            border-radius: 50%;
-            overflow: hidden;
-
-            .c-inner-circle {
-              position: absolute;
-              top: -100%; /* 上からスライドインするための初期位置 */
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background-color: #a9a9a9;  /* 内側を塗りつぶす色 */
-            }
-          }
-        }
-      }
-    }
-
-
   &__lineup{
-    height: auto;
+    height: 25%;
     background-color: #E0E5E5;
   }
 
     &__lineupTop{
       height: 10%;
-      padding: 10% 0;
+      padding: 8% 0;
 
       .c-lineupTop__title{
         width: 10%;
@@ -392,7 +346,7 @@ $sp: 320px;
           width: 20%;
         }
 
-        .c-lineupTop__headding{
+        .c-lineupTop__heading{
           font-size: 2.0em;
           font-weight: 300;
           letter-spacing: 0.1em;
@@ -419,14 +373,15 @@ $sp: 320px;
         .p-lineup__img{
           position: relative;
 
-          // .c-lineup__overlay {
-          //   position: absolute;
-          //   top: 0;
-          //   left: 0;
-          //   width: 100%;
-          //   height: 100%;
-          //   background-color: rgba(255, 255, 255, 0.3); /* 白色の透過シェイプ */
-          // }
+          .c-lineup__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(119, 119, 119, 0.1);
+            z-index: 1;
+            }
 
           .c-lineup__img{
             max-width: 100%;
@@ -570,132 +525,265 @@ $sp: 320px;
         }
       }
     }
-  }
 
   &__shop{
-    height: auto;
+    height: 15%;
+    background-color: #f8f8f8;
   }
 
-  .p-main__shopTop{
-    width: 20%;
-    height: 40%;
-    padding: 10% 0;
-    margin: 0 auto;
-    text-align: center;
-    @include sp {
-      width: 30%;
-    }
-
-    .c-shop__heading{
-      height: 35%;
-      margin-bottom: 8%;
-      font-size: 2.0em;
-      font-weight: 300;
-      letter-spacing: 0.2em;
+    .p-main__shopTop{
+      width: 20%;
+      height: 40%;
+      padding: 8% 0;
+      margin: 0 auto;
+      text-align: center;
       @include sp {
-        margin-bottom: 5%;
-        font-size: 0.8em;
-      }
-    }
-
-    .c-shop__description{
-      font-size: 0.9em;
-      font-weight: 300;
-      letter-spacing: 0.1em;
-      @include sp {
-        font-size: 7px;
-      }
-    }
-  }
-
-  .p-main__shopBottom{
-    width: 70%;
-    margin: 0 auto;
-    padding-bottom: 10%;
-    text-align: center;
-    @include sp {
-      width: 80%;
-    }
-
-    .p-shop__information{
-      display: flex;
-      justify-content: space-between;
-      list-style: none;
-      @include sp {
-        display: block;
+        width: 30%;
       }
 
-      .p-shop__list{
-        width: 45%;
-        height: auto;
+      .c-shop__heading{
+        height: 35%;
+        margin-bottom: 8%;
+        font-size: 2.0em;
+        font-weight: 300;
+        letter-spacing: 0.2em;
         @include sp {
-          width: 100%;
+          font-size: 0.8em;
+        }
+      }
+
+      .c-shop__description{
+        font-size: 0.9em;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        @include sp {
+          font-size: 7px;
+        }
+      }
+    }
+
+    .p-main__shopBottom{
+      width: 70%;
+      margin: 0 auto;
+      padding-bottom: 8%;
+      text-align: center;
+      @include sp {
+        width: 80%;
+      }
+
+      .p-shop__information{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        @include sp {
+          display: block;
         }
 
-        .c-shop__name{
-          border-bottom: 1px solid #C6C9CC;
-          padding: 5% 0;
-          font-size: 1.2em;
+        .p-shop__list{
+          width: 45%;
+          height: auto;
+          @include sp {
+            width: 100%;
+          }
+
+          .c-shop__name{
+            border-bottom: 1px solid #C6C9CC;
+            padding: 5% 0;
+            font-size: 1.2em;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            text-align: left;
+            @include sp {
+              padding: 3% 0;
+              font-size: 8px;
+            }
+          }
+
+          .p-shop__box{
+            margin: 10% 0;
+            list-style: none;
+            @include sp {
+              margin: 5% 0 12%;
+            }
+
+            .c-shop__list{
+              display: flex;
+              margin-bottom: 6%;
+              @include sp {
+                margin-bottom: 2%;
+              }
+
+              .c-shop__item{
+                width: 25%;
+                font-size: 1.0em;
+                letter-spacing: 0.2em;
+                text-align: left;
+                @include sp {
+                  font-size: 6px;
+                }
+              }
+
+              .c-shop__content{
+                width: 85%;
+                margin-left: 5%;
+                font-size: 1.0em;
+                line-height: 1.5em;
+                letter-spacing: 0.2em;
+                text-align: left;
+                @include sp {
+                  font-size: 6px;
+                  line-height: 1.5em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  &__news{
+    height: 10%;
+    background-color: #E0E5E5;
+  }
+
+    &__newsTop{
+      height: 10%;
+      padding: 8% 0;
+
+      .c-newsTop__title{
+        width: 10%;
+        margin: 0 auto;
+        text-align: center;
+        @include sp {
+          width: 20%;
+        }
+
+        .c-newsTop__heading{
+          font-size: 2.0em;
+          font-weight: 300;
+          letter-spacing: 0.1em;
+          @include sp {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+
+    &__newsBottom{
+      width: 70%;
+      margin: 0 auto;
+      padding-bottom: 8%;
+      @include sp {
+        width: 80%;
+      }
+
+    .p-news__information{
+      list-style: none;
+      @include sp {
+      }
+
+      .p-news__list{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-bottom: 3%;
+        padding-bottom: 3%;
+        border-bottom: 1px solid #C6C9CC;
+        align-items: center;
+        @include sp {
+        flex-wrap: wrap;
+        }
+
+        .c-news__date{
+          width: 16%;
+          font-size: 0.9em;
           font-weight: 300;
           letter-spacing: 0.1em;
           text-align: left;
           @include sp {
-            padding: 3% 0;
-            font-size: 8px;
+            width: 20%;
+            font-size: 6px;
           }
         }
 
-        .p-shop__box{
-          margin: 10% 0;
-          list-style: none;
+        .c-news__tag{
+          display: flex;
+          align-items: center;
+          width: 7%;
+          padding: 1%;
+          background-color: #C6C9CC;
+          text-align: center;
           @include sp {
-            margin: 5% 0 12%;
+            width: 8%;
+            padding: 0.1em;
+            font-size: 6px;
           }
 
-          .c-shop__list{
-            display: flex;
-            margin-bottom: 6%;
+          .c-news__button{
+            width: 100%;
+            height:100%;
+            font-size: 0.8em;
+            font-weight: 300;
+            letter-spacing: 0.1em;
             @include sp {
-              margin-bottom: 2%;
-            }
-
-            .c-shop__item{
-              width: 25%;
-              font-size: 1.0em;
-              letter-spacing: 0.2em;
-              text-align: left;
-              @include sp {
-                font-size: 7px;
-              }
-            }
-
-            .c-shop__content{
-              width: 85%;
-              margin-left: 5%;
-              font-size: 1.0em;
-              line-height: 1.5em;
-              letter-spacing: 0.2em;
-              text-align: left;
-              @include sp {
-                font-size: 7px;
-                line-height: 1.5em;
-              }
+              font-size: 0.7em;
             }
           }
+        }
+
+        .c-news__content{
+          width: 75%;
+          margin-left: 5%;
+          font-size: 1.0em;
+          line-height: 1.5em;
+          letter-spacing: 0.2em;
+          text-align: left;
+          @include sp {
+            width: 100%;
+            margin: 5px 0 0 1px;
+            font-size: 6px;
+            line-height: 1.5em;
+          }
+        }
+      }
+
+      .p-news__list:first-child{
+        padding-top: 3%;
+        border-top: 1px solid #C6C9CC;
+      }
+    }
+
+    .p-news__button{
+      width: 9%;
+      margin-left: auto;
+      padding: 2% 3%;
+      border: 1px solid #888888;
+      text-align: center;
+      @include sp {
+        padding: 1% 4%;
+      }
+
+      .c-more__button{
+        font-size: 0.8em;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        @include sp {
+          font-size: 6px;
         }
       }
     }
   }
+}
 
 .l-footer{
-  height: 10%;
+  height: 5%;
   border-top: 1px solid #e0e0e0;
 
   &__container{
     width: 60%;
     height: 70%;
     margin: 0 auto;
-    padding: 10% 0;
+    padding: 8% 0;
   }
 
     &__containerTop{
@@ -739,8 +827,8 @@ $sp: 320px;
           font-size: 0.75em;
           letter-spacing: 0.05em;
           @include sp {
-            font-size: 0.01em;
-            line-height: 150em;
+            font-size: 6px;
+            line-height: 2.0em;
             letter-spacing: 0.01em;
             text-align: center;
           }

@@ -1,7 +1,25 @@
 @charset "UTF-8";
 
-$sp: 320px;
+$sp: 480px;
+$md: 610px;
+$lg: 768px;
+$xl: 1024px;
 
+@mixin xl {
+  @media screen and (max-width: ($xl)) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (max-width: ($lg)) {
+    @content;
+  }
+}
+@mixin md {
+  @media screen and (max-width: ($md)) {
+    @content;
+  }
+}
 @mixin sp {
   @media screen and (max-width: ($sp)) {
     @content;

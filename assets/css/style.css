@@ -48,30 +48,30 @@
   height: 85%;
   background-color: #f8f8f8;
 }
-.l-wrapper .l-main__about {
+.l-wrapper .l-main #l-main__about {
   height: 40%;
 }
-.l-wrapper .l-main__class {
+.l-wrapper .l-main #l-main__class {
   height: 10%;
   background-color: #E0E5E5;
 }
-.l-wrapper .l-main__workshop {
+.l-wrapper .l-main #l-main__workshop {
   height: 10%;
   background-color: #f8f8f8;
 }
-.l-wrapper .l-main__blog {
+.l-wrapper .l-main #l-main__blog {
   height: 10%;
   background-color: #E0E5E5;
 }
-.l-wrapper .l-main__booking {
+.l-wrapper .l-main #l-main__booking {
   height: 10%;
   background-color: #f8f8f8;
 }
-.l-wrapper .l-main__contact {
+.l-wrapper .l-main #l-main__contact {
   height: 10%;
   background-color: #E0E5E5;
 }
-.l-wrapper .l-main__sns {
+.l-wrapper .l-main #l-main__sns {
   height: 10%;
   background-color: #f8f8f8;
 }

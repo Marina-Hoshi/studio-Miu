@@ -165,8 +165,49 @@ $xl: 1024px;
 
   #l-main__booking{
     height: 10%;
+    padding: 0 25% 5%;
     background-color: #f8f8f8;
   }
+
+    &__bookingTop{
+      width: 100%;
+
+      .p-booking__heading {
+        width: 100%;
+        margin-bottom: 5%;
+        h2{
+          font-size: 1.5em;
+          text-align: center;
+        }
+      }
+    }
+
+    &__bookingBottom{
+      padding: 5% 10%;
+      background-color: #EDDFC9;
+
+      .p-booking__innner{
+        margin: 0 auto;
+
+        .c-booking__icon{
+          width: 30%;
+          margin: 0 auto;
+        }
+
+        .c-booking__text{
+          width: 70%;
+          margin: 0 auto;
+        }
+
+        .c-booking__button{
+          width: 60%;
+          margin: 0 auto;
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
 
   #l-main__contact{
     height: 10%;

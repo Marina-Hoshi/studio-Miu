@@ -65,49 +65,141 @@
 }
 .l-wrapper .l-main #l-main__booking {
   height: 10%;
-  padding: 0 25% 5%;
-  background-color: #f8f8f8;
+  padding: 0 25% 10%;
+  background-color: #FFFFFF;
 }
 .l-wrapper .l-main__bookingTop {
   width: 100%;
 }
 .l-wrapper .l-main__bookingTop .p-booking__heading {
   width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 .l-wrapper .l-main__bookingTop .p-booking__heading h2 {
   font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
   text-align: center;
 }
 .l-wrapper .l-main__bookingBottom {
-  padding: 5% 10%;
-  background-color: #EDDFC9;
+  padding: 7% 15% 10%;
+  background-color: #fbf8f3;
 }
-.l-wrapper .l-main__bookingBottom .p-booking__innner {
+.l-wrapper .l-main__bookingBottom .p-booking__inner {
   margin: 0 auto;
 }
-.l-wrapper .l-main__bookingBottom .p-booking__innner .c-booking__icon {
-  width: 30%;
+.l-wrapper .l-main__bookingBottom .p-booking__inner .c-booking__icon {
+  width: 20%;
   margin: 0 auto;
+  text-align: center;
+  margin-bottom: 7%;
 }
-.l-wrapper .l-main__bookingBottom .p-booking__innner .c-booking__text {
-  width: 70%;
-  margin: 0 auto;
+.l-wrapper .l-main__bookingBottom .p-booking__inner .c-booking__text {
+  margin-bottom: 7%;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: center;
 }
-.l-wrapper .l-main__bookingBottom .p-booking__innner .c-booking__button {
+.l-wrapper .l-main__bookingBottom .p-booking__inner .c-booking__button {
   width: 60%;
   margin: 0 auto;
-}
-.l-wrapper .l-main__bookingBottom .p-booking__innner .c-booking__button p {
+  padding: 5% 0;
+  border: 1px solid #333333;
+  background-color: #FFFFFF;
+  font-size: 1em;
+  letter-spacing: 0.2em;
   text-align: center;
 }
 .l-wrapper .l-main #l-main__contact {
   height: 10%;
-  background-color: #E0E5E5;
+  padding: 0 25% 18%;
+  background-color: #FFFFFF;
+}
+.l-wrapper .l-main__contactTop {
+  width: 100%;
+}
+.l-wrapper .l-main__contactTop .p-contact__heading {
+  width: 100%;
+  margin-bottom: 10%;
+}
+.l-wrapper .l-main__contactTop .p-contact__heading h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+.l-wrapper .l-main__contactBottom {
+  padding: 7% 15% 10%;
+  background-color: #fbf8f3;
+}
+.l-wrapper .l-main__contactBottom .p-contact__inner {
+  margin: 0 auto;
+}
+.l-wrapper .l-main__contactBottom .p-contact__inner .c-contact__icon {
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 7%;
+}
+.l-wrapper .l-main__contactBottom .p-contact__inner .c-contact__button {
+  width: 60%;
+  margin: 0 auto;
+  padding: 5% 0;
+  border: 1px solid #333333;
+  background-color: #FFFFFF;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  text-align: center;
 }
 .l-wrapper .l-main #l-main__sns {
   height: 10%;
-  background-color: #f8f8f8;
+  padding: 0 15% 10%;
+  background-color: #FFFFFF;
+}
+.l-wrapper .l-main__snsTop {
+  width: 100%;
+}
+.l-wrapper .l-main__snsTop .p-sns__heading {
+  width: 100%;
+  margin-bottom: 10%;
+}
+.l-wrapper .l-main__snsTop .p-sns__heading h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+.l-wrapper .l-main__snsBottom {
+  padding: 7% 15%;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+}
+.l-wrapper .l-main__snsBottom .p-sns__inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__left {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+.l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__left p {
+  font-size: 0.9em;
+  letter-spacing: 0.2em;
+}
+.l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__right {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+.l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__right p {
+  font-size: 0.9em;
+  letter-spacing: 0.2em;
 }
 .l-wrapper .l-footer {
   height: 5%;

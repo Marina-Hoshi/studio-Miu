@@ -1,13 +1,28 @@
+@charset "UTF-8";
 .l-wrapper {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   min-height: 100vh;
   background-color: #FFFFFF;
-  width: 100%;
   color: #333333;
+  letter-spacing: 0.1em;
+  line-height: 2em;
 }
 .l-wrapper a {
   color: #333333;
+  text-decoration: none;
+}
+.l-wrapper li {
+  list-style: none;
+}
+.l-wrapper h2 {
+  font-size: 1.7em;
+  font-weight: 300;
+}
+.l-wrapper h2::before {
+  display: block;
+  content: "/";
+  padding: 0 0 3% 1%;
+  font-size: 1.7em;
 }
 .l-wrapper .l-header {
   width: 100%;
@@ -36,7 +51,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1em;
-  letter-spacing: 0.1em;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 @media screen and (max-width: 480px) {
@@ -46,27 +60,68 @@
 }
 .l-wrapper .l-main {
   height: 85%;
-  background-color: #f8f8f8;
 }
 .l-wrapper .l-main #l-main__about {
-  height: 40%;
+  width: 80%; /*px固定に変更*/
+  height: 10%;
+  margin: 0 auto;
+  padding-bottom: 12%;
+}
+.l-wrapper .l-main .p-about__heading {
+  margin-bottom: 10%;
 }
 .l-wrapper .l-main #l-main__class {
+  width: 80%;
   height: 10%;
-  background-color: #E0E5E5;
+  margin: 0 auto;
+  padding-bottom: 8%;
+}
+.l-wrapper .l-main .p-class__heading {
+  margin-bottom: 10%;
 }
 .l-wrapper .l-main #l-main__workshop {
+  width: 80%;
   height: 10%;
-  background-color: #f8f8f8;
+  margin: 0 auto;
+  padding-bottom: 11%;
+}
+.l-wrapper .l-main .p-workshop__heading {
+  margin-bottom: 10%;
 }
 .l-wrapper .l-main #l-main__blog {
+  width: 80%;
   height: 10%;
-  background-color: #E0E5E5;
+  margin: 0 auto;
+  padding-bottom: 13%;
+}
+.l-wrapper .l-main__blogTop {
+  margin-bottom: 10%;
+}
+.l-wrapper .l-main__blogBottom {
+  border-top: 1px solid #e8e8e8;
+}
+.l-wrapper .l-main__blogBottom .p-blog__information {
+  margin-bottom: 5%;
+}
+.l-wrapper .l-main__blogBottom .p-blog__information li {
+  padding: 5% 3%;
+  border-bottom: 1px solid #e8e8e8;
+}
+.l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list {
+  display: flex;
+}
+.l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__left {
+  width: 30%;
+}
+.l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right {
+  width: 70%;
+}
+.l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__head {
+  display: flex;
 }
 .l-wrapper .l-main #l-main__booking {
   height: 10%;
   padding: 0 25% 10%;
-  background-color: #FFFFFF;
 }
 .l-wrapper .l-main__bookingTop {
   width: 100%;
@@ -75,10 +130,9 @@
   width: 100%;
   margin-bottom: 10%;
 }
-.l-wrapper .l-main__bookingTop .p-booking__heading h2 {
+.l-wrapper .l-main__bookingTop .p-booking__heading h3 {
   font-size: 1.5em;
   font-weight: 300;
-  letter-spacing: 0.1em;
   text-align: center;
 }
 .l-wrapper .l-main__bookingBottom {
@@ -97,7 +151,6 @@
 .l-wrapper .l-main__bookingBottom .p-booking__inner .c-booking__text {
   margin-bottom: 7%;
   font-size: 1em;
-  line-height: 2em;
   text-align: center;
 }
 .l-wrapper .l-main__bookingBottom .p-booking__inner .c-booking__button {
@@ -113,7 +166,6 @@
 .l-wrapper .l-main #l-main__contact {
   height: 10%;
   padding: 0 25% 18%;
-  background-color: #FFFFFF;
 }
 .l-wrapper .l-main__contactTop {
   width: 100%;
@@ -122,7 +174,7 @@
   width: 100%;
   margin-bottom: 10%;
 }
-.l-wrapper .l-main__contactTop .p-contact__heading h2 {
+.l-wrapper .l-main__contactTop .p-contact__heading h3 {
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: 0.2em;
@@ -154,7 +206,6 @@
 .l-wrapper .l-main #l-main__sns {
   height: 10%;
   padding: 0 15% 10%;
-  background-color: #FFFFFF;
 }
 .l-wrapper .l-main__snsTop {
   width: 100%;
@@ -163,7 +214,7 @@
   width: 100%;
   margin-bottom: 10%;
 }
-.l-wrapper .l-main__snsTop .p-sns__heading h2 {
+.l-wrapper .l-main__snsTop .p-sns__heading h3 {
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: 0.2em;
@@ -203,7 +254,6 @@
 }
 .l-wrapper .l-footer {
   height: 5%;
-  border-top: 1px solid #e0e0e0;
 }
 .l-wrapper .l-footer__top {
   height: 10%;

@@ -27,16 +27,33 @@ $xl: 1024px;
 }
 
 .l-wrapper{
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   min-height: 100vh;
   background-color: #FFFFFF;
-  width: 100%;
   color: #333333;
+  letter-spacing: 0.1em;
+  line-height: 2.0em;
 
   a{
     color: #333333;
+    text-decoration: none;
   }
+
+  li{
+    list-style: none;
+  }
+
+  h2 {
+  font-size: 1.7em;
+  font-weight: 300;
+  }
+  h2::before {
+  display: block;
+  content: '/';
+  padding: 0 0 3% 1%;
+  font-size: 1.7em;
+  }
+
 
 .l-header {
   width: 100%;
@@ -67,7 +84,6 @@ $xl: 1024px;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 1.0em;
-      letter-spacing: 0.1em;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
       @include sp {
         font-size: 0.5em;
@@ -136,37 +152,91 @@ $xl: 1024px;
 
 .l-main{
     height: 85%;
-    background-color: #f8f8f8;
 
   #l-main__about{
-    height: 40%;
-
-    // .p-about__heading{
-    //   h2 {
-    //     font-size: 10px;
-    //   }
-    // }
+    width: 80%; /*px固定に変更*/
+    height: 10%;
+    margin: 0 auto;
+    padding-bottom: 12%;
   }
+
+    .p-about__heading{
+      margin-bottom: 10%;
+    }
 
   #l-main__class{
+    width: 80%;
     height: 10%;
-    background-color: #E0E5E5;
+    margin: 0 auto;
+    padding-bottom: 8%;
   }
+
+    .p-class__heading{
+      margin-bottom: 10%;
+    }
 
   #l-main__workshop{
+    width: 80%;
     height: 10%;
-    background-color: #f8f8f8;
+    margin: 0 auto;
+    padding-bottom: 11%;
   }
 
+    .p-workshop__heading{
+      margin-bottom: 10%;
+    }
+
   #l-main__blog{
+    width: 80%;
     height: 10%;
-    background-color: #E0E5E5;
+    margin: 0 auto;
+    padding-bottom: 13%;
   }
+
+    &__blogTop{
+      margin-bottom: 10%;
+    }
+
+    &__blogBottom{
+      border-top: 1px solid #e8e8e8;
+
+      .p-blog__information{
+        margin-bottom: 5%;
+
+        li{
+          padding: 5% 3%;
+          border-bottom: 1px solid #e8e8e8;
+
+          .p-blog__list{
+            display: flex;
+
+            .p-blog__left{
+              width: 30%;
+            }
+
+            .p-blog__right{
+              width: 70%;
+              .c-blog__head{
+                display: flex;
+                // .c-blog__date{
+                // }
+                // .c-blog__tag{
+                //   display: flex;
+                //   align-items: center;
+                //   padding: 1%;
+                //   border: 1px solid #333333;
+                //   text-align: center;
+                // }
+              }
+            }
+          }
+        }
+      }
+    }
 
   #l-main__booking{
     height: 10%;
     padding: 0 25% 10%;
-    background-color: #FFFFFF;
   }
 
     &__bookingTop{
@@ -175,10 +245,9 @@ $xl: 1024px;
       .p-booking__heading {
         width: 100%;
         margin-bottom: 10%;
-        h2{
+        h3 {
           font-size: 1.5em;
           font-weight: 300;
-          letter-spacing: 0.1em;
           text-align: center;
         }
       }
@@ -201,7 +270,6 @@ $xl: 1024px;
         .c-booking__text{
           margin-bottom: 7%;
           font-size: 1.0em;
-          line-height: 2.0em;
           text-align: center;
         }
 
@@ -221,7 +289,6 @@ $xl: 1024px;
   #l-main__contact{
     height: 10%;
     padding: 0 25% 18%;
-    background-color: #FFFFFF;
   }
 
     &__contactTop{
@@ -230,7 +297,7 @@ $xl: 1024px;
       .p-contact__heading {
         width: 100%;
         margin-bottom: 10%;
-        h2{
+        h3{
           font-size: 1.5em;
           font-weight: 300;
           letter-spacing: 0.2em;
@@ -269,7 +336,6 @@ $xl: 1024px;
   #l-main__sns{
     height: 10%;
     padding: 0 15% 10%;
-    background-color: #FFFFFF;
   }
 
     &__snsTop{
@@ -278,7 +344,7 @@ $xl: 1024px;
       .p-sns__heading {
         width: 100%;
         margin-bottom: 10%;
-        h2{
+        h3{
           font-size: 1.5em;
           font-weight: 300;
           letter-spacing: 0.2em;
@@ -326,7 +392,6 @@ $xl: 1024px;
 
 .l-footer{
   height: 5%;
-  border-top: 1px solid #e0e0e0;
 
   &__top{
     height: 10%;

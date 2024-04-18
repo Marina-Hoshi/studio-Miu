@@ -216,17 +216,30 @@ $xl: 1024px;
 
             .p-blog__right{
               width: 70%;
+              margin-top: 3%;
               .c-blog__head{
                 display: flex;
-                // .c-blog__date{
-                // }
-                // .c-blog__tag{
-                //   display: flex;
-                //   align-items: center;
-                //   padding: 1%;
-                //   border: 1px solid #333333;
-                //   text-align: center;
-                // }
+                align-items: center;
+                margin-bottom: 3%;
+                .c-blog__date{
+                  width: 20%;
+                }
+                .c-blog__category{
+                  display: inline-block;
+                  margin-bottom: 0;
+                  span {
+                    padding: 2px 2px;
+                    border: 1px solid #333333;
+                    font-size: 0.8em;
+                  }
+                }
+              }
+              .c-blog__title{
+                margin-bottom: 2%;
+                font-weight: 300;
+              }
+              .c-blog__content{
+                width: 80%;
               }
             }
           }
@@ -265,6 +278,9 @@ $xl: 1024px;
           margin: 0 auto;
           text-align: center;
           margin-bottom: 7%;
+          .fa-regular.fa-calendar-check{
+            font-size: 200%;
+          }
         }
 
         .c-booking__text{
@@ -318,6 +334,10 @@ $xl: 1024px;
           margin: 0 auto;
           text-align: center;
           margin-bottom: 7%;
+          .fa-solid.fa-envelope{
+            font-size: 200%;
+            // -webkit-text-strokes: 1px #fbf8f3;/*背景色と合わせてアウトラインの色と太さを調整*/
+          }
         }
 
         .c-contact__button{
@@ -363,27 +383,20 @@ $xl: 1024px;
         justify-content: space-between;
         margin: 0 auto;
 
-        .c-sns__left{
+        .c-sns__icon{
           display: flex;
-          justify-content: space-between;
-          width: 20%;
-          margin: 0 auto;
+          justify-content: center;
+          width: 30%;
           text-align: center;
-          p{
-            font-size: 0.9em;
-            letter-spacing: 0.2em;
+          .fa-brands.fa-facebook-f ,.fa-brands.fa-instagram{
+            font-size: 200%;
           }
-        }
-
-        .c-sns__right{
-          display: flex;
-          justify-content: space-between;
-          width: 20%;
-          margin: 0 auto;
-          text-align: center;
           p{
-            font-size: 0.9em;
-            letter-spacing: 0.2em;
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 1.0em;
+            font-weight: 600;
+            letter-spacing: 0.25em;
           }
         }
       }

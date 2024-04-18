@@ -115,9 +115,31 @@
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right {
   width: 70%;
+  margin-top: 3%;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__head {
   display: flex;
+  align-items: center;
+  margin-bottom: 3%;
+}
+.l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__head .c-blog__date {
+  width: 20%;
+}
+.l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__head .c-blog__category {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__head .c-blog__category span {
+  padding: 2px 2px;
+  border: 1px solid #333333;
+  font-size: 0.8em;
+}
+.l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__title {
+  margin-bottom: 2%;
+  font-weight: 300;
+}
+.l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__content {
+  width: 80%;
 }
 .l-wrapper .l-main #l-main__booking {
   height: 10%;
@@ -147,6 +169,9 @@
   margin: 0 auto;
   text-align: center;
   margin-bottom: 7%;
+}
+.l-wrapper .l-main__bookingBottom .p-booking__inner .c-booking__icon .fa-regular.fa-calendar-check {
+  font-size: 200%;
 }
 .l-wrapper .l-main__bookingBottom .p-booking__inner .c-booking__text {
   margin-bottom: 7%;
@@ -193,6 +218,9 @@
   text-align: center;
   margin-bottom: 7%;
 }
+.l-wrapper .l-main__contactBottom .p-contact__inner .c-contact__icon .fa-solid.fa-envelope {
+  font-size: 200%;
+}
 .l-wrapper .l-main__contactBottom .p-contact__inner .c-contact__button {
   width: 60%;
   margin: 0 auto;
@@ -230,27 +258,21 @@
   justify-content: space-between;
   margin: 0 auto;
 }
-.l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__left {
+.l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__icon {
   display: flex;
-  justify-content: space-between;
-  width: 20%;
-  margin: 0 auto;
+  justify-content: center;
+  width: 30%;
   text-align: center;
 }
-.l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__left p {
-  font-size: 0.9em;
-  letter-spacing: 0.2em;
+.l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__icon .fa-brands.fa-facebook-f, .l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__icon .fa-brands.fa-instagram {
+  font-size: 200%;
 }
-.l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__right {
-  display: flex;
-  justify-content: space-between;
-  width: 20%;
-  margin: 0 auto;
-  text-align: center;
-}
-.l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__right p {
-  font-size: 0.9em;
-  letter-spacing: 0.2em;
+.l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__icon p {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0.25em;
 }
 .l-wrapper .l-footer {
   height: 5%;

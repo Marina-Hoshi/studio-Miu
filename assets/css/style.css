@@ -68,7 +68,7 @@
   padding-bottom: 12%;
 }
 .l-wrapper .l-main .p-about__heading {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .l-wrapper .l-main #l-main__class {
   width: 80%;
@@ -77,16 +77,60 @@
   padding-bottom: 8%;
 }
 .l-wrapper .l-main .p-class__heading {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .l-wrapper .l-main #l-main__workshop {
+  position: relative;
   width: 80%;
   height: 10%;
   margin: 0 auto;
   padding-bottom: 11%;
 }
 .l-wrapper .l-main .p-workshop__heading {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
+}
+.l-wrapper .l-main .p-workshop__description {
+  margin-bottom: 2%;
+}
+.l-wrapper .l-main .p-workshop__text {
+  width: 80%;
+  margin-bottom: 7%;
+}
+.l-wrapper .l-main .p-workshop__button {
+  position: absolute;
+  top: 12%;
+  right: 0;
+  margin: 0;
+  text-align: right;
+}
+.l-wrapper .l-main__workshopList {
+  display: flex;
+  justify-content: space-between;
+}
+.l-wrapper .l-main__workshopList li {
+  width: 45%;
+}
+.l-wrapper .l-main__workshopList li .p-box__img {
+  margin-bottom: 4%;
+}
+.l-wrapper .l-main__workshopList li .p-box__text {
+  margin-bottom: 4%;
+}
+.l-wrapper .l-main__workshopList li .p-box__detail li {
+  display: flex;
+  width: 100%;
+}
+.l-wrapper .l-main__workshopList li .p-box__detail li .p-box__item {
+  width: 30%;
+}
+.l-wrapper .l-main__workshopList li .p-box__detail li .p-box__content {
+  width: 70%;
+}
+.l-wrapper .l-main__workshopList li .p-workshop__bookingButton {
+  margin-top: 6%;
+}
+.l-wrapper .l-main__workshopList .l-main__workshopList > li:nth-last-child(1) { /*効いてない*/
+  margin-top: 7%;
 }
 .l-wrapper .l-main #l-main__blog {
   width: 80%;
@@ -95,7 +139,7 @@
   padding-bottom: 13%;
 }
 .l-wrapper .l-main__blogTop {
-  margin-bottom: 10%;
+  margin-bottom: 7%;
 }
 .l-wrapper .l-main__blogBottom {
   border-top: 1px solid #e8e8e8;
@@ -104,7 +148,7 @@
   margin-bottom: 5%;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li {
-  padding: 5% 3%;
+  padding: 4% 4%;
   border-bottom: 1px solid #e8e8e8;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list {

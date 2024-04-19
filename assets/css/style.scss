@@ -161,7 +161,7 @@ $xl: 1024px;
   }
 
     .p-about__heading{
-      margin-bottom: 10%;
+      margin-bottom: 5%;
     }
 
   #l-main__class{
@@ -172,10 +172,11 @@ $xl: 1024px;
   }
 
     .p-class__heading{
-      margin-bottom: 10%;
+      margin-bottom: 5%;
     }
 
   #l-main__workshop{
+    position: relative;
     width: 80%;
     height: 10%;
     margin: 0 auto;
@@ -183,8 +184,56 @@ $xl: 1024px;
   }
 
     .p-workshop__heading{
-      margin-bottom: 10%;
+      margin-bottom: 5%;
     }
+
+    .p-workshop__description{
+      margin-bottom: 2%;
+    }
+
+    .p-workshop__text{
+      width: 80%;
+      margin-bottom: 7%;
+    }
+
+    .p-workshop__button{
+      position: absolute;
+      top: 12%;
+      right: 0;
+      margin: 0;
+      text-align: right;
+    }
+
+  &__workshopList{
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 45%;
+      .p-box__img{
+        margin-bottom: 4%;
+      }
+      .p-box__text{
+        margin-bottom: 4%;
+      }
+      .p-box__detail li{
+        display: flex;
+        width: 100%;
+        .p-box__item{
+          width: 30%
+        }
+        .p-box__content{
+          width: 70%;
+        }
+      }
+      .p-workshop__bookingButton{
+        margin-top: 6%;
+      }
+    }
+
+    .l-main__workshopList > li:nth-last-child(1) { /*効いてない*/
+      margin-top: 7%;
+    }
+  }
 
   #l-main__blog{
     width: 80%;
@@ -194,7 +243,7 @@ $xl: 1024px;
   }
 
     &__blogTop{
-      margin-bottom: 10%;
+      margin-bottom: 7%;
     }
 
     &__blogBottom{
@@ -204,7 +253,7 @@ $xl: 1024px;
         margin-bottom: 5%;
 
         li{
-          padding: 5% 3%;
+          padding: 4% 4%;
           border-bottom: 1px solid #e8e8e8;
 
           .p-blog__list{

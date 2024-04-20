@@ -14,37 +14,48 @@
   <body>
     <div class="l-wrapper">
       <header class="l-header">
-        <div class="l-header__top">
-        </div>
-        <div class="l-header__middle">
-          <!-- <div class="l-header__keyvisual">
-            <div class="c-header__overlay"></div>
-            <img class="c-header__img" src="assets/img/keyVisual.jpg" alt=キービジュアル>
-            <p class="c-header__subTitle">CHEESE CAKE</p>
+        <div class="l-header__inner">
+          <h1 class="c-header__title">studio<br>M</h1>
+          <nav class="p-header__subNav--pc">
+            <ul class="p-subNav__menu--pc">
+              <li class="c-subNav__menu"><a href="#"><i class="fa-solid fa-location-dot"></i></a></li>
+              <li class="c-subNav__menu"><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+          </nav>
+          <div id="p-drawer__toggle--sp" class="open">
+            <span class="hamburger_border c-hamburger_borderTop"></span>
+            <span class="hamburger_border c-hamburger_borderMiddle"></span>
+            <span class="hamburger_border c-hamburger_borderBottom"></span>
           </div>
-          <div class="l-header__inner">
-            <div class="c-heading">
-              <h1 class="c-header__title">studio<br>M</h1>
-            </div> -->
-        </div>
-        <div class="l-header__bottom">
-          <nav class="p-header__nav">
-            <ul class="p-nav__menu">
+          <nav class="p-header__nav--sp">
+            <ul class="p-nav__menu--sp">
               <li class="c-nav__menu"><a href="#l-main__about">ABOUT</a></li>
               <li class="c-nav__menu"><a href="#l-main__class">PILATES CLASS</a></li>
               <li class="c-nav__menu"><a href="#l-main__workshop">WORKSHOP</a></li>
               <li class="c-nav__menu"><a href="#l-main__blog">BLOG</a></li>
               <li class="c-nav__menu"><a href="#l-main__booking">BOOKING</a></li>
             </ul>
+            <ul class="p-subNav__menu--sp">
+              <li class="c-subNav__menu"><a href="#"><i class="fa-solid fa-location-dot"></i></a></li>
+              <li class="c-subNav__menu"><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
           </nav>
         </div>
-        <div class="p-hamburger" id="js-hamburger">
-          <span class="hamburger_border c-hamburger_borderTop"></span>
-          <span class="hamburger_border c-hamburger_borderMiddle"></span>
-          <span class="hamburger_border c-hamburger_borderBottom"></span>
-        </div>
-        <div class="black_bg" id="js-black-bg"></div>
       </header>
+      <div class="l-top__keyvisual">
+        <!-- <div class="c-header__overlay"></div> -->
+        <img class="c-top__img" src="assets/img/" alt=キービジュアル>
+        <p class="c-top__subTitle">A good place to find your moments.</p>
+      </div>
+      <nav class="p-header__nav--pc">
+        <ul class="p-nav__menu--pc">
+          <li class="c-nav__menu"><a href="#l-main__about">ABOUT</a></li>
+          <li class="c-nav__menu"><a href="#l-main__class">PILATES CLASS</a></li>
+          <li class="c-nav__menu"><a href="#l-main__workshop">WORKSHOP</a></li>
+          <li class="c-nav__menu"><a href="#l-main__blog">BLOG</a></li>
+          <li class="c-nav__menu"><a href="#l-main__booking">BOOKING</a></li>
+        </ul>
+      </nav>
       <main class="l-main">
         <section id="l-main__about">
           <div class="l-main__aboutbox">
@@ -306,31 +317,37 @@
       </main>
       <footer class="l-footer">
         <div class="l-footer__top">
+          <div class="c-footer__button">
+            <a href="#">↑</a>
+          </div>
         </div>
         <div class="l-footer__bottom">
-          <div class="l-footer__left">
-            <div class="l-footer__leftTop"></div>
-            <div class="l-footer__leftMiddle"></div>
-            <div class="l-footer__leftBottom">
-              <p class="c-footer__copyright">&copy; 2022 Studio M</p>
-            </div>
-          </div>
           <div class="l-footer__right">
-            <nav>
+            <nav class="p-footer__nav">
               <ul class="p-nav__menu">
-                <li class="c-nav__menu"><a href="#">PILATES CLASS</a></li>
-                <li class="c-nav__menu"><a href="#">WORKSHOP</a></li>
-                <li class="c-nav__menu"><a href="#">ABOUT</a></li>
-                <li class="c-nav__menu"><a href="#">BLOG</a></li>
-                <li class="c-nav__menu"><a href="#">BOOKING</a></li>
+                <li class="c-nav__menu"><a href="#l-main__about">ABOUT</a></li>
+                <li class="c-nav__menu"><a href="#l-main__class">PILATES CLASS</a></li>
+                <li class="c-nav__menu"><a href="#l-main__workshop">WORKSHOP</a></li>
+                <li class="c-nav__menu"><a href="#l-main__blog">BLOG</a></li>
+                <li class="c-nav__menu"><a href="#l-main__booking">BOOKING</a></li>
+              </ul>
+              <ul class="p-subNav__menu">
+                <li class="c-subNav__menu"><a href="#"><i class="fa-solid fa-location-dot"></i></a></li>
+                <li class="c-subNav__menu"><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
               </ul>
             </nav>
-            <nav>
-              <div class="p-subNav__menu">
-                <img class="c-subNav__menu" src="" alt="MAP"><a href="#"></a></img>
-                <img class="c-subNav__menu" src="" alt="INSTAGRAM"><a href="#"></a></img>
-              </div>
-            </nav>
+          </div>
+          <div class="l-footer__left">
+            <div class="c-footer__title">
+              <p>studio<br>M</p>
+            </div>
+            <div class="c-footer__address">
+              <p>〒123-4567</p>
+              <p>東京都渋谷区神南1-2-3</p>
+            </div>
+            <div class="c-footer__copyright">
+              <p>&copy; 2022 Studio M</p>
+            </div>
           </div>
         </div>
       </footer>

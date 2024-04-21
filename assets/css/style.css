@@ -188,9 +188,13 @@
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list {
   display: flex;
+  justify-content: space-between;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__left {
-  width: 30%;
+  width: 20%;
+}
+.l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__left img {
+  width: 100%;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right {
   width: 70%;

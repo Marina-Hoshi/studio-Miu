@@ -145,12 +145,45 @@ $xl: 1024px;
     width: 80%;
     height: 10%;
     margin: 0 auto;
-    padding-bottom: 8%;
+    padding-bottom: 18%;
   }
 
-    .p-class__heading{
-      margin-bottom: 5%;
+      .p-class__heading{
+        margin-bottom: 5%;
+      }
+
+    &__classBottom{
+      position: relative;
     }
+
+      &__classImg{
+        width: 75%;
+        img{
+          width: 100%;
+          aspect-ratio: 2/1;
+          object-fit: cover;
+        }
+      }
+
+      &__classbox{
+        position: absolute;
+        top: 90%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        width: 35%;
+        height: auto;
+        padding: 8%;
+        background-color: #FFFFFF;
+        .p-class__description{
+          margin-bottom: 10%;
+        }
+        .p-class__text{
+          margin-bottom: 20%;
+        }
+        .p-class__bookingButton{
+          width: 100%;
+        }
+      }
 
   #l-main__workshop{
     position: relative;
@@ -184,10 +217,22 @@ $xl: 1024px;
   &__workshopList{
     display: flex;
     justify-content: space-between;
-    li {
+    .p-workshop__List {
       width: 45%;
       .p-box__img{
+        position: relative;
+        width: 100%;
         margin-bottom: 4%;
+        img{
+          width: 100%;
+        }
+        h3 {
+          position: absolute;
+          top: 78%;
+          left: 0;
+          background: #FFFFFF;
+          padding: 5% 8%;
+        }
       }
       .p-box__text{
         margin-bottom: 4%;
@@ -207,7 +252,7 @@ $xl: 1024px;
       }
     }
 
-    .l-main__workshopList > li:nth-last-child(1) { /*効いてない*/
+    .p-workshop__List:nth-last-child(1) {
       margin-top: 7%;
     }
   }
@@ -238,14 +283,20 @@ $xl: 1024px;
             justify-content: space-between;
 
             .p-blog__left{
-              width: 20%;
+              position: relative;
+              width: 25%;
               img{
+                position:absolute;
+                top: 0;
+                left: 0;
                 width: 100%;
+                height: 100%;
+                object-fit: cover;
               }
             }
 
             .p-blog__right{
-              width: 70%;
+              width: 65%;
               margin-top: 3%;
               .c-blog__head{
                 display: flex;

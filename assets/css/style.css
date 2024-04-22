@@ -109,10 +109,41 @@
   width: 80%;
   height: 10%;
   margin: 0 auto;
-  padding-bottom: 8%;
+  padding-bottom: 18%;
 }
 .l-wrapper .l-main .p-class__heading {
   margin-bottom: 5%;
+}
+.l-wrapper .l-main__classBottom {
+  position: relative;
+}
+.l-wrapper .l-main__classImg {
+  width: 75%;
+}
+.l-wrapper .l-main__classImg img {
+  width: 100%;
+  aspect-ratio: 2/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.l-wrapper .l-main__classbox {
+  position: absolute;
+  top: 90%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: auto;
+  padding: 8%;
+  background-color: #FFFFFF;
+}
+.l-wrapper .l-main__classbox .p-class__description {
+  margin-bottom: 10%;
+}
+.l-wrapper .l-main__classbox .p-class__text {
+  margin-bottom: 20%;
+}
+.l-wrapper .l-main__classbox .p-class__bookingButton {
+  width: 100%;
 }
 .l-wrapper .l-main #l-main__workshop {
   position: relative;
@@ -142,29 +173,41 @@
   display: flex;
   justify-content: space-between;
 }
-.l-wrapper .l-main__workshopList li {
+.l-wrapper .l-main__workshopList .p-workshop__List {
   width: 45%;
 }
-.l-wrapper .l-main__workshopList li .p-box__img {
+.l-wrapper .l-main__workshopList .p-workshop__List .p-box__img {
+  position: relative;
+  width: 100%;
   margin-bottom: 4%;
 }
-.l-wrapper .l-main__workshopList li .p-box__text {
+.l-wrapper .l-main__workshopList .p-workshop__List .p-box__img img {
+  width: 100%;
+}
+.l-wrapper .l-main__workshopList .p-workshop__List .p-box__img h3 {
+  position: absolute;
+  top: 78%;
+  left: 0;
+  background: #FFFFFF;
+  padding: 5% 8%;
+}
+.l-wrapper .l-main__workshopList .p-workshop__List .p-box__text {
   margin-bottom: 4%;
 }
-.l-wrapper .l-main__workshopList li .p-box__detail li {
+.l-wrapper .l-main__workshopList .p-workshop__List .p-box__detail li {
   display: flex;
   width: 100%;
 }
-.l-wrapper .l-main__workshopList li .p-box__detail li .p-box__item {
+.l-wrapper .l-main__workshopList .p-workshop__List .p-box__detail li .p-box__item {
   width: 30%;
 }
-.l-wrapper .l-main__workshopList li .p-box__detail li .p-box__content {
+.l-wrapper .l-main__workshopList .p-workshop__List .p-box__detail li .p-box__content {
   width: 70%;
 }
-.l-wrapper .l-main__workshopList li .p-workshop__bookingButton {
+.l-wrapper .l-main__workshopList .p-workshop__List .p-workshop__bookingButton {
   margin-top: 6%;
 }
-.l-wrapper .l-main__workshopList .l-main__workshopList > li:nth-last-child(1) { /*効いてない*/
+.l-wrapper .l-main__workshopList .p-workshop__List:nth-last-child(1) {
   margin-top: 7%;
 }
 .l-wrapper .l-main #l-main__blog {
@@ -191,13 +234,20 @@
   justify-content: space-between;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__left {
-  width: 20%;
+  position: relative;
+  width: 25%;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__left img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right {
-  width: 70%;
+  width: 65%;
   margin-top: 3%;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__head {

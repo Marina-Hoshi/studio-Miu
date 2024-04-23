@@ -43,8 +43,19 @@
         </div>
       </header>
       <div class="l-top__keyvisual">
-        <!-- <div class="c-header__overlay"></div> -->
-        <img class="c-top__img" src="assets/img/" alt=キービジュアル>
+        <div class="l-keyvisual__container">
+          <div class="p-header__left">
+            <img class="c-slideImage" src="assets/img/top1.jpg" alt=left1>
+            <img class="c-slideImage" src="assets/img/top2.jpg" alt=left2>
+            <img class="c-slideImage" src="assets/img/top3.jpg" alt=left3>
+            <a href="#" class="c-scroll-line pc"><span>scroll</span></a>
+          </div>
+          <div class="p-header__right">
+            <img class="c-slideImage" src="assets/img/top1.jpg" alt=right1>
+            <img class="c-slideImage" src="assets/img/top2.jpg" alt=right2>
+            <img class="c-slideImage" src="assets/img/top3.jpg" alt=right3>
+          </div>
+        </div>
         <p class="c-top__subTitle">A good place to find your moments.</p>
       </div>
       <nav class="p-header__nav--pc">
@@ -58,23 +69,29 @@
       </nav>
       <main class="l-main">
         <section id="l-main__about">
-          <div class="l-main__aboutbox">
-            <div class="p-about__heading">
-              <h2>ABOUT</h2>
+          <div class="p-about__container">
+            <div class="p-about__information">
+              <div class="p-about__heading">
+                <h2>ABOUT</h2>
+              </div>
+              <div class="p-about__description">
+                <p>ピラティススタジオで<br>日常に楽しさを一つプラス</p>
+              </div>
+              <div class="p-about__text">
+                <p>ccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccc</p>
+              </div>
+              <div class="p-about__button">
+                <a href="#"><span>MORE</span></a>
+              </div>
             </div>
-            <div class="p-about__description">
-              <p>ピラティススタジオで<br>日常に楽しさを一つプラス</p>
+            <div class="p-about__img">
+              <div class="p-about__imgTop">
+                <img src="" alt="スタジオ1">
+              </div>
+              <div class="p-about__imgBotton">
+                <img src="" alt="スタジオ2">
+              </div>
             </div>
-            <div class="p-about__text">
-              <p>ccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccc</p>
-            </div>
-            <div class="p-about__button">
-              <a href="#"><p>+ MORE</p></a>
-            </div>
-          </div>
-          <div class="l-main__aboutImg">
-            <img src="" alt="スタジオ1">
-            <img src="" alt="スタジオ2">
           </div>
         </section>
         <section id="l-main__class">
@@ -82,7 +99,7 @@
             <div class="p-class__heading">
               <h2>PILATES CLASS</h2>
               <div class="p-class__button">
-                <a href="#"><p>+ MORE</p></a>
+                <a href="#"><span>MORE</span></a>
               </div>
             </div>
           </div>
@@ -98,7 +115,7 @@
                 <p>ccccccccccccccccccccccccccc<br>ccccccccccccccccccccccccccc<br>cccccccccccccccccccccccccccc<br>cccccccccccccccccccccccccc<br>cccccccccccccccccccccccccc</p>
               </div>
               <div class="p-class__bookingButton">
-                <a href="#">+ 予約サイトへ</a>
+                <a href="#"><span>予約サイトへ</span></a>
               </div>
             </div>
           </div>
@@ -110,12 +127,12 @@
             </div>
             <div class="p-workshop__description">
               <h3>人、場所、コンテンツを繋ぐ</h3>
-            </div>
-            <div class="p-workshop__text">
-              <p>新たなアイデアやクリエイティブな発想を楽しむ場として、ワークショップやイベントを開催しています。<br>知識・情報をシェアしたい方もお気軽にお問い合わせください。</p>
-            </div>
-            <div class="p-workshop__button">
-              <a href="#"><p>+ MORE</p></a>
+              <div class="p-workshop__text">
+                <p>新たなアイデアやクリエイティブな発想を楽しむ場として、ワークショップやイベントを開催しています。<br>知識・情報をシェアしたい方もお気軽にお問い合わせください。</p>
+              </div>
+              <div class="p-workshop__button">
+                <a href="#"><span>MORE</span></a>
+              </div>
             </div>
           </div>
           <ul class="l-main__workshopList">
@@ -126,7 +143,9 @@
                   <h3>+ レンタルスペース</h5>
                 </div>
                 <div class="p-box__text">
-                  <p>cccccccccccccccccccccccccccccccccccccccccccccc<br>cccccccccccccccccccccccccccccccccccccccccccccc</p>
+                  <p>ヨガ・ピラティスのレッスン、ダンスや演劇、撮影、セミナー、ポップアップショップ開催など幅広い用途でご利用可能です。
+                    <br>ヨガマット・スピーカー・三脚・ホワイトボード等のレンタル可。当サイトお問合せフォームよりお問合せください。
+                    <br>※決済はクレジットカードです。</p>
                 </div>
                 <ul class="p-box__detail">
                   <li>
@@ -135,7 +154,7 @@
                   </li>
                   <li>
                     <div class="p-box__item">金額</div>
-                    <div class="p-box__content">当サイトお問合せフォームよりご連絡ください</div>
+                    <div class="p-box__content">お問合せフォームよりご連絡ください</div>
                   </li>
                   <li>
                     <div class="p-box__item">時間</div>
@@ -151,7 +170,8 @@
                   <h3>+ フラワーアレンジメント</h3>
                 </div>
                 <div class="p-box__text">
-                  <p>cccccccccccccccccccccccccccccccccccccccccccccc<br>cccccccccccccccccccccccccccccccccccccccccccccc</p>
+                  <p>花や実の種類や色を自由に組み合わせて、自分だけの作品づくりを楽しんでみませんか？
+                    <br>花が好きな方、作品づくりに興味がある方、ぜひ一度お気軽にワークショップへお越しください。</p>
                 </div>
                 <ul class="p-box__detail">
                   <li>
@@ -168,7 +188,7 @@
                   </li>
                 </ul>
                 <div class="p-workshop__bookingButton">
-                  <p>+ 予約サイトへ</p>
+                  <a href="#"><span>予約サイトへ</span></a>
                 </div>
               </div>
             </li>
@@ -249,7 +269,7 @@
             </ul>
             <a href="#">
               <div class="p-blog__button">
-                <a href="#"><p>+ MORE</p></a>
+                <a href="#"><span>MORE</span></a>
               </div>
             </a>
           </div>
@@ -318,7 +338,7 @@
       <footer class="l-footer">
         <div class="l-footer__top">
           <div class="c-footer__button">
-            <a href="#">↑</a>
+            <a href="#"><span>↑</span></a>
           </div>
         </div>
         <div class="l-footer__bottom">

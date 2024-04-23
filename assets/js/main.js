@@ -1,3 +1,32 @@
+$(document).ready(function() {
+    const currentIndexLeft = 0;
+    const  currentIndexRight = 0;
+    const imagesLeft = $('.p-header__left img');
+    const imagesRight = $('.p-header__right img');
+    const totalImagesLeft = imagesLeft.length;
+    const totalImagesRight = imagesRight.length;
+
+    function showNextImageLeft() {
+      const nextIndex = (currentIndexLeft + 1) % totalImagesLeft;
+      imagesLeft.eq(currentIndexLeft).animate({opacity: 0}, 500);
+      imagesLeft.eq(nextIndex).animate({opacity: 1}, 500);
+      currentIndexLeft = nextIndex;
+    }
+
+    function showNextImageRight() {
+      const nextIndex = (currentIndexRight + 1) % totalImagesRight;
+      imagesRight.eq(currentIndexRight).animate({opacity: 0}, 500);
+      imagesRight.eq(nextIndex).animate({opacity: 1}, 500);
+      currentIndexRight = nextIndex;
+    }
+
+    setInterval(showNextImageLeft, 3000);
+    setInterval(showNextImageRight, 3000);
+});
+
+
+
+// PF01
 // $(() => {
 //   const fadeInPage = () => {
 //     $('body').fadeIn(1000);

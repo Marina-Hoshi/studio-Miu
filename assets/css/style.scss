@@ -46,6 +46,7 @@ $xl: 1024px;
   h2 {
   font-size: 1.3em;
   font-weight: 300;
+  letter-spacing: 0.15em;
   }
   h2::before {
   display: block;
@@ -111,13 +112,11 @@ $xl: 1024px;
     position: relative;
     width: 15%;
     margin-top: 100px;
-    overflow: hidden; /* 画像のはみ出しを制御 */
     }
   .p-header__right {
     position: relative;
     width: 55%;
     height: calc(100% - 100px);
-    overflow: hidden; /* 画像のはみ出しを制御 */
   }
 
     .c-slideImage {
@@ -136,12 +135,39 @@ $xl: 1024px;
       opacity: 0; /* 最初の画像以外は透明 */
     }
 
+    .c-scroll-line{
+      position: absolute;
+      bottom: 0;
+      left: 120%;
+      padding-bottom: 70%;
+      font-size: 0.8em;
+      letter-spacing: 0.2em;
+      transition: all .3s;
+      ::after{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 21px;
+        width: 1px;
+        background-color: #000000;
+        animation-name: lineMove;
+        animation-duration: 4s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+      }
+      span {
+        display: inline-block;
+        transform: rotate(-90deg);
+      }
+    }
+
   .c-top__subTitle {
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 70%;
+    left: 45%;
     transform: translate(-50%, -50%);
-    font-size: 1.0em;
+    font-size: 2.3em;
+    line-height: 1.8em;
     @include sp {
       font-size: 0.5em;
     }
@@ -157,7 +183,15 @@ $xl: 1024px;
     .c-nav__menu{
       margin-right:5%;
       font-size: 0.75em;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.25em;
+      font-weight: 600;
+      ::before{
+        display: block;
+        content: "/";
+        padding: 0 0 4% 1%;
+        font-size: 1.3em;
+        font-weight: 300;
+      }
     }
   }
 }
@@ -175,10 +209,11 @@ $xl: 1024px;
     .p-about__container{
       position: relative;
       display: flex;
+      margin-bottom: 12%;
 
       .p-about__information{
         width: 65%;
-        margin-left: 5%;
+        padding: 5% 0  20% 5%;
 
         .p-about__heading{
           margin-bottom: 5%;
@@ -201,12 +236,13 @@ $xl: 1024px;
 
         .p-about__button{
           position: relative;
+          font-size: 0.7em;
           ::after {
             content: '';
             position: absolute;
             left: 0;
-            bottom: -3px;
-            width: 11%;
+            bottom: -1%;
+            width: 8%;
             border-bottom: 1px solid #333333;
           }
         }
@@ -218,11 +254,25 @@ $xl: 1024px;
           position: absolute;
           top: 0;
           right: 0;
+          width: 40%;
+          height: 90%;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
         .p-about__imgBotton{
           position: absolute;
-          top: 90%;
+          top: 80%;
           right: 30%;
+          width: 35%;
+          height: 40%;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
       }
     }
@@ -241,12 +291,13 @@ $xl: 1024px;
       .p-class__button{
         position: relative;
         text-align: right;
+        font-size: 0.7em;
         ::after {
           content: '';
           position: absolute;
           right: 0;
-          bottom: -3px;
-          width: 5.3%;
+          bottom: -1%;
+          width: 4%;
           border-bottom: 1px solid #333333;
         }
       }
@@ -284,12 +335,13 @@ $xl: 1024px;
         .p-class__bookingButton{
           position: relative;
           width: 100%;
+          font-size: 0.7em;
           ::after {
             content: '';
             position: absolute;
             left: 0;
-            bottom: -3px;
-            width: 28%;
+            bottom: -1%;
+            width: 20%;
             border-bottom: 1px solid #333333;
           }
         }
@@ -325,6 +377,7 @@ $xl: 1024px;
         top: 0;
         right: 0;
         text-align: right;
+        font-size: 0.7em;
         a {
           position: relative;
         }
@@ -385,12 +438,13 @@ $xl: 1024px;
       .p-workshop__bookingButton{
         position: relative;
         margin-top: 12%;
+        font-size: 0.7em;
         ::after {
           content: '';
           position: absolute;
           left: 0;
-          bottom: -3px;
-          width: 22%;
+          bottom: -1%;
+          width: 16%;
           border-bottom: 1px solid #333333;
         }
       }
@@ -474,12 +528,13 @@ $xl: 1024px;
       .p-blog__button{
         position: relative;
         text-align: right;
+        font-size: 0.7em;
         ::after {
           content: '';
           position: absolute;
           right: 0;
-          bottom: -3px;
-          width: 5.3%;
+          bottom: -1%;
+          width: 4%;
           border-bottom: 1px solid #333333;
         }
       }
@@ -672,6 +727,12 @@ $xl: 1024px;
         justify-content: space-between;
         @include sp {
           display: block;
+        }
+        .c-nav__menu{
+          margin-right: 5%;
+          font-size: 0.75em;
+          letter-spacing: 0.25em;
+          font-weight: 600;
         }
       }
 

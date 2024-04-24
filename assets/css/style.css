@@ -17,6 +17,7 @@
 .l-wrapper h2 {
   font-size: 1.3em;
   font-weight: 300;
+  letter-spacing: 0.15em;
 }
 .l-wrapper h2::before {
   display: block;
@@ -77,13 +78,11 @@
   position: relative;
   width: 15%;
   margin-top: 100px;
-  overflow: hidden; /* 画像のはみ出しを制御 */
 }
 .l-wrapper .l-top__keyvisual .p-header__right {
   position: relative;
   width: 55%;
   height: calc(100% - 100px);
-  overflow: hidden; /* 画像のはみ出しを制御 */
 }
 .l-wrapper .l-top__keyvisual .c-slideImage {
   display: none;
@@ -100,12 +99,42 @@
 .l-wrapper .l-top__keyvisual .c-slideImage:not(:first-child) {
   opacity: 0; /* 最初の画像以外は透明 */
 }
+.l-wrapper .l-top__keyvisual .c-scroll-line {
+  position: absolute;
+  bottom: 0;
+  left: 120%;
+  padding-bottom: 70%;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  transition: all 0.3s;
+}
+.l-wrapper .l-top__keyvisual .c-scroll-line ::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 21px;
+  width: 1px;
+  background-color: #000000;
+  -webkit-animation-name: lineMove;
+          animation-name: lineMove;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.l-wrapper .l-top__keyvisual .c-scroll-line span {
+  display: inline-block;
+  transform: rotate(-90deg);
+}
 .l-wrapper .l-top__keyvisual .c-top__subTitle {
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 70%;
+  left: 45%;
   transform: translate(-50%, -50%);
-  font-size: 1em;
+  font-size: 2.3em;
+  line-height: 1.8em;
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-top__keyvisual .c-top__subTitle {
@@ -123,7 +152,15 @@
 .l-wrapper .p-header__nav--pc .p-nav__menu--pc .c-nav__menu {
   margin-right: 5%;
   font-size: 0.75em;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.25em;
+  font-weight: 600;
+}
+.l-wrapper .p-header__nav--pc .p-nav__menu--pc .c-nav__menu ::before {
+  display: block;
+  content: "/";
+  padding: 0 0 4% 1%;
+  font-size: 1.3em;
+  font-weight: 300;
 }
 .l-wrapper .l-main {
   height: 85%;
@@ -137,10 +174,11 @@
 .l-wrapper .l-main .p-about__container {
   position: relative;
   display: flex;
+  margin-bottom: 12%;
 }
 .l-wrapper .l-main .p-about__container .p-about__information {
   width: 65%;
-  margin-left: 5%;
+  padding: 5% 0 20% 5%;
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__heading {
   margin-bottom: 5%;
@@ -160,13 +198,14 @@
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__button {
   position: relative;
+  font-size: 0.7em;
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__button ::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px;
-  width: 11%;
+  bottom: -1%;
+  width: 8%;
   border-bottom: 1px solid #333333;
 }
 .l-wrapper .l-main .p-about__container .p-about__img {
@@ -176,11 +215,27 @@
   position: absolute;
   top: 0;
   right: 0;
+  width: 40%;
+  height: 90%;
+}
+.l-wrapper .l-main .p-about__container .p-about__img .p-about__imgTop img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .l-wrapper .l-main .p-about__container .p-about__img .p-about__imgBotton {
   position: absolute;
-  top: 90%;
+  top: 80%;
   right: 30%;
+  width: 35%;
+  height: 40%;
+}
+.l-wrapper .l-main .p-about__container .p-about__img .p-about__imgBotton img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .l-wrapper .l-main #l-main__class {
   width: 80%;
@@ -194,13 +249,14 @@
 .l-wrapper .l-main .p-class__button {
   position: relative;
   text-align: right;
+  font-size: 0.7em;
 }
 .l-wrapper .l-main .p-class__button ::after {
   content: "";
   position: absolute;
   right: 0;
-  bottom: -3px;
-  width: 5.3%;
+  bottom: -1%;
+  width: 4%;
   border-bottom: 1px solid #333333;
 }
 .l-wrapper .l-main__classBottom {
@@ -236,13 +292,14 @@
 .l-wrapper .l-main__classbox .p-class__bookingButton {
   position: relative;
   width: 100%;
+  font-size: 0.7em;
 }
 .l-wrapper .l-main__classbox .p-class__bookingButton ::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px;
-  width: 28%;
+  bottom: -1%;
+  width: 20%;
   border-bottom: 1px solid #333333;
 }
 .l-wrapper .l-main #l-main__workshop {
@@ -272,6 +329,7 @@
   top: 0;
   right: 0;
   text-align: right;
+  font-size: 0.7em;
 }
 .l-wrapper .l-main .p-workshop__description .p-workshop__button a {
   position: relative;
@@ -333,13 +391,14 @@
 .l-wrapper .l-main__workshopList .p-workshop__List .p-workshop__bookingButton {
   position: relative;
   margin-top: 12%;
+  font-size: 0.7em;
 }
 .l-wrapper .l-main__workshopList .p-workshop__List .p-workshop__bookingButton ::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px;
-  width: 22%;
+  bottom: -1%;
+  width: 16%;
   border-bottom: 1px solid #333333;
 }
 .l-wrapper .l-main__workshopList .p-workshop__List:nth-last-child(1) {
@@ -413,13 +472,14 @@
 .l-wrapper .l-main__blogBottom .p-blog__button {
   position: relative;
   text-align: right;
+  font-size: 0.7em;
 }
 .l-wrapper .l-main__blogBottom .p-blog__button ::after {
   content: "";
   position: absolute;
   right: 0;
-  bottom: -3px;
-  width: 5.3%;
+  bottom: -1%;
+  width: 4%;
   border-bottom: 1px solid #333333;
 }
 .l-wrapper .l-main #l-main__booking {
@@ -587,6 +647,12 @@
   .l-wrapper .l-footer__right .p-footer__nav .p-nav__menu {
     display: block;
   }
+}
+.l-wrapper .l-footer__right .p-footer__nav .p-nav__menu .c-nav__menu {
+  margin-right: 5%;
+  font-size: 0.75em;
+  letter-spacing: 0.25em;
+  font-weight: 600;
 }
 .l-wrapper .l-footer__right .p-footer__nav .p-subNav__menu {
   display: flex;

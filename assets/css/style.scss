@@ -68,12 +68,18 @@ $xl: 1024px;
     display: flex;
     position: relative;
     height: 100%;
-    h1{
+    .c-header__title{
       position: absolute;
       top: 100px;
       left: 10%;
       width: 10%;
       height: 150px;
+      z-index: 100;
+      h1{
+        font-size: 3em;
+        letter-spacing: 0.2em;
+        line-height: 1.5em;
+      }
     }
     .p-header__subNav--pc{
       position: absolute;
@@ -237,6 +243,19 @@ $xl: 1024px;
         .p-about__button{
           position: relative;
           font-size: 0.7em;
+          ::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: -3%;
+            width: 7px;
+            height: 1px;
+            background-color: #000;
+            transform: scale(1, 1);
+            transform-origin: left top;
+            transition: all .3s;
+          }
           ::after {
             content: '';
             position: absolute;

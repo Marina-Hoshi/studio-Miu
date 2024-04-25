@@ -38,12 +38,18 @@
   position: relative;
   height: 100%;
 }
-.l-wrapper .l-header__inner h1 {
+.l-wrapper .l-header__inner .c-header__title {
   position: absolute;
   top: 100px;
   left: 10%;
   width: 10%;
   height: 150px;
+  z-index: 100;
+}
+.l-wrapper .l-header__inner .c-header__title h1 {
+  font-size: 3em;
+  letter-spacing: 0.2em;
+  line-height: 1.5em;
 }
 .l-wrapper .l-header__inner .p-header__subNav--pc {
   position: absolute;
@@ -199,6 +205,19 @@
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__button {
   position: relative;
   font-size: 0.7em;
+}
+.l-wrapper .l-main .p-about__container .p-about__information .p-about__button ::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -3%;
+  width: 7px;
+  height: 1px;
+  background-color: #000;
+  transform: scale(1, 1);
+  transform-origin: left top;
+  transition: all 0.3s;
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__button ::after {
   content: "";

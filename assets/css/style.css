@@ -4,6 +4,7 @@
   min-height: 100vh;
   background-color: #FFFFFF;
   color: #333333;
+  font-family: "Noto Sans JP", "Noto Sans", sans-serif;
   letter-spacing: 0.1em;
   line-height: 2em;
 }
@@ -15,6 +16,7 @@
   list-style: none;
 }
 .l-wrapper h2 {
+  font-family: "Lato", sans-serif;
   font-size: 1.3em;
   font-weight: 300;
   letter-spacing: 0.15em;
@@ -23,7 +25,7 @@
   display: block;
   content: "/";
   padding: 0 0 3% 1%;
-  font-size: 1.4em;
+  font-size: 2.2em;
 }
 .l-wrapper h3 {
   font-size: 1em;
@@ -40,16 +42,21 @@
 }
 .l-wrapper .l-header__inner .c-header__title {
   position: absolute;
-  top: 100px;
+  top: 120px;
   left: 10%;
   width: 10%;
   height: 150px;
   z-index: 100;
 }
 .l-wrapper .l-header__inner .c-header__title h1 {
-  font-size: 3em;
+  font-family: "Lato", sans-serif;
+  font-size: 2.4em;
+  letter-spacing: 0.05em;
+  line-height: 1.3em;
+}
+.l-wrapper .l-header__inner .c-header__title h1 span {
+  font-size: 1.4em;
   letter-spacing: 0.2em;
-  line-height: 1.5em;
 }
 .l-wrapper .l-header__inner .p-header__subNav--pc {
   position: absolute;
@@ -110,6 +117,7 @@
   bottom: 0;
   left: 120%;
   padding-bottom: 70%;
+  font-family: "Lato", sans-serif;
   font-size: 0.8em;
   letter-spacing: 0.2em;
   transition: all 0.3s;
@@ -136,11 +144,12 @@
 }
 .l-wrapper .l-top__keyvisual .c-top__subTitle {
   position: absolute;
-  top: 70%;
-  left: 45%;
+  top: 74%;
+  left: 42%;
   transform: translate(-50%, -50%);
-  font-size: 2.3em;
-  line-height: 1.8em;
+  font-family: "Josefin Slab", serif;
+  font-size: 2.7em;
+  line-height: 1.5em;
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-top__keyvisual .c-top__subTitle {
@@ -157,6 +166,7 @@
 }
 .l-wrapper .p-header__nav--pc .p-nav__menu--pc .c-nav__menu {
   margin-right: 5%;
+  font-family: "Lato", sans-serif;
   font-size: 0.75em;
   letter-spacing: 0.25em;
   font-weight: 600;
@@ -172,10 +182,10 @@
   height: 85%;
 }
 .l-wrapper .l-main #l-main__about {
-  width: 80%; /*px固定に変更*/
+  width: 85%; /*px固定に変更*/
   height: 10%;
   margin: 0 auto;
-  padding-bottom: 12%;
+  padding-top: 2%;
 }
 .l-wrapper .l-main .p-about__container {
   position: relative;
@@ -187,23 +197,26 @@
   padding: 5% 0 20% 5%;
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__heading {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__heading h2 {
   font-size: 1em;
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__description {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   font-size: 1.3em;
   line-height: 1.9em;
   letter-spacing: 0.15em;
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__text {
-  margin-bottom: 10%;
+  width: 85%;
+  margin-bottom: 25%;
   font-size: 0.8em;
+  line-height: 2.8em;
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__button {
   position: relative;
+  font-family: "Lato", sans-serif;
   font-size: 0.7em;
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__button ::before {
@@ -235,7 +248,7 @@
   top: 0;
   right: 0;
   width: 40%;
-  height: 90%;
+  height: 75%;
 }
 .l-wrapper .l-main .p-about__container .p-about__img .p-about__imgTop img {
   width: 100%;
@@ -245,10 +258,10 @@
 }
 .l-wrapper .l-main .p-about__container .p-about__img .p-about__imgBotton {
   position: absolute;
-  top: 80%;
+  top: 65%;
   right: 30%;
-  width: 35%;
-  height: 40%;
+  width: 30%;
+  height: 35%;
 }
 .l-wrapper .l-main .p-about__container .p-about__img .p-about__imgBotton img {
   width: 100%;
@@ -263,11 +276,12 @@
   padding-bottom: 18%;
 }
 .l-wrapper .l-main h2 {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 .l-wrapper .l-main .p-class__button {
   position: relative;
   text-align: right;
+  font-family: "Lato", sans-serif;
   font-size: 0.7em;
 }
 .l-wrapper .l-main .p-class__button ::after {
@@ -292,12 +306,12 @@
 }
 .l-wrapper .l-main__classbox {
   position: absolute;
-  top: 90%;
-  left: 75%;
+  top: 100%;
+  left: 80%;
   transform: translate(-50%, -50%);
   width: 35%;
   height: auto;
-  padding: 8%;
+  padding: 6%;
   background-color: #FFFFFF;
 }
 .l-wrapper .l-main__classbox .p-class__description {
@@ -307,6 +321,7 @@
 .l-wrapper .l-main__classbox .p-class__text {
   margin-bottom: 20%;
   font-size: 0.8em;
+  line-height: 2.8em;
 }
 .l-wrapper .l-main__classbox .p-class__bookingButton {
   position: relative;
@@ -348,6 +363,7 @@
   top: 0;
   right: 0;
   text-align: right;
+  font-family: "Lato", sans-serif;
   font-size: 0.7em;
 }
 .l-wrapper .l-main .p-workshop__description .p-workshop__button a {
@@ -470,6 +486,7 @@
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__head .c-blog__date {
   width: 20%;
+  font-family: "Lato", sans-serif;
   font-size: 0.8em;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__head .c-blog__category {
@@ -491,6 +508,7 @@
 .l-wrapper .l-main__blogBottom .p-blog__button {
   position: relative;
   text-align: right;
+  font-family: "Lato", sans-serif;
   font-size: 0.7em;
 }
 .l-wrapper .l-main__blogBottom .p-blog__button ::after {
@@ -558,6 +576,7 @@
   margin-bottom: 10%;
 }
 .l-wrapper .l-main__contactTop .p-contact__heading h3 {
+  font-family: "Lato", sans-serif;
   letter-spacing: 0.2em;
   text-align: center;
 }
@@ -599,6 +618,7 @@
   margin-bottom: 10%;
 }
 .l-wrapper .l-main__snsTop .p-sns__heading h3 {
+  font-family: "Lato", sans-serif;
   letter-spacing: 0.2em;
   text-align: center;
 }
@@ -624,6 +644,7 @@
 .l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__icon p {
   display: inline-block;
   margin-left: 10px;
+  font-family: "Lato", sans-serif;
   font-size: 0.8em;
   font-weight: 600;
   letter-spacing: 0.25em;
@@ -669,6 +690,7 @@
 }
 .l-wrapper .l-footer__right .p-footer__nav .p-nav__menu .c-nav__menu {
   margin-right: 5%;
+  font-family: "Lato", sans-serif;
   font-size: 0.75em;
   letter-spacing: 0.25em;
   font-weight: 600;
@@ -699,8 +721,15 @@
   width: 30%;
 }
 .l-wrapper .l-footer .c-footer__title {
-  font-size: 3em;
-  line-height: 1.5em;
+  font-family: "Lato", sans-serif;
+  font-size: 2.4em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.3em;
+}
+.l-wrapper .l-footer .c-footer__title span {
+  font-size: 1.4em;
+  letter-spacing: 0.2em;
 }
 .l-wrapper .l-footer .c-footer__address {
   margin-top: 5%;

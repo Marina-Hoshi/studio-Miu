@@ -31,6 +31,7 @@ $xl: 1024px;
   min-height: 100vh;
   background-color: #FFFFFF;
   color: #333333;
+  font-family: "Noto Sans JP", "Noto Sans", sans-serif;
   letter-spacing: 0.1em;
   line-height: 2.0em;
 
@@ -44,6 +45,7 @@ $xl: 1024px;
   }
 
   h2 {
+  font-family: "Lato", sans-serif;
   font-size: 1.3em;
   font-weight: 300;
   letter-spacing: 0.15em;
@@ -52,7 +54,7 @@ $xl: 1024px;
   display: block;
   content: '/';
   padding: 0 0 3% 1%;
-  font-size: 1.4em;
+  font-size: 2.2em;
   }
 
   h3{
@@ -70,15 +72,20 @@ $xl: 1024px;
     height: 100%;
     .c-header__title{
       position: absolute;
-      top: 100px;
+      top: 120px;
       left: 10%;
       width: 10%;
       height: 150px;
       z-index: 100;
       h1{
-        font-size: 3em;
-        letter-spacing: 0.2em;
-        line-height: 1.5em;
+        font-family: "Lato", sans-serif;
+        font-size: 2.4em;
+        letter-spacing: 0.05em;
+        line-height: 1.3em;
+        span{
+          font-size: 1.4em;
+          letter-spacing: 0.2em;
+        }
       }
     }
     .p-header__subNav--pc{
@@ -146,6 +153,7 @@ $xl: 1024px;
       bottom: 0;
       left: 120%;
       padding-bottom: 70%;
+      font-family: "Lato", sans-serif;
       font-size: 0.8em;
       letter-spacing: 0.2em;
       transition: all .3s;
@@ -169,11 +177,12 @@ $xl: 1024px;
 
   .c-top__subTitle {
     position: absolute;
-    top: 70%;
-    left: 45%;
+    top: 74%;
+    left: 42%;
     transform: translate(-50%, -50%);
-    font-size: 2.3em;
-    line-height: 1.8em;
+    font-family: "Josefin Slab", serif;
+    font-size: 2.7em;
+    line-height: 1.5em;
     @include sp {
       font-size: 0.5em;
     }
@@ -187,7 +196,8 @@ $xl: 1024px;
     justify-content: flex-end;
     width: 95%;
     .c-nav__menu{
-      margin-right:5%;
+      margin-right: 5%;
+      font-family: "Lato", sans-serif;
       font-size: 0.75em;
       letter-spacing: 0.25em;
       font-weight: 600;
@@ -206,10 +216,10 @@ $xl: 1024px;
     height: 85%;
 
   #l-main__about{
-    width: 80%; /*px固定に変更*/
+    width: 85%; /*px固定に変更*/
     height: 10%;
     margin: 0 auto;
-    padding-bottom: 12%;
+    padding-top: 2%;
   }
 
     .p-about__container{
@@ -222,26 +232,29 @@ $xl: 1024px;
         padding: 5% 0  20% 5%;
 
         .p-about__heading{
-          margin-bottom: 5%;
+          margin-bottom: 10%;
           h2{
             font-size: 1.0em;
           }
         }
 
         .p-about__description{
-          margin-bottom: 5%;
+          margin-bottom: 10%;
           font-size: 1.3em;
           line-height: 1.9em;
           letter-spacing: 0.15em;
         }
 
         .p-about__text{
-          margin-bottom: 10%;
+          width: 85%;
+          margin-bottom: 25%;
           font-size: 0.8em;
+          line-height: 2.8em;
         }
 
         .p-about__button{
           position: relative;
+          font-family: "Lato", sans-serif;
           font-size: 0.7em;
           ::before {
             content: '';
@@ -274,7 +287,7 @@ $xl: 1024px;
           top: 0;
           right: 0;
           width: 40%;
-          height: 90%;
+          height: 75%;
           img{
             width: 100%;
             height: 100%;
@@ -283,10 +296,10 @@ $xl: 1024px;
         }
         .p-about__imgBotton{
           position: absolute;
-          top: 80%;
+          top: 65%;
           right: 30%;
-          width: 35%;
-          height: 40%;
+          width: 30%;
+          height: 35%;
           img{
             width: 100%;
             height: 100%;
@@ -304,12 +317,13 @@ $xl: 1024px;
   }
 
       h2 {
-        margin-bottom: 5%;
+        margin-bottom: 3%;
       }
 
       .p-class__button{
         position: relative;
         text-align: right;
+        font-family: "Lato", sans-serif;
         font-size: 0.7em;
         ::after {
           content: '';
@@ -336,12 +350,12 @@ $xl: 1024px;
 
       &__classbox{
         position: absolute;
-        top: 90%;
-        left: 75%;
+        top: 100%;
+        left: 80%;
         transform: translate(-50%, -50%);
         width: 35%;
         height: auto;
-        padding: 8%;
+        padding: 6%;
         background-color: #FFFFFF;
         .p-class__description{
           margin-bottom: 10%;
@@ -350,6 +364,7 @@ $xl: 1024px;
         .p-class__text{
           margin-bottom: 20%;
           font-size: 0.8em;
+          line-height: 2.8em;
         }
         .p-class__bookingButton{
           position: relative;
@@ -396,6 +411,7 @@ $xl: 1024px;
         top: 0;
         right: 0;
         text-align: right;
+        font-family: "Lato", sans-serif;
         font-size: 0.7em;
         a {
           position: relative;
@@ -521,6 +537,7 @@ $xl: 1024px;
                 margin-bottom: 3%;
                 .c-blog__date{
                   width: 20%;
+                  font-family: "Lato", sans-serif;
                   font-size: 0.8em;
                 }
                 .c-blog__category{
@@ -547,6 +564,7 @@ $xl: 1024px;
       .p-blog__button{
         position: relative;
         text-align: right;
+        font-family: "Lato", sans-serif;
         font-size: 0.7em;
         ::after {
           content: '';
@@ -624,6 +642,7 @@ $xl: 1024px;
         width: 100%;
         margin-bottom: 10%;
         h3{
+          font-family: "Lato", sans-serif;
           letter-spacing: 0.2em;
           text-align: center;
         }
@@ -673,6 +692,7 @@ $xl: 1024px;
         width: 100%;
         margin-bottom: 10%;
         h3{
+          font-family: "Lato", sans-serif;
           letter-spacing: 0.2em;
           text-align: center;
         }
@@ -700,6 +720,7 @@ $xl: 1024px;
           p{
             display: inline-block;
             margin-left: 10px;
+            font-family: "Lato", sans-serif;
             font-size: 0.8em;
             font-weight: 600;
             letter-spacing: 0.25em;
@@ -749,6 +770,7 @@ $xl: 1024px;
         }
         .c-nav__menu{
           margin-right: 5%;
+          font-family: "Lato", sans-serif;
           font-size: 0.75em;
           letter-spacing: 0.25em;
           font-weight: 600;
@@ -784,9 +806,17 @@ $xl: 1024px;
     }
 
       .c-footer__title{
-        font-size: 3.0em;
-        line-height: 1.5em;
+        font-family: "Lato", sans-serif;
+        font-size: 2.4em;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        line-height: 1.3em;
+        span{
+          font-size: 1.4em;
+          letter-spacing: 0.2em;
+        }
       }
+
 
       .c-footer__address{
         margin-top: 5%;

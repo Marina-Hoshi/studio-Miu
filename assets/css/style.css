@@ -26,6 +26,7 @@
   content: "/";
   padding: 0 0 3% 1%;
   font-size: 2.2em;
+  font-weight: 300;
 }
 .l-wrapper h3 {
   font-size: 1em;
@@ -236,8 +237,8 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -1%;
-  width: 8%;
+  bottom: 0;
+  width: 7%;
   border-bottom: 1px solid #333333;
 }
 .l-wrapper .l-main .p-about__container .p-about__img {
@@ -276,7 +277,7 @@
   padding-bottom: 18%;
 }
 .l-wrapper .l-main h2 {
-  margin-bottom: 3%;
+  margin-bottom: 4%;
 }
 .l-wrapper .l-main .p-class__button {
   position: relative;
@@ -288,38 +289,39 @@
   content: "";
   position: absolute;
   right: 0;
-  bottom: -1%;
+  bottom: 0;
   width: 4%;
   border-bottom: 1px solid #333333;
 }
 .l-wrapper .l-main__classBottom {
   position: relative;
+  margin-top: -2%;
 }
 .l-wrapper .l-main__classImg {
   width: 75%;
 }
 .l-wrapper .l-main__classImg img {
   width: 100%;
-  aspect-ratio: 2/1;
+  aspect-ratio: 2/0.9;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .l-wrapper .l-main__classbox {
   position: absolute;
-  top: 100%;
+  top: 110%;
   left: 80%;
   transform: translate(-50%, -50%);
   width: 35%;
   height: auto;
-  padding: 6%;
+  padding: 5%;
   background-color: #FFFFFF;
 }
 .l-wrapper .l-main__classbox .p-class__description {
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   font-size: 1.17em;
 }
 .l-wrapper .l-main__classbox .p-class__text {
-  margin-bottom: 20%;
+  margin-bottom: 14%;
   font-size: 0.8em;
   line-height: 2.8em;
 }
@@ -332,7 +334,7 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -1%;
+  bottom: 0;
   width: 20%;
   border-bottom: 1px solid #333333;
 }
@@ -344,17 +346,17 @@
   padding-bottom: 11%;
 }
 .l-wrapper .l-main .p-workshop__heading {
-  margin-bottom: 5%;
+  margin-bottom: 4%;
 }
 .l-wrapper .l-main .p-workshop__description {
   position: relative;
 }
 .l-wrapper .l-main .p-workshop__description h3 {
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }
 .l-wrapper .l-main .p-workshop__description .p-workshop__text {
   width: 85%;
-  margin-bottom: 7%;
+  margin-bottom: 6%;
   font-size: 0.8em;
   line-height: 2.2em;
 }
@@ -387,7 +389,7 @@
 .l-wrapper .l-main__workshopList .p-workshop__List .p-box__img {
   position: relative;
   width: 100%;
-  margin-bottom: 8%;
+  margin-bottom: 7%;
 }
 .l-wrapper .l-main__workshopList .p-workshop__List .p-box__img img {
   width: 100%;
@@ -414,7 +416,7 @@
 .l-wrapper .l-main__workshopList .p-workshop__List .p-box__detail li {
   display: flex;
   width: 100%;
-  font-size: 0.7em;
+  font-size: 0.8em;
   line-height: 2.5em;
 }
 .l-wrapper .l-main__workshopList .p-workshop__List .p-box__detail li .p-box__item {
@@ -432,18 +434,18 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -1%;
+  bottom: 0;
   width: 16%;
   border-bottom: 1px solid #333333;
 }
 .l-wrapper .l-main__workshopList .p-workshop__List:nth-last-child(1) {
-  margin-top: 7%;
+  margin-top: 6%;
 }
 .l-wrapper .l-main #l-main__blog {
   width: 80%;
   height: 10%;
   margin: 0 auto;
-  padding-bottom: 13%;
+  padding-bottom: 11%;
 }
 .l-wrapper .l-main__blogTop {
   margin-bottom: 7%;
@@ -455,7 +457,7 @@
   margin-bottom: 5%;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li {
-  padding: 3% 3%;
+  padding: 5% 4%;
   border-bottom: 1px solid #e8e8e8;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list {
@@ -464,16 +466,17 @@
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__left {
   position: relative;
-  width: 25%;
+  width: 20%;
+  height: 20%;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__left img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  aspect-ratio: 1;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right {
   width: 65%;
@@ -487,7 +490,7 @@
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__head .c-blog__date {
   width: 20%;
   font-family: "Lato", sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__head .c-blog__category {
   display: inline-block;
@@ -499,10 +502,11 @@
   font-size: 0.7em;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__title {
+  font-size: 0.9em;
   margin-bottom: 2%;
 }
 .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__content {
-  width: 80%;
+  width: 90%;
   font-size: 0.75em;
 }
 .l-wrapper .l-main__blogBottom .p-blog__button {
@@ -515,7 +519,7 @@
   content: "";
   position: absolute;
   right: 0;
-  bottom: -1%;
+  bottom: 0;
   width: 4%;
   border-bottom: 1px solid #333333;
 }
@@ -528,9 +532,10 @@
 }
 .l-wrapper .l-main__bookingTop .p-booking__heading {
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
 }
 .l-wrapper .l-main__bookingTop .p-booking__heading h3 {
+  font-weight: 400;
   text-align: center;
 }
 .l-wrapper .l-main__bookingBottom {
@@ -566,17 +571,18 @@
 }
 .l-wrapper .l-main #l-main__contact {
   height: 10%;
-  padding: 0 25% 18%;
+  padding: 0 25% 14%;
 }
 .l-wrapper .l-main__contactTop {
   width: 100%;
 }
 .l-wrapper .l-main__contactTop .p-contact__heading {
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
 }
 .l-wrapper .l-main__contactTop .p-contact__heading h3 {
   font-family: "Lato", sans-serif;
+  font-weight: 400;
   letter-spacing: 0.2em;
   text-align: center;
 }
@@ -608,17 +614,18 @@
 }
 .l-wrapper .l-main #l-main__sns {
   height: 10%;
-  padding: 0 15% 10%;
+  padding: 0 15% 6%;
 }
 .l-wrapper .l-main__snsTop {
   width: 100%;
 }
 .l-wrapper .l-main__snsTop .p-sns__heading {
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
 }
 .l-wrapper .l-main__snsTop .p-sns__heading h3 {
   font-family: "Lato", sans-serif;
+  font-weight: 400;
   letter-spacing: 0.2em;
   text-align: center;
 }
@@ -670,18 +677,15 @@
   flex-direction: row-reverse;
   width: 90%;
   margin: 0 auto;
-  padding: 5% 0;
+  padding: 4% 0;
 }
 .l-wrapper .l-footer__right {
   width: 70%;
-  padding: 8% 0;
-}
-.l-wrapper .l-footer__right .p-footer__nav {
-  margin-left: 30%;
+  padding: 6% 0 4% 0;
 }
 .l-wrapper .l-footer__right .p-footer__nav .p-nav__menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-footer__right .p-footer__nav .p-nav__menu {
@@ -689,7 +693,7 @@
   }
 }
 .l-wrapper .l-footer__right .p-footer__nav .p-nav__menu .c-nav__menu {
-  margin-right: 5%;
+  margin-left: 6%;
   font-family: "Lato", sans-serif;
   font-size: 0.75em;
   letter-spacing: 0.25em;
@@ -699,7 +703,7 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 8%;
-  gap: 5%;
+  gap: 4%;
 }
 .l-wrapper .l-footer__right .p-footer__nav .p-subNav__menu .fa-solid.fa-location-dot, .l-wrapper .l-footer__right .p-footer__nav .p-subNav__menu .fa-solid.fa-envelope {
   font-size: 150%;
@@ -732,7 +736,7 @@
   letter-spacing: 0.2em;
 }
 .l-wrapper .l-footer .c-footer__address {
-  margin-top: 5%;
+  margin-top: 3%;
   font-size: 0.8em;
 }
 .l-wrapper .l-footer .c-footer__copyright {

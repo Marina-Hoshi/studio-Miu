@@ -45,17 +45,20 @@ $xl: 1024px;
   }
 
   h2 {
-  font-family: "Lato", sans-serif;
-  font-size: 1.3em;
-  font-weight: 300;
-  letter-spacing: 0.15em;
+    font-family: "Lato", sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    @include sp {
+      font-size: 0.9em;
+    }
   }
   h2::before {
-  display: block;
-  content: '/';
-  padding: 0 0 3% 1%;
-  font-size: 2.2em;
-  font-weight: 300;
+    display: block;
+    content: '/';
+    padding: 0 0 3% 1%;
+    font-size: 2.2em;
+    font-weight: 300;
   }
 
   h3{
@@ -96,6 +99,9 @@ $xl: 1024px;
       width: 10%;
       height: 100px;
       align-items: center;
+      @include sp {
+        display: none;
+      }
       .p-subNav__menu--pc{
         display: flex;
         height: 100%;
@@ -192,6 +198,9 @@ $xl: 1024px;
 
 .p-header__nav--pc{
   height: 200px;
+  @include sp {
+    display: none;
+  }
   .p-nav__menu--pc{
     display: flex;
     justify-content: flex-end;
@@ -227,10 +236,18 @@ $xl: 1024px;
       position: relative;
       display: flex;
       margin-bottom: 12%;
+      @include sp {
+        position: static;
+        display: block;
+        // font-size: 0.5em;
+      }
 
       .p-about__information{
         width: 65%;
         padding: 5% 0  20% 5%;
+        @include sp {
+          width: 100%;
+        }
 
         .p-about__heading{
           margin-bottom: 10%;
@@ -283,12 +300,20 @@ $xl: 1024px;
 
       .p-about__img{
         width: 70%;
+        @include sp {
+          position: relative;
+          width: 100%;
+        }
         .p-about__imgTop{
           position: absolute;
           top: 0;
           right: 0;
           width: 40%;
           height: 75%;
+          @include sp {
+            top: 0;
+            left: -10%;
+          }
           img{
             width: 100%;
             height: 100%;
@@ -301,6 +326,10 @@ $xl: 1024px;
           right: 30%;
           width: 30%;
           height: 35%;
+          @include sp {
+            top: 40%;
+            left: 30%;
+          }
           img{
             width: 100%;
             height: 100%;
@@ -315,7 +344,17 @@ $xl: 1024px;
     height: 10%;
     margin: 0 auto;
     padding-bottom: 18%;
+    @include sp {
+      width: 100%;
+    }
   }
+
+    &__classTop{
+      @include sp {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
 
       h2 {
         margin-bottom: 4%;
@@ -339,10 +378,16 @@ $xl: 1024px;
     &__classBottom{
       position: relative;
       margin-top: -2%;
+    @include sp {
+      position: static;
+      }
     }
 
       &__classImg{
         width: 75%;
+        @include sp {
+          width: 100%;
+        }
         img{
           width: 100%;
           aspect-ratio: 2/0.9;
@@ -359,6 +404,13 @@ $xl: 1024px;
         height: auto;
         padding: 5%;
         background-color: #FFFFFF;
+          @include sp {
+            position: static;
+            transform: none;
+            width: 80%;
+            margin: 0 auto;
+            padding: 0;
+          }
         .p-class__description{
           margin-bottom: 8%;
           font-size: 1.17em;
@@ -372,6 +424,9 @@ $xl: 1024px;
           position: relative;
           width: 100%;
           font-size: 0.7em;
+          @include sp {
+            text-align: right;
+          }
           ::after {
             content: '';
             position: absolute;
@@ -379,6 +434,10 @@ $xl: 1024px;
             bottom: 0;
             width: 20%;
             border-bottom: 1px solid #333333;
+            @include sp {
+              left: auto;
+              right: 0;
+            }
           }
         }
       }
@@ -415,6 +474,9 @@ $xl: 1024px;
         text-align: right;
         font-family: "Lato", sans-serif;
         font-size: 0.7em;
+        @include sp {
+          position: static;
+        }
         a {
           position: relative;
         }
@@ -432,8 +494,14 @@ $xl: 1024px;
   &__workshopList{
     display: flex;
     justify-content: space-between;
+    @include sp {
+      display: block;
+    }
     .p-workshop__List {
       width: 45%;
+      @include sp {
+        width: 100%;
+      }
       .p-box__img{
         position: relative;
         width: 100%;
@@ -476,6 +544,9 @@ $xl: 1024px;
         position: relative;
         margin-top: 12%;
         font-size: 0.7em;
+        @include sp {
+          text-align: right;
+        }
         ::after {
           content: '';
           position: absolute;
@@ -483,6 +554,10 @@ $xl: 1024px;
           bottom: 0;
           width: 16%;
           border-bottom: 1px solid #333333;
+          @include sp {
+            left: auto;
+            right: 0;
+          }
         }
       }
     }
@@ -538,6 +613,9 @@ $xl: 1024px;
                 display: flex;
                 align-items: center;
                 margin-bottom: 3%;
+                @include sp {
+                  display: block;
+                }
                 .c-blog__date{
                   width: 20%;
                   font-family: "Lato", sans-serif;
@@ -560,6 +638,9 @@ $xl: 1024px;
               .c-blog__content{
                 width: 90%;
                 font-size: 0.75em;
+                @include sp {
+                  display: none;
+                }
               }
             }
           }
@@ -584,6 +665,11 @@ $xl: 1024px;
   #l-main__booking{
     height: 10%;
     padding: 0 25% 10%;
+    @include sp {
+      width: 80%;
+      margin: 0 auto;
+      padding: 0;
+    }
   }
 
     &__bookingTop{
@@ -605,6 +691,7 @@ $xl: 1024px;
 
       .p-booking__inner{
         margin: 0 auto;
+        text-align: center; /* インライン要素のc-booking__buttonの中央寄せ */
 
         .c-booking__icon{
           width: 20%;
@@ -623,6 +710,7 @@ $xl: 1024px;
         }
 
         .c-booking__button{
+          display: inline-block;
           width: 60%;
           margin: 0 auto;
           padding: 3% 0;
@@ -632,12 +720,21 @@ $xl: 1024px;
           letter-spacing: 0.2em;
           text-align: center;
         }
+        .c-booking__button:hover{
+            background-color: #f1e4cf;
+            border: 1px solid #f1e4cf;
+        }
       }
     }
 
   #l-main__contact{
     height: 10%;
     padding: 0 25% 14%;
+    @include sp {
+      width: 80%;
+      margin: 0 auto;
+      padding: 0;
+    }
   }
 
     &__contactTop{
@@ -661,6 +758,7 @@ $xl: 1024px;
 
       .p-contact__inner{
         margin: 0 auto;
+        text-align: center;
 
         .c-contact__icon{
           width: 20%;
@@ -669,11 +767,11 @@ $xl: 1024px;
           margin-bottom: 7%;
           .fa-solid.fa-envelope{
             font-size: 200%;
-            // -webkit-text-strokes: 1px #fbf8f3;/*背景色と合わせてアウトラインの色と太さを調整*/
           }
         }
 
         .c-contact__button{
+          display: inline-block;
           width: 60%;
           margin: 0 auto;
           padding: 3% 0;
@@ -683,12 +781,21 @@ $xl: 1024px;
           letter-spacing: 0.2em;
           text-align: center;
         }
+        .c-contact__button:hover{
+          background-color: #f1e4cf;
+          border: 1px solid #f1e4cf;
+        }
       }
     }
 
   #l-main__sns{
     height: 10%;
     padding: 0 15% 6%;
+    @include sp {
+      width: 80%;
+      margin: 0 auto;
+      padding: 0;
+    }
   }
 
     &__snsTop{
@@ -750,7 +857,12 @@ $xl: 1024px;
       width: 64px;
       height: 64px;
       border: 1px solid #333333;
-      font-size: 0.9em;
+      font-size: 1.5em;
+      text-align: center;
+    }
+    .c-footer__button:hover{
+      background-color: #EEEEEE;
+      border: 1px solid #EEEEEE;
     }
   }
 
@@ -760,6 +872,9 @@ $xl: 1024px;
     width: 90%;
     margin: 0 auto;
     padding: 4% 0;
+    @include sp {
+      display: block;
+    }
   }
 
     &__right{
@@ -789,6 +904,9 @@ $xl: 1024px;
         justify-content: flex-end;
         margin-top: 8%;
         gap: 4%;
+        @include sp {
+          justify-content: flex-start;
+        }
         .fa-solid.fa-location-dot ,.fa-solid.fa-envelope{
           font-size: 150%;
         }
@@ -810,6 +928,10 @@ $xl: 1024px;
     &__left{
       position: relative;
       width: 30%;
+      @include sp {
+        position: static;
+        width: 100%;
+      }
     }
 
       .c-footer__title{
@@ -833,6 +955,9 @@ $xl: 1024px;
       .c-footer__copyright{
         position: absolute;
         bottom: 0;
+        @include sp {
+          position: static;
+        }
         p{
           font-size: 0.5em;
           letter-spacing: 0.09em;

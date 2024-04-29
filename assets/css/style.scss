@@ -790,6 +790,14 @@ $xl: 1024px;
             }
           }
         }
+
+        li:hover{
+          background-color: #f9f9f9;
+          @include sp {
+            background-color: #FFFFFF;
+          }
+        }
+
       }
       .p-blog__button{
         position: relative;
@@ -876,8 +884,12 @@ $xl: 1024px;
           }
         }
         .c-booking__button:hover{
-            background-color: #f1e4cf;
-            border: 1px solid #f1e4cf;
+          background-color: #f1e4cf;
+          border: 1px solid #f1e4cf;
+          @include sp {
+            background-color: #FFFFFF;
+            border: 1px solid #333333;
+          }
         }
       }
     }
@@ -946,6 +958,10 @@ $xl: 1024px;
         .c-contact__button:hover{
           background-color: #f1e4cf;
           border: 1px solid #f1e4cf;
+          @include sp {
+            background-color: #FFFFFF;
+            border: 1px solid #333333;
+          }
         }
       }
     }
@@ -1051,6 +1067,10 @@ $xl: 1024px;
     .c-footer__button:hover{
       background-color: #EEEEEE;
       border: 1px solid #EEEEEE;
+      @include sp {
+        background-color: #FFFFFF;
+        border: 1px solid #333333;
+      }
     }
   }
 

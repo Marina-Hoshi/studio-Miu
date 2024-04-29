@@ -830,6 +830,14 @@
     display: none;
   }
 }
+.l-wrapper .l-main__blogBottom .p-blog__information li:hover {
+  background-color: #f9f9f9;
+}
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-main__blogBottom .p-blog__information li:hover {
+    background-color: #FFFFFF;
+  }
+}
 .l-wrapper .l-main__blogBottom .p-blog__button {
   position: relative;
   text-align: right;
@@ -919,6 +927,12 @@
   background-color: #f1e4cf;
   border: 1px solid #f1e4cf;
 }
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-main__bookingBottom .p-booking__inner .c-booking__button:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #333333;
+  }
+}
 .l-wrapper .l-main #l-main__contact {
   height: 10%;
   padding: 0 25% 14%;
@@ -985,6 +999,12 @@
 .l-wrapper .l-main__contactBottom .p-contact__inner .c-contact__button:hover {
   background-color: #f1e4cf;
   border: 1px solid #f1e4cf;
+}
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-main__contactBottom .p-contact__inner .c-contact__button:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #333333;
+  }
 }
 .l-wrapper .l-main #l-main__sns {
   height: 10%;
@@ -1096,6 +1116,12 @@
 .l-wrapper .l-footer__top .c-footer__button:hover {
   background-color: #EEEEEE;
   border: 1px solid #EEEEEE;
+}
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-footer__top .c-footer__button:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #333333;
+  }
 }
 .l-wrapper .l-footer__bottom {
   display: flex;

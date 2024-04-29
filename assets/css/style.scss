@@ -535,9 +535,6 @@ $xl: 1024px;
       position: relative;
       h3{
         margin-bottom: 2%;
-        @include sp {
-          margin-bottom: 3%;
-        }
       }
 
       .p-workshop__text{
@@ -547,7 +544,7 @@ $xl: 1024px;
         line-height: 2.2em;
         @include sp {
           width: 100%;
-          margin-bottom: 8%;
+          margin-bottom: 5%;
           font-size: 0.75em;
           letter-spacing: 0.09em;
           line-height: 2.4em;
@@ -629,17 +626,15 @@ $xl: 1024px;
         .p-box__item{
           width: 25%;
           @include sp {
-            font-size: 0.75em;
-            letter-spacing: 0.09em;
-            line-height: 2.3em;
+            font-size: 0.85em;
+            line-height: 2.4em;
           }
         }
         .p-box__content{
           width: 75%;
           @include sp {
-            font-size: 0.75em;
-            letter-spacing: 0.09em;
-            line-height: 2.3em;
+            font-size: 0.85em;
+            line-height: 2.4em;
           }
         }
       }
@@ -681,7 +676,7 @@ $xl: 1024px;
     padding-bottom: 11%;
     @include sp {
       width: 85%;
-      padding-bottom: 15%;
+      padding-bottom: 25%;
     }
   }
 
@@ -779,7 +774,7 @@ $xl: 1024px;
     @include sp {
       width: 85%;
       margin: 0 auto;
-      padding: 0 0 10% 0;
+      padding: 0 0 15% 0;
     }
   }
 
@@ -844,7 +839,7 @@ $xl: 1024px;
     @include sp {
       width: 85%;
       margin: 0 auto;
-      padding: 0 0 15% 0;
+      padding: 0 0 20% 0;
     }
   }
 
@@ -905,7 +900,7 @@ $xl: 1024px;
     @include sp {
       width: 85%;
       margin: 0 auto;
-      padding: 0;
+      padding: 0 0 30% 0;
     }
   }
 
@@ -957,10 +952,19 @@ $xl: 1024px;
 
 .l-footer{
   height: 5%;
+  @include sp {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+  }
 
   &__top{
     height: 10%;
     margin-left: 90%;
+    @include sp {
+      margin-left: 75%;
+    }
+
     .c-footer__button{
       display: flex;
       justify-content: center;
@@ -970,6 +974,10 @@ $xl: 1024px;
       border: 1px solid #333333;
       font-size: 1.5em;
       text-align: center;
+      @include sp {
+        width: 50px;
+        height: 50px;
+      }
     }
     .c-footer__button:hover{
       background-color: #EEEEEE;
@@ -984,13 +992,21 @@ $xl: 1024px;
     margin: 0 auto;
     padding: 4% 0;
     @include sp {
+      position: absolute;
+      top: 0;
+      left: 0;
       display: block;
+      padding: 0 0 4% 0;
     }
   }
 
     &__right{
       width: 70%;
       padding: 6% 0 4% 0;
+      @include sp {
+        padding: 0 0 4% 0;
+      }
+
 
       .p-footer__nav{
         // margin-left: 30%;
@@ -1007,6 +1023,9 @@ $xl: 1024px;
           font-size: 0.75em;
           letter-spacing: 0.25em;
           font-weight: 600;
+          @include sp {
+            margin: 0;
+          }
         }
       }
 

@@ -18,13 +18,12 @@
 .l-wrapper h2 {
   font-family: "Lato", sans-serif;
   font-size: 1.3em;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.15em;
 }
 @media screen and (max-width: 480px) {
   .l-wrapper h2 {
-    font-size: 0.8em;
-    font-weight: 400;
+    font-size: 0.95em;
   }
 }
 .l-wrapper h2::before {
@@ -32,17 +31,23 @@
   content: "/";
   padding: 0 0 3% 1%;
   font-size: 2.2em;
-  font-weight: 300;
+  font-weight: 200;
 }
 @media screen and (max-width: 480px) {
   .l-wrapper h2::before {
     padding: 0 0 2% 1%;
     font-size: 2.1em;
+    font-weight: 300;
   }
 }
 .l-wrapper h3 {
   font-size: 1em;
   font-weight: 300;
+}
+@media screen and (max-width: 480px) {
+  .l-wrapper h3 {
+    font-size: 0.85em;
+  }
 }
 .l-wrapper .l-header {
   width: 100%;
@@ -213,7 +218,7 @@
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main #l-main__about {
     width: 100%;
-    padding: 10% 0;
+    padding: 15% 0 20% 0;
   }
 }
 .l-wrapper .l-main .p-about__container {
@@ -248,7 +253,12 @@
   }
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__heading h2 {
-  font-size: 0.95em;
+  font-size: 1em;
+}
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-main .p-about__container .p-about__information .p-about__heading h2 {
+    font-size: 0.95em;
+  }
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__description {
   margin-bottom: 10%;
@@ -258,7 +268,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main .p-about__container .p-about__information .p-about__description {
-    margin-bottom: 5%;
+    margin-bottom: 8%;
     font-size: 1.1em;
     line-height: 2em;
   }
@@ -388,17 +398,23 @@
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main #l-main__class {
     width: 100%;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
   }
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main__classTop {
     width: 85%;
     margin: 0 auto;
+    margin-bottom: 8%;
   }
 }
 .l-wrapper .l-main h2 {
   margin-bottom: 4%;
+}
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-main h2 {
+    margin-bottom: 8%;
+  }
 }
 .l-wrapper .l-main .p-class__button {
   position: relative;
@@ -453,7 +469,7 @@
     transform: none;
     width: 85%;
     margin: 0 auto;
-    padding: 10% 0 0 0;
+    padding: 8% 0 0 0;
   }
 }
 .l-wrapper .l-main__classbox .p-class__description {
@@ -464,6 +480,14 @@
   margin-bottom: 14%;
   font-size: 0.8em;
   line-height: 2.8em;
+}
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-main__classbox .p-class__text {
+    margin-bottom: 8%;
+    font-size: 0.75em;
+    letter-spacing: 0.09em;
+    line-height: 2.4em;
+  }
 }
 .l-wrapper .l-main__classbox .p-class__bookingButton {
   position: relative;
@@ -516,6 +540,14 @@
   margin-bottom: 6%;
   font-size: 0.8em;
   line-height: 2.2em;
+}
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-main .p-workshop__description .p-workshop__text {
+    width: 100%;
+    font-size: 0.75em;
+    letter-spacing: 0.09em;
+    line-height: 2.4em;
+  }
 }
 .l-wrapper .l-main .p-workshop__description .p-workshop__button {
   position: absolute;

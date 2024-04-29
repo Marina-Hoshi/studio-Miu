@@ -232,7 +232,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main .p-about__container .p-about__information {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     padding: 0;
   }
@@ -246,7 +246,7 @@
   }
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__heading h2 {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__description {
   margin-bottom: 10%;
@@ -257,7 +257,7 @@
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main .p-about__container .p-about__information .p-about__description {
     margin-bottom: 5%;
-    font-size: 1em;
+    font-size: 1.1em;
   }
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__text {
@@ -270,7 +270,7 @@
   .l-wrapper .l-main .p-about__container .p-about__information .p-about__text {
     width: 100%;
     margin-bottom: 10%;
-    font-size: 0.7em;
+    font-size: 0.8em;
     line-height: 2.5em;
     letter-spacing: 0.08em;
   }
@@ -388,7 +388,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main__classTop {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
   }
 }
@@ -435,7 +435,7 @@
 .l-wrapper .l-main__classbox {
   position: absolute;
   top: 110%;
-  left: 80%;
+  left: 85%;
   transform: translate(-50%, -50%);
   width: 35%;
   height: auto;
@@ -446,9 +446,9 @@
   .l-wrapper .l-main__classbox {
     position: static;
     transform: none;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
-    padding-top: 10%;
+    padding: 10% 0 0 0;
   }
 }
 .l-wrapper .l-main__classbox .p-class__description {
@@ -493,6 +493,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main #l-main__workshop {
+    width: 85%;
     padding-bottom: 10%;
   }
 }
@@ -626,6 +627,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main #l-main__blog {
+    width: 85%;
     padding-bottom: 15%;
   }
 }
@@ -721,7 +723,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main #l-main__booking {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     padding: 0 0 10% 0;
   }
@@ -780,7 +782,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main #l-main__contact {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     padding: 0 0 15% 0;
   }
@@ -836,7 +838,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main #l-main__sns {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     padding: 0;
   }

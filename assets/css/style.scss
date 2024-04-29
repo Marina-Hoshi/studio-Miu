@@ -248,14 +248,13 @@ $xl: 1024px;
       @include sp {
         position: static;
         display: block;
-        // font-size: 0.5em;
       }
 
       .p-about__information{
         width: 65%;
         padding: 5% 0  20% 5%;
         @include sp {
-          width: 80%;
+          width: 85%;
           margin: 0 auto;
           padding: 0;
         }
@@ -266,7 +265,7 @@ $xl: 1024px;
             margin-bottom: 5%;
           }
           h2{
-            font-size: 0.9em;
+            font-size: 1.0em;
           }
         }
 
@@ -277,7 +276,7 @@ $xl: 1024px;
           letter-spacing: 0.15em;
           @include sp {
             margin-bottom: 5%;
-            font-size: 1.0em;
+            font-size: 1.1em;
           }
         }
 
@@ -289,7 +288,7 @@ $xl: 1024px;
           @include sp {
             width: 100%;
             margin-bottom: 10%;
-            font-size: 0.7em;
+            font-size: 0.8em;
             line-height: 2.5em;
             letter-spacing: 0.08em;
           }
@@ -395,7 +394,7 @@ $xl: 1024px;
 
     &__classTop{
       @include sp {
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
       }
     }
@@ -442,7 +441,7 @@ $xl: 1024px;
       &__classbox{
         position: absolute;
         top: 110%;
-        left: 80%;
+        left: 85%;
         transform: translate(-50%, -50%);
         width: 35%;
         height: auto;
@@ -451,9 +450,9 @@ $xl: 1024px;
           @include sp {
             position: static;
             transform: none;
-            width: 80%;
+            width: 85%;
             margin: 0 auto;
-            padding-top: 10%;
+            padding: 10% 0 0 0;
           }
         .p-class__description{
           margin-bottom: 8%;
@@ -493,6 +492,7 @@ $xl: 1024px;
     margin: 0 auto;
     padding-bottom: 11%;
     @include sp {
+      width: 85%;
       padding-bottom: 10%;
     }
   }
@@ -620,6 +620,7 @@ $xl: 1024px;
     margin: 0 auto;
     padding-bottom: 11%;
     @include sp {
+      width: 85%;
       padding-bottom: 15%;
     }
   }
@@ -716,7 +717,7 @@ $xl: 1024px;
     height: 10%;
     padding: 0 25% 10%;
     @include sp {
-      width: 80%;
+      width: 85%;
       margin: 0 auto;
       padding: 0 0 10% 0;
     }
@@ -781,7 +782,7 @@ $xl: 1024px;
     height: 10%;
     padding: 0 25% 14%;
     @include sp {
-      width: 80%;
+      width: 85%;
       margin: 0 auto;
       padding: 0 0 15% 0;
     }
@@ -842,7 +843,7 @@ $xl: 1024px;
     height: 10%;
     padding: 0 15% 6%;
     @include sp {
-      width: 80%;
+      width: 85%;
       margin: 0 auto;
       padding: 0;
     }

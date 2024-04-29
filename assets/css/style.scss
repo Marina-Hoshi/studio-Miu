@@ -450,6 +450,9 @@ $xl: 1024px;
           width: 100%;
           aspect-ratio: 2/0.9;
           object-fit: cover;
+          @include sp {
+            aspect-ratio: 1.875/1;
+          }
         }
       }
 
@@ -514,9 +517,15 @@ $xl: 1024px;
     padding-bottom: 11%;
     @include sp {
       width: 85%;
-      padding-bottom: 10%;
+      padding-bottom: 15%;
     }
   }
+
+    &__workshopTop{
+      @include sp {
+        padding-bottom: 12%;
+      }
+    }
 
     .p-workshop__heading{
       margin-bottom: 4%;
@@ -526,6 +535,9 @@ $xl: 1024px;
       position: relative;
       h3{
         margin-bottom: 2%;
+        @include sp {
+          margin-bottom: 3%;
+        }
       }
 
       .p-workshop__text{
@@ -535,6 +547,7 @@ $xl: 1024px;
         line-height: 2.2em;
         @include sp {
           width: 100%;
+          margin-bottom: 8%;
           font-size: 0.75em;
           letter-spacing: 0.09em;
           line-height: 2.4em;
@@ -601,6 +614,12 @@ $xl: 1024px;
         font-size: 0.7em;
         line-height: 2.5em;
         letter-spacing: 0.15em;
+        @include sp {
+          margin-bottom: 10%;
+          font-size: 0.75em;
+          letter-spacing: 0.09em;
+          line-height: 2.3em;
+        }
       }
       .p-box__detail li{
         display: flex;
@@ -609,9 +628,19 @@ $xl: 1024px;
         line-height: 2.5em;
         .p-box__item{
           width: 25%;
+          @include sp {
+            font-size: 0.75em;
+            letter-spacing: 0.09em;
+            line-height: 2.3em;
+          }
         }
         .p-box__content{
           width: 75%;
+          @include sp {
+            font-size: 0.75em;
+            letter-spacing: 0.09em;
+            line-height: 2.3em;
+          }
         }
       }
       .p-workshop__bookingButton{
@@ -619,6 +648,7 @@ $xl: 1024px;
         margin-top: 12%;
         font-size: 0.7em;
         @include sp {
+          margin-top: 10%;
           text-align: right;
         }
         ::after {
@@ -638,6 +668,9 @@ $xl: 1024px;
 
     .p-workshop__List:nth-last-child(1) {
       margin-top: 6%;
+      @include sp {
+        margin-top: 18%;
+      }
     }
   }
 

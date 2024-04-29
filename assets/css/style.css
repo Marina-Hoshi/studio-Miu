@@ -453,6 +453,11 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-main__classImg img {
+    aspect-ratio: 1.875/1;
+  }
+}
 .l-wrapper .l-main__classbox {
   position: absolute;
   top: 110%;
@@ -523,7 +528,12 @@
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main #l-main__workshop {
     width: 85%;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-main__workshopTop {
+    padding-bottom: 12%;
   }
 }
 .l-wrapper .l-main .p-workshop__heading {
@@ -535,6 +545,11 @@
 .l-wrapper .l-main .p-workshop__description h3 {
   margin-bottom: 2%;
 }
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-main .p-workshop__description h3 {
+    margin-bottom: 3%;
+  }
+}
 .l-wrapper .l-main .p-workshop__description .p-workshop__text {
   width: 85%;
   margin-bottom: 6%;
@@ -544,6 +559,7 @@
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main .p-workshop__description .p-workshop__text {
     width: 100%;
+    margin-bottom: 8%;
     font-size: 0.75em;
     letter-spacing: 0.09em;
     line-height: 2.4em;
@@ -617,6 +633,14 @@
   line-height: 2.5em;
   letter-spacing: 0.15em;
 }
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-main__workshopList .p-workshop__List .p-box__text {
+    margin-bottom: 10%;
+    font-size: 0.75em;
+    letter-spacing: 0.09em;
+    line-height: 2.3em;
+  }
+}
 .l-wrapper .l-main__workshopList .p-workshop__List .p-box__detail li {
   display: flex;
   width: 100%;
@@ -626,8 +650,22 @@
 .l-wrapper .l-main__workshopList .p-workshop__List .p-box__detail li .p-box__item {
   width: 25%;
 }
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-main__workshopList .p-workshop__List .p-box__detail li .p-box__item {
+    font-size: 0.75em;
+    letter-spacing: 0.09em;
+    line-height: 2.3em;
+  }
+}
 .l-wrapper .l-main__workshopList .p-workshop__List .p-box__detail li .p-box__content {
   width: 75%;
+}
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-main__workshopList .p-workshop__List .p-box__detail li .p-box__content {
+    font-size: 0.75em;
+    letter-spacing: 0.09em;
+    line-height: 2.3em;
+  }
 }
 .l-wrapper .l-main__workshopList .p-workshop__List .p-workshop__bookingButton {
   position: relative;
@@ -636,6 +674,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main__workshopList .p-workshop__List .p-workshop__bookingButton {
+    margin-top: 10%;
     text-align: right;
   }
 }
@@ -655,6 +694,11 @@
 }
 .l-wrapper .l-main__workshopList .p-workshop__List:nth-last-child(1) {
   margin-top: 6%;
+}
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-main__workshopList .p-workshop__List:nth-last-child(1) {
+    margin-top: 18%;
+  }
 }
 .l-wrapper .l-main #l-main__blog {
   width: 80%;

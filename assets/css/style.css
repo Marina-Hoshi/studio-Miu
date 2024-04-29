@@ -246,7 +246,7 @@
   }
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__heading h2 {
-  font-size: 1em;
+  font-size: 0.95em;
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__description {
   margin-bottom: 10%;
@@ -257,7 +257,7 @@
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main .p-about__container .p-about__information .p-about__description {
     margin-bottom: 5%;
-    font-size: 1.1em;
+    font-size: 1.05em;
   }
 }
 .l-wrapper .l-main .p-about__container .p-about__information .p-about__text {
@@ -270,8 +270,8 @@
   .l-wrapper .l-main .p-about__container .p-about__information .p-about__text {
     width: 100%;
     margin-bottom: 10%;
-    font-size: 0.8em;
-    line-height: 2.5em;
+    font-size: 0.75em;
+    line-height: 2.3em;
     letter-spacing: 0.08em;
   }
 }

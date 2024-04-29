@@ -265,7 +265,7 @@ $xl: 1024px;
             margin-bottom: 5%;
           }
           h2{
-            font-size: 1.0em;
+            font-size: 0.95em;
           }
         }
 
@@ -276,7 +276,7 @@ $xl: 1024px;
           letter-spacing: 0.15em;
           @include sp {
             margin-bottom: 5%;
-            font-size: 1.1em;
+            font-size: 1.05em;
           }
         }
 
@@ -288,8 +288,8 @@ $xl: 1024px;
           @include sp {
             width: 100%;
             margin-bottom: 10%;
-            font-size: 0.8em;
-            line-height: 2.5em;
+            font-size: 0.75em;
+            line-height: 2.3em;
             letter-spacing: 0.08em;
           }
         }

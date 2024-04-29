@@ -529,6 +529,11 @@ $xl: 1024px;
 
     .p-workshop__heading{
       margin-bottom: 4%;
+      h2 {
+        @include sp {
+          margin-bottom: 0;
+        }
+      }
     }
 
     .p-workshop__description{
@@ -547,7 +552,7 @@ $xl: 1024px;
           margin-bottom: 5%;
           font-size: 0.75em;
           letter-spacing: 0.09em;
-          line-height: 2.4em;
+          line-height: 2.3em;
         }
       }
 
@@ -626,15 +631,15 @@ $xl: 1024px;
         .p-box__item{
           width: 25%;
           @include sp {
-            font-size: 0.85em;
-            line-height: 2.4em;
+            font-size: 0.88em;
+            line-height: 2.5em;
           }
         }
         .p-box__content{
           width: 75%;
           @include sp {
-            font-size: 0.85em;
-            line-height: 2.4em;
+            font-size: 0.88em;
+            line-height: 2.5em;
           }
         }
       }
@@ -693,15 +698,27 @@ $xl: 1024px;
         li{
           padding: 5% 4%;
           border-bottom: 1px solid #e8e8e8;
+          @include sp {
+            padding: 2% 4%;
+          }
 
           .p-blog__list{
             display: flex;
             justify-content: space-between;
+            @include sp {
+              margin-top: 3%;
+            }
 
             .p-blog__left{
               position: relative;
               width: 20%;
               height: 20%;
+              @include sp {
+                position: static;
+                width: 33%;
+                height: 33%;
+                margin: 2% 0;
+              }
               img{
                 position:absolute;
                 top: 0;
@@ -709,12 +726,20 @@ $xl: 1024px;
                 width: 100%;
                 object-fit: cover;
                 aspect-ratio: 1;
+                @include sp {
+                  position: static;
+                }
               }
             }
 
             .p-blog__right{
               width: 65%;
               margin-top: 3%;
+              @include sp {
+                width: 60%;
+                margin: 0 0 0 5%;
+              }
+
               .c-blog__head{
                 display: flex;
                 align-items: center;
@@ -726,6 +751,11 @@ $xl: 1024px;
                   width: 20%;
                   font-family: "Lato", sans-serif;
                   font-size: 1.0em;
+                  @include sp {
+                    width: 100%;
+                    margin-bottom: -5%;
+                    font-size: 0.8em;
+                  }
                 }
                 .c-blog__category{
                   display: inline-block;
@@ -734,12 +764,21 @@ $xl: 1024px;
                     padding: 2px 2px;
                     border: 1px solid #333333;
                     font-size: 0.7em;
+                    @include sp {
+                      width: 100%;
+                      font-size: 0.5em;
+                    }
                   }
                 }
               }
               .c-blog__title{
                 font-size: 0.9em;
                 margin-bottom: 2%;
+                @include sp {
+                  font-size: 0.8em;
+                  line-height: 1.8em;
+                }
+
               }
               .c-blog__content{
                 width: 90%;

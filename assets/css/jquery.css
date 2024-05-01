@@ -22,7 +22,7 @@ body.loading {
   height: 18px;
   background-color: #000000; /* 黒い円 */
   border-radius: 50%;
-  animation: bounce 1s ease forwards;; /* 弾むアニメーション */
+  animation: bounce 1s ease forwards; /* 弾むアニメーション */
 }
 
 @keyframes bounce {

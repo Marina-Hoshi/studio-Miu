@@ -1,16 +1,69 @@
-/* body {
-  display: none;
+body.loading {
+  overflow: hidden;
 }
 
+/* ローディング画面 */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* 半透明な背景色 */
+  z-index: 9999; /* 最前面に表示 */
+}
+
+.loading-circle {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  background-color: #000000; /* 黒い円 */
+  border-radius: 50%;
+  animation: bounce 1s ease forwards;; /* 弾むアニメーション */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(-50%, -50%) translateY(-20px); /* 上に移動 */
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(0); /* 下に移動 */
+  }
+}
+
+
+/* フェードインする要素の初期設定 */
 ._scrollFadeIn {
   opacity: 0;
-  transition-property: all;
+  transition-property: opacity;
   transition-duration: 1s;
 }
+
+/* フェードインが有効な場合のスタイル */
 ._isActiveFadeIn {
   opacity: 1;
 }
 
+.c-top__subTitle {
+  opacity: 0;
+  transform: translateY(50px); /* 下から50px上に移動 */
+  transition: opacity 1s ease, transform 1s ease; /* フェードインと移動のトランジション */
+}
+
+.c-top__subTitle._isActiveFadeIn {
+  opacity: 1;
+  transform: translateY(0); /* 元の位置に戻す */
+}
+
+
+
+
+
+
+/*
 ._scrollSlideFadeLeft {
   opacity: 0;
   transform: translateX(-50px);

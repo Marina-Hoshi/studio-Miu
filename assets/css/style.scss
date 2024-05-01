@@ -110,12 +110,15 @@ $lg: 1024px;
           font-size: 1.4em;
         }
           span{
-          font-size: 1.4em;
-          letter-spacing: 0.2em;
+            font-size: 1.4em;
+            letter-spacing: 0.2em;
           // @include md {
           //   font-size: 1.2em;
           // }
+          }
         }
+      h1:hover{
+        opacity: 0.6;
       }
     }
     .p-header__subNav--pc{
@@ -141,6 +144,10 @@ $lg: 1024px;
         }
         .fa-solid.fa-location-dot ,.fa-solid.fa-envelope{
           font-size: 150%;
+        }
+        .fa-solid.fa-location-dot:hover ,
+        .fa-solid.fa-envelope:hover {
+          opacity: 0.6;
         }
       }
     }
@@ -309,6 +316,9 @@ $lg: 1024px;
         transform: rotate(-90deg);
       }
     }
+    .c-scroll-line:hover{
+      opacity: 0.6;
+    }
 
   .c-top__subTitle {
     position: absolute;
@@ -348,28 +358,54 @@ $lg: 1024px;
     width: 95%;
     margin-top: -1%;
 
-    .c-nav__menu{
+    // .c-nav__menu{
+    //   margin-left: 7%;
+    //   font-family: "Lato", sans-serif;
+    //   font-size: 0.75em;
+    //   letter-spacing: 0.25em;
+    //   font-weight: 600;
+    //   @include lg {
+    //     font-size: 0.3em;
+    //   }
+    //   @include md {
+    //     margin-left: 4%;
+    //     font-size: 0.5em;
+    //     letter-spacing: 0.23em;
+    //   }
+    //   ::before{
+    //     display: block;
+    //     content: "/";
+    //     padding: 0 0 4% 1%;
+    //     font-size: 1.3em;
+    //     font-weight: 300;
+    //   }
+    // }
+    .c-nav__menu {
+      position: relative; /* 相対位置指定 */
       margin-left: 7%;
+      padding-top: 3%;
       font-family: "Lato", sans-serif;
       font-size: 0.75em;
       letter-spacing: 0.25em;
       font-weight: 600;
-      @include lg {
-        font-size: 0.3em;
-      }
-      @include md {
-        margin-left: 4%;
-        font-size: 0.5em;
-        letter-spacing: 0.23em;
-      }
-      ::before{
-        display: block;
-        content: "/";
-        padding: 0 0 4% 1%;
-        font-size: 1.3em;
-        font-weight: 300;
-      }
     }
+    .c-nav__menu:hover {
+      opacity: 0.6;
+    }
+    .c-nav__menu::before {
+      content: "/";
+      position: absolute;
+      top: 0;
+      left: 5px;
+      font-size: 1.3em;
+      font-weight: 300;
+    }
+    .c-nav__menu:hover::before {
+      content: "|";
+      padding-right: 5px;
+    }
+
+
   }
 }
 
@@ -526,7 +562,7 @@ $lg: 1024px;
               }
             }
           }
-          .p-about__imgBotton{
+          .p-about__imgBottom{
             position: absolute;
             top: 65%;
             right: 30%;
@@ -1342,6 +1378,10 @@ $lg: 1024px;
               margin: 0;
             }
           }
+          p:hover {
+            opacity: 0.6;
+          }
+
         }
       }
     }
@@ -1440,6 +1480,9 @@ $lg: 1024px;
               letter-spacing: 0.22em;
             }
           }
+          .c-nav__menu:hover {
+            opacity: 0.6;
+          }
         }
 
       .p-subNav__menu{
@@ -1457,6 +1500,10 @@ $lg: 1024px;
         }
         .fa-solid.fa-location-dot ,.fa-solid.fa-envelope{
           font-size: 150%;
+        }
+        .fa-solid.fa-location-dot:hover ,
+        .fa-solid.fa-envelope:hover {
+          opacity: 0.6;
         }
 
         .c-nav__menu{

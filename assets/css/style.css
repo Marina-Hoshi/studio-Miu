@@ -99,6 +99,9 @@
   font-size: 1.4em;
   letter-spacing: 0.2em;
 }
+.l-wrapper .l-header__inner .c-header__title h1:hover {
+  opacity: 0.6;
+}
 .l-wrapper .l-header__inner .p-header__subNav--pc {
   position: absolute;
   top: 0;
@@ -130,6 +133,10 @@
 }
 .l-wrapper .l-header__inner .p-header__subNav--pc .p-subNav__menu--pc .fa-solid.fa-location-dot, .l-wrapper .l-header__inner .p-header__subNav--pc .p-subNav__menu--pc .fa-solid.fa-envelope {
   font-size: 150%;
+}
+.l-wrapper .l-header__inner .p-header__subNav--pc .p-subNav__menu--pc .fa-solid.fa-location-dot:hover,
+.l-wrapper .l-header__inner .p-header__subNav--pc .p-subNav__menu--pc .fa-solid.fa-envelope:hover {
+  opacity: 0.6;
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-header__inner #p-drawer__toggle--sp {
@@ -301,6 +308,9 @@
   display: inline-block;
   transform: rotate(-90deg);
 }
+.l-wrapper .l-top__keyvisual .c-scroll-line:hover {
+  opacity: 0.6;
+}
 .l-wrapper .l-top__keyvisual .c-top__subTitle {
   position: absolute;
   top: 45%;
@@ -346,30 +356,28 @@
   margin-top: -1%;
 }
 .l-wrapper .p-header__nav--pc .p-nav__menu--pc .c-nav__menu {
+  position: relative; /* 相対位置指定 */
   margin-left: 7%;
+  padding-top: 3%;
   font-family: "Lato", sans-serif;
   font-size: 0.75em;
   letter-spacing: 0.25em;
   font-weight: 600;
 }
-@media screen and (max-width: 1024px) {
-  .l-wrapper .p-header__nav--pc .p-nav__menu--pc .c-nav__menu {
-    font-size: 0.3em;
-  }
+.l-wrapper .p-header__nav--pc .p-nav__menu--pc .c-nav__menu:hover {
+  opacity: 0.6;
 }
-@media screen and (max-width: 768px) {
-  .l-wrapper .p-header__nav--pc .p-nav__menu--pc .c-nav__menu {
-    margin-left: 4%;
-    font-size: 0.5em;
-    letter-spacing: 0.23em;
-  }
-}
-.l-wrapper .p-header__nav--pc .p-nav__menu--pc .c-nav__menu ::before {
-  display: block;
+.l-wrapper .p-header__nav--pc .p-nav__menu--pc .c-nav__menu::before {
   content: "/";
-  padding: 0 0 4% 1%;
+  position: absolute;
+  top: 0;
+  left: 5px;
   font-size: 1.3em;
   font-weight: 300;
+}
+.l-wrapper .p-header__nav--pc .p-nav__menu--pc .c-nav__menu:hover::before {
+  content: "|";
+  padding-right: 5px;
 }
 .l-wrapper .l-main {
   height: 85%;
@@ -551,7 +559,7 @@
     aspect-ratio: 1.3/1;
   }
 }
-.l-wrapper .l-main .p-about__container .p-about__img .p-about__imgBotton {
+.l-wrapper .l-main .p-about__container .p-about__img .p-about__imgBottom {
   position: absolute;
   top: 65%;
   right: 30%;
@@ -559,7 +567,7 @@
   height: 35%;
 }
 @media screen and (max-width: 1024px) {
-  .l-wrapper .l-main .p-about__container .p-about__img .p-about__imgBotton {
+  .l-wrapper .l-main .p-about__container .p-about__img .p-about__imgBottom {
     top: 40%;
     right: 20%;
     width: 35%;
@@ -567,21 +575,21 @@
   }
 }
 @media screen and (max-width: 610px) {
-  .l-wrapper .l-main .p-about__container .p-about__img .p-about__imgBotton {
+  .l-wrapper .l-main .p-about__container .p-about__img .p-about__imgBottom {
     top: 75%;
     right: 15%;
     width: 40%;
     height: 50%;
   }
 }
-.l-wrapper .l-main .p-about__container .p-about__img .p-about__imgBotton img {
+.l-wrapper .l-main .p-about__container .p-about__img .p-about__imgBottom img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media screen and (max-width: 610px) {
-  .l-wrapper .l-main .p-about__container .p-about__img .p-about__imgBotton img {
+  .l-wrapper .l-main .p-about__container .p-about__img .p-about__imgBottom img {
     aspect-ratio: 1.23/1;
   }
 }
@@ -1500,6 +1508,9 @@
     margin: 0;
   }
 }
+.l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__icon p:hover {
+  opacity: 0.6;
+}
 .l-wrapper .l-footer {
   height: 5%;
 }
@@ -1611,6 +1622,9 @@
     letter-spacing: 0.22em;
   }
 }
+.l-wrapper .l-footer__right .p-footer__nav .p-nav__menu .c-nav__menu:hover {
+  opacity: 0.6;
+}
 .l-wrapper .l-footer__right .p-footer__nav .p-subNav__menu {
   display: flex;
   justify-content: flex-end;
@@ -1631,6 +1645,10 @@
 }
 .l-wrapper .l-footer__right .p-footer__nav .p-subNav__menu .fa-solid.fa-location-dot, .l-wrapper .l-footer__right .p-footer__nav .p-subNav__menu .fa-solid.fa-envelope {
   font-size: 150%;
+}
+.l-wrapper .l-footer__right .p-footer__nav .p-subNav__menu .fa-solid.fa-location-dot:hover,
+.l-wrapper .l-footer__right .p-footer__nav .p-subNav__menu .fa-solid.fa-envelope:hover {
+  opacity: 0.6;
 }
 .l-wrapper .l-footer__right .p-footer__nav .p-subNav__menu .c-nav__menu {
   font-size: 0.75em;

@@ -273,43 +273,71 @@
 .l-wrapper .l-top__keyvisual .c-slideImage:not(:first-child) {
   opacity: 0; /* 最初の画像以外は透明 */
 }
-.l-wrapper .l-top__keyvisual .c-scroll-line {
+.l-wrapper .l-top__keyvisual .c-scroll-text {
   position: absolute;
-  bottom: 0;
+  top: 75%;
   left: 120%;
-  padding-bottom: 70%;
   font-family: "Lato", sans-serif;
   font-size: 0.8em;
   letter-spacing: 0.2em;
-  transition: all 0.3s;
+  writing-mode: vertical-lr; /* テキストを垂直に配置 */
+  transform: rotate(180deg); /* テキストを反転させる */
 }
-@media screen and (max-width: 610px) {
-  .l-wrapper .l-top__keyvisual .c-scroll-line {
-    display: none;
+.l-wrapper .l-top__keyvisual .c-scroll-text:hover {
+  opacity: 0.6;
+}
+.l-wrapper .l-top__keyvisual .c-scroll-line {
+  position: absolute;
+  bottom: 150%;
+  left: 40%;
+  width: 2px;
+  height: 50px;
+  background-color: #333333;
+  opacity: 0;
+  -webkit-animation: lineMove 3s ease-in-out infinite;
+          animation: lineMove 3s ease-in-out infinite;
+}
+@-webkit-keyframes lineMove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 70px;
+    opacity: 0;
+  }
+  70% {
+    height: 0;
+    top: -100px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: -100px;
+    opacity: 0;
   }
 }
-.l-wrapper .l-top__keyvisual .c-scroll-line ::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 21px;
-  width: 1px;
-  background-color: #000000;
-  -webkit-animation-name: lineMove;
-          animation-name: lineMove;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-.l-wrapper .l-top__keyvisual .c-scroll-line span {
-  display: inline-block;
-  transform: rotate(-90deg);
-}
-.l-wrapper .l-top__keyvisual .c-scroll-line:hover {
-  opacity: 0.6;
+@keyframes lineMove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 70px;
+    opacity: 0;
+  }
+  70% {
+    height: 0;
+    top: -100px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: -100px;
+    opacity: 0;
+  }
 }
 .l-wrapper .l-top__keyvisual .c-top__subTitle {
   position: absolute;

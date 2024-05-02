@@ -287,37 +287,50 @@ $lg: 1024px;
       opacity: 0; /* 最初の画像以外は透明 */
     }
 
-    .c-scroll-line{
+    .c-scroll-text {
       position: absolute;
-      bottom: 0;
+      top: 75%;
       left: 120%;
-      padding-bottom: 70%;
       font-family: "Lato", sans-serif;
       font-size: 0.8em;
       letter-spacing: 0.2em;
-      transition: all .3s;
-      @include sp {
-        display: none;
-      }
-      ::after{
-        content: '';
-        display: block;
-        position: absolute;
-        left: 21px;
-        width: 1px;
-        background-color: #000000;
-        animation-name: lineMove;
-        animation-duration: 4s;
-        animation-timing-function: ease;
-        animation-iteration-count: infinite;
-      }
-      span {
-        display: inline-block;
-        transform: rotate(-90deg);
-      }
+      writing-mode: vertical-lr; /* テキストを垂直に配置 */
+      transform: rotate(180deg); /* テキストを反転させる */
     }
-    .c-scroll-line:hover{
+    .c-scroll-text:hover{
       opacity: 0.6;
+    }
+
+    .c-scroll-line {
+      position: absolute;
+      bottom: 150%;
+      left: 40%;
+      width: 2px;
+      height: 50px;
+      background-color: #333333;
+      opacity: 0;
+      animation: lineMove 3s ease-in-out infinite;
+    }
+    @keyframes lineMove {
+      0%{
+        height:0;
+        top:0;
+        opacity: 0;
+      }
+      30%{
+        height:70px;
+        opacity: 0;
+      }
+      70%{
+        height:0;
+        top:-100px;
+        opacity: 1;
+      }
+      100%{
+        height:0;
+        top:-100px;
+        opacity: 0;
+      }
     }
 
   .c-top__subTitle {

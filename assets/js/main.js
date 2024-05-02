@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   // ページの読み込みが完了したらローディング画面をフェードアウト
   $(window).on("load", function() {
-    $("#loading-screen").fadeOut(500);
+    $("#loading-screen").fadeOut(1500);
     $("body").removeClass("loading"); // loadingクラスを削除してページを表示
   });
 
@@ -30,7 +30,7 @@ $(document).ready(function() {
   });
 
   // 擬似要素のhover
-  $('.c-nav__menu').hover(
+  $('p-nav__menu--pc > .c-nav__menu').hover(
     function() {
       $(this).addClass('hovered');
     },

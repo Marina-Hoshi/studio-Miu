@@ -54,6 +54,52 @@
     font-size: 0.85em;
   }
 }
+.l-wrapper .custom-button {
+  position: relative;
+  text-align: right;
+  font-family: "Lato", sans-serif;
+  font-size: 0.7em;
+}
+@media screen and (max-width: 610px) {
+  .l-wrapper .custom-button {
+    font-size: 0.6em;
+  }
+}
+.l-wrapper .custom-button::before {
+  content: "+";
+  position: absolute;
+  right: 5%;
+  bottom: -15%;
+  transform-origin: top left; /* 下線の起点を左上に設定 */
+  transform: scaleX(1); /* 最初は＋がある */
+  color: #333333;
+  font-size: 1.3em;
+  transition: transform 0.5s ease;
+}
+.l-wrapper .custom-button::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  width: 3.5%;
+  border-bottom: 1px solid #333333;
+  transform-origin: bottom left; /* 下線の起点を左下に設定 */
+  transform: scaleX(1); /* 最初は下線がある状態 */
+  transition: transform 0.5s ease;
+}
+.l-wrapper .custom-button:hover::before,
+.l-wrapper .custom-button:hover::after {
+  transform: scaleX(0); /* ホバー時に下線を非表示 */
+}
+.l-wrapper .custom-button a {
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width: 610px) {
+  .l-wrapper .custom-button a {
+    font-size: 0.6em;
+  }
+}
 .l-wrapper .l-header {
   width: 100%;
   height: 250px;
@@ -506,43 +552,49 @@
     letter-spacing: 0.09em;
   }
 }
-.l-wrapper .l-main .p-about__container .p-about__information .p-about__button {
+.l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA {
   position: relative;
   font-family: "Lato", sans-serif;
   font-size: 0.7em;
 }
 @media screen and (max-width: 610px) {
-  .l-wrapper .l-main .p-about__container .p-about__information .p-about__button {
+  .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA {
     font-size: 0.6em;
-    text-align: right;
   }
 }
-.l-wrapper .l-main .p-about__container .p-about__information .p-about__button ::before {
-  content: "";
-  display: block;
+.l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA::before {
+  content: "+";
   position: absolute;
-  top: 50%;
-  left: -3%;
-  width: 7px;
-  height: 1px;
-  background-color: #000;
-  transform: scale(1, 1);
-  transform-origin: left top;
-  transition: all 0.3s;
+  left: -5%;
+  bottom: -15%;
+  transform-origin: top left; /* 下線の起点を左上に設定 */
+  transform: scaleX(1); /* 最初は＋がある */
+  color: #333333;
+  font-size: 1.3em;
+  transition: transform 0.5s ease;
 }
-.l-wrapper .l-main .p-about__container .p-about__information .p-about__button ::after {
+.l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 10%;
   width: 7%;
   border-bottom: 1px solid #333333;
+  transform-origin: bottom left; /* 下線の起点を左下に設定 */
+  transform: scaleX(1); /* 最初は下線がある状態 */
+  transition: transform 0.5s ease;
+}
+.l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA:hover::before,
+.l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA:hover::after {
+  transform: scaleX(0); /* ホバー時に下線を非表示 */
+}
+.l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA a {
+  position: relative;
+  z-index: 1;
 }
 @media screen and (max-width: 610px) {
-  .l-wrapper .l-main .p-about__container .p-about__information .p-about__button ::after {
-    left: auto;
-    right: 0;
-    width: 11%;
+  .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA a {
+    font-size: 0.6em;
   }
 }
 .l-wrapper .l-main .p-about__container .p-about__img {
@@ -658,30 +710,6 @@
     margin-bottom: 8%;
   }
 }
-.l-wrapper .l-main .p-class__button {
-  position: relative;
-  text-align: right;
-  font-family: "Lato", sans-serif;
-  font-size: 0.7em;
-}
-@media screen and (max-width: 610px) {
-  .l-wrapper .l-main .p-class__button {
-    font-size: 0.6em;
-  }
-}
-.l-wrapper .l-main .p-class__button ::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 4%;
-  border-bottom: 1px solid #333333;
-}
-@media screen and (max-width: 610px) {
-  .l-wrapper .l-main .p-class__button ::after {
-    width: 11%;
-  }
-}
 .l-wrapper .l-main__classBottom {
   position: relative;
   margin-top: -2%;
@@ -773,30 +801,49 @@
     margin-bottom: 8%;
   }
 }
-.l-wrapper .l-main__classbox .p-class__bookingButton {
+.l-wrapper .l-main__classbox .custom-buttonB {
   position: relative;
-  width: 100%;
+  font-family: "Lato", sans-serif;
   font-size: 0.7em;
 }
 @media screen and (max-width: 610px) {
-  .l-wrapper .l-main__classbox .p-class__bookingButton {
-    text-align: right;
+  .l-wrapper .l-main__classbox .custom-buttonB {
     font-size: 0.6em;
   }
 }
-.l-wrapper .l-main__classbox .p-class__bookingButton ::after {
+.l-wrapper .l-main__classbox .custom-buttonB::before {
+  content: "+";
+  position: absolute;
+  left: -5%;
+  bottom: -15%;
+  transform-origin: top left; /* 下線の起点を左上に設定 */
+  transform: scaleX(1); /* 最初は＋がある */
+  color: #333333;
+  font-size: 1.3em;
+  transition: transform 0.5s ease;
+}
+.l-wrapper .l-main__classbox .custom-buttonB::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 10%;
   width: 20%;
   border-bottom: 1px solid #333333;
+  transform-origin: bottom left; /* 下線の起点を左下に設定 */
+  transform: scaleX(1); /* 最初は下線がある状態 */
+  transition: transform 0.5s ease;
+}
+.l-wrapper .l-main__classbox .custom-buttonB:hover::before,
+.l-wrapper .l-main__classbox .custom-buttonB:hover::after {
+  transform: scaleX(0); /* ホバー時に下線を非表示 */
+}
+.l-wrapper .l-main__classbox .custom-buttonB a {
+  position: relative;
+  z-index: 1;
 }
 @media screen and (max-width: 610px) {
-  .l-wrapper .l-main__classbox .p-class__bookingButton ::after {
-    left: auto;
-    right: 0;
-    width: 21%;
+  .l-wrapper .l-main__classbox .custom-buttonB a {
+    font-size: 0.6em;
   }
 }
 .l-wrapper .l-main #l-main__workshop {
@@ -876,31 +923,6 @@
     letter-spacing: 0.09em;
     line-height: 2.3em;
   }
-}
-.l-wrapper .l-main .p-workshop__description .p-workshop__button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: right;
-  font-family: "Lato", sans-serif;
-  font-size: 0.7em;
-}
-@media screen and (max-width: 610px) {
-  .l-wrapper .l-main .p-workshop__description .p-workshop__button {
-    position: static;
-    font-size: 0.6em;
-  }
-}
-.l-wrapper .l-main .p-workshop__description .p-workshop__button a {
-  position: relative;
-}
-.l-wrapper .l-main .p-workshop__description .p-workshop__button ::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -70%;
-  width: 100%;
-  border-bottom: 1px solid #333333;
 }
 .l-wrapper .l-main__workshopList {
   display: flex;
@@ -1013,31 +1035,50 @@
     line-height: 2.5em;
   }
 }
-.l-wrapper .l-main__workshopList .p-workshop__List .p-workshop__bookingButton {
+.l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2 {
   position: relative;
-  margin-top: 12%;
+  margin-top: 10%;
+  font-family: "Lato", sans-serif;
   font-size: 0.7em;
 }
 @media screen and (max-width: 610px) {
-  .l-wrapper .l-main__workshopList .p-workshop__List .p-workshop__bookingButton {
-    margin-top: 10%;
+  .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2 {
     font-size: 0.6em;
-    text-align: right;
   }
 }
-.l-wrapper .l-main__workshopList .p-workshop__List .p-workshop__bookingButton ::after {
+.l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2::before {
+  content: "+";
+  position: absolute;
+  left: -5%;
+  bottom: -15%;
+  transform-origin: top left; /* 下線の起点を左上に設定 */
+  transform: scaleX(1); /* 最初は＋がある */
+  color: #333333;
+  font-size: 1.3em;
+  transition: transform 0.5s ease;
+}
+.l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
-  width: 16%;
+  bottom: 10%;
+  width: 15.5%;
   border-bottom: 1px solid #333333;
+  transform-origin: bottom left; /* 下線の起点を左下に設定 */
+  transform: scaleX(1); /* 最初は下線がある状態 */
+  transition: transform 0.5s ease;
+}
+.l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2:hover::before,
+.l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2:hover::after {
+  transform: scaleX(0); /* ホバー時に下線を非表示 */
+}
+.l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2 a {
+  position: relative;
+  z-index: 1;
 }
 @media screen and (max-width: 610px) {
-  .l-wrapper .l-main__workshopList .p-workshop__List .p-workshop__bookingButton ::after {
-    left: auto;
-    right: 0;
-    width: 21%;
+  .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2 a {
+    font-size: 0.6em;
   }
 }
 .l-wrapper .l-main__workshopList .p-workshop__List:nth-last-child(1) {
@@ -1248,30 +1289,6 @@
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__blogBottom .p-blog__information li:hover {
     background-color: #FFFFFF;
-  }
-}
-.l-wrapper .l-main__blogBottom .p-blog__button {
-  position: relative;
-  text-align: right;
-  font-family: "Lato", sans-serif;
-  font-size: 0.7em;
-}
-@media screen and (max-width: 610px) {
-  .l-wrapper .l-main__blogBottom .p-blog__button {
-    font-size: 0.6em;
-  }
-}
-.l-wrapper .l-main__blogBottom .p-blog__button ::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 4%;
-  border-bottom: 1px solid #333333;
-}
-@media screen and (max-width: 610px) {
-  .l-wrapper .l-main__blogBottom .p-blog__button ::after {
-    width: 11%;
   }
 }
 .l-wrapper .l-main #l-main__booking {

@@ -28,6 +28,7 @@ $lg: 1024px;
   font-family: "Noto Sans JP", "Noto Sans", sans-serif;
   letter-spacing: 0.1em;
   line-height: 2.0em;
+  box-sizing: border-box;
 
   a{
     color: #333333;
@@ -290,7 +291,6 @@ $lg: 1024px;
 }
 
 .l-top__keyvisual{
-  width: 100%;
   height: 664px;
   margin-top: -150px;
   @include sp {

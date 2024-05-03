@@ -393,7 +393,6 @@ $lg: 1024px;
     position: absolute;
     top: 45%;
     left: 30%;
-    // transform: translate(-50%, -50%);
     font-family: "Josefin Slab", serif;
     font-size: 2.7em;
     line-height: 1.5em;
@@ -408,7 +407,6 @@ $lg: 1024px;
     }
     @include sp {
       top: 305px;
-      left: 220px;
       width: 60%;
       font-size: 1.2em;
       line-height: 1.5em;

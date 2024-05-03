@@ -77,7 +77,6 @@ $lg: 1024px;
     font-family: "Lato", sans-serif;
     font-size: 0.7em;
     @include sp {
-      pointer-events: none;
       font-size: 0.6em;
     }
   }
@@ -92,6 +91,9 @@ $lg: 1024px;
     color: #333333;
     font-size: 1.3em;
     transition: transform 0.5s ease;
+    @include sp {
+      right: 10%;
+    }
   }
   .custom-button::after {
     content: '';
@@ -103,6 +105,9 @@ $lg: 1024px;
     transform-origin: bottom left; /* 下線の起点を左下に設定 */
     transform: scaleX(1); /* 最初は下線がある状態 */
     transition: transform 0.5s ease;
+    @include sp {
+      width: 8%;
+    }
   }
   .custom-button:hover::before,
   .custom-button:hover::after {
@@ -285,6 +290,7 @@ $lg: 1024px;
 }
 
 .l-top__keyvisual{
+  width: 100%;
   height: 664px;
   margin-top: -150px;
   @include sp {
@@ -561,7 +567,7 @@ $lg: 1024px;
           font-family: "Lato", sans-serif;
           font-size: 0.7em;
           @include sp {
-            pointer-events: none;
+            text-align: right;
             font-size: 0.6em;
           }
         }
@@ -576,6 +582,9 @@ $lg: 1024px;
           color: #333333;
           font-size: 1.3em;
           transition: transform 0.5s ease;
+          @include sp {
+            right: 10%;
+          }
         }
         .custom-buttonA::after {
           content: '';
@@ -587,6 +596,10 @@ $lg: 1024px;
           transform-origin: bottom left; /* 下線の起点を左下に設定 */
           transform: scaleX(1); /* 最初は下線がある状態 */
           transition: transform 0.5s ease;
+          @include sp {
+            left: 92%;
+            width: 8%;
+          }
         }
         .custom-buttonA:hover::before,
         .custom-buttonA:hover::after {
@@ -870,7 +883,7 @@ $lg: 1024px;
           font-family: "Lato", sans-serif;
           font-size: 0.7em;
           @include sp {
-            pointer-events: none;
+            text-align: right;
             font-size: 0.6em;
           }
         }
@@ -885,6 +898,9 @@ $lg: 1024px;
           color: #333333;
           font-size: 1.3em;
           transition: transform 0.5s ease;
+          @include sp {
+            left: 80%;
+          }
         }
         .custom-buttonB::after {
           content: '';
@@ -896,6 +912,10 @@ $lg: 1024px;
           transform-origin: bottom left; /* 下線の起点を左下に設定 */
           transform: scaleX(1); /* 最初は下線がある状態 */
           transition: transform 0.5s ease;
+          @include sp {
+            left: 85%;
+            width: 15%;
+          }
         }
         .custom-buttonB:hover::before,
         .custom-buttonB:hover::after {
@@ -1141,7 +1161,7 @@ $lg: 1024px;
         font-family: "Lato", sans-serif;
         font-size: 0.7em;
         @include sp {
-          pointer-events: none;
+          text-align: right;
           font-size: 0.6em;
         }
       }
@@ -1156,6 +1176,9 @@ $lg: 1024px;
         color: #333333;
         font-size: 1.3em;
         transition: transform 0.5s ease;
+        @include sp {
+          left: 80%;
+        }
       }
       .custom-buttonB2::after {
         content: '';
@@ -1167,6 +1190,10 @@ $lg: 1024px;
         transform-origin: bottom left; /* 下線の起点を左下に設定 */
         transform: scaleX(1); /* 最初は下線がある状態 */
         transition: transform 0.5s ease;
+        @include sp {
+          left: 85%;
+          width: 15%;
+        }
       }
       .custom-buttonB2:hover::before,
       .custom-buttonB2:hover::after {

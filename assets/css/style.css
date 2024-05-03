@@ -62,7 +62,6 @@
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .custom-button {
-    pointer-events: none;
     font-size: 0.6em;
   }
 }
@@ -77,6 +76,11 @@
   font-size: 1.3em;
   transition: transform 0.5s ease;
 }
+@media screen and (max-width: 610px) {
+  .l-wrapper .custom-button::before {
+    right: 10%;
+  }
+}
 .l-wrapper .custom-button::after {
   content: "";
   position: absolute;
@@ -87,6 +91,11 @@
   transform-origin: bottom left; /* 下線の起点を左下に設定 */
   transform: scaleX(1); /* 最初は下線がある状態 */
   transition: transform 0.5s ease;
+}
+@media screen and (max-width: 610px) {
+  .l-wrapper .custom-button::after {
+    width: 8%;
+  }
 }
 .l-wrapper .custom-button:hover::before,
 .l-wrapper .custom-button:hover::after {
@@ -268,6 +277,7 @@
   font-size: 150%;
 }
 .l-wrapper .l-top__keyvisual {
+  width: 100%;
   height: 664px;
   margin-top: -150px;
 }
@@ -565,7 +575,7 @@
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA {
-    pointer-events: none;
+    text-align: right;
     font-size: 0.6em;
   }
 }
@@ -580,6 +590,11 @@
   font-size: 1.3em;
   transition: transform 0.5s ease;
 }
+@media screen and (max-width: 610px) {
+  .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA::before {
+    right: 10%;
+  }
+}
 .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA::after {
   content: "";
   position: absolute;
@@ -590,6 +605,12 @@
   transform-origin: bottom left; /* 下線の起点を左下に設定 */
   transform: scaleX(1); /* 最初は下線がある状態 */
   transition: transform 0.5s ease;
+}
+@media screen and (max-width: 610px) {
+  .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA::after {
+    left: 92%;
+    width: 8%;
+  }
 }
 .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA:hover::before,
 .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA:hover::after {
@@ -815,7 +836,7 @@
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__classbox .custom-buttonB {
-    pointer-events: none;
+    text-align: right;
     font-size: 0.6em;
   }
 }
@@ -830,6 +851,11 @@
   font-size: 1.3em;
   transition: transform 0.5s ease;
 }
+@media screen and (max-width: 610px) {
+  .l-wrapper .l-main__classbox .custom-buttonB::before {
+    left: 80%;
+  }
+}
 .l-wrapper .l-main__classbox .custom-buttonB::after {
   content: "";
   position: absolute;
@@ -840,6 +866,12 @@
   transform-origin: bottom left; /* 下線の起点を左下に設定 */
   transform: scaleX(1); /* 最初は下線がある状態 */
   transition: transform 0.5s ease;
+}
+@media screen and (max-width: 610px) {
+  .l-wrapper .l-main__classbox .custom-buttonB::after {
+    left: 85%;
+    width: 15%;
+  }
 }
 .l-wrapper .l-main__classbox .custom-buttonB:hover::before,
 .l-wrapper .l-main__classbox .custom-buttonB:hover::after {
@@ -1051,7 +1083,7 @@
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2 {
-    pointer-events: none;
+    text-align: right;
     font-size: 0.6em;
   }
 }
@@ -1066,6 +1098,11 @@
   font-size: 1.3em;
   transition: transform 0.5s ease;
 }
+@media screen and (max-width: 610px) {
+  .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2::before {
+    left: 80%;
+  }
+}
 .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2::after {
   content: "";
   position: absolute;
@@ -1076,6 +1113,12 @@
   transform-origin: bottom left; /* 下線の起点を左下に設定 */
   transform: scaleX(1); /* 最初は下線がある状態 */
   transition: transform 0.5s ease;
+}
+@media screen and (max-width: 610px) {
+  .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2::after {
+    left: 85%;
+    width: 15%;
+  }
 }
 .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2:hover::before,
 .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2:hover::after {

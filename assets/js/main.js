@@ -39,12 +39,21 @@ $(document).ready(function() {
     }
   );
 
-  // ハンバーガーメニュー
+  // 読み込み時のハンバーガーメニューボタンを閉じた状態に設定
+  $("#p-drawer__toggle--sp").removeClass("open");
+  $(".c-hamburger_borderTop, .c-hamburger_borderBottom").removeClass("open");
+
   $("#p-drawer__toggle--sp").click(function(){
     $(this).toggleClass("open");
-    $(".p-header__nav--sp").fadeToggle();
-    $(".c-hamburger_borderTop, .c-hamburger_borderBottom").toggleClass("open");
+    if ($(this).hasClass("open")) {
+      $(".p-header__nav--sp").fadeIn();
+      $(".c-hamburger_borderTop, .c-hamburger_borderBottom").addClass("open");
+    } else {
+      $(".p-header__nav--sp").fadeOut();
+      $(".c-hamburger_borderTop, .c-hamburger_borderBottom").removeClass("open");
+    }
   });
+
 
   // 画像の切り替え
   const imagesLeft = $('.p-header__left img');

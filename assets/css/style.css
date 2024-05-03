@@ -62,6 +62,7 @@
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .custom-button {
+    pointer-events: none;
     font-size: 0.6em;
   }
 }
@@ -329,6 +330,11 @@
   writing-mode: vertical-lr; /* テキストを垂直に配置 */
   transform: rotate(180deg); /* テキストを反転させる */
 }
+@media screen and (max-width: 610px) {
+  .l-wrapper .l-top__keyvisual .c-scroll-text {
+    display: none;
+  }
+}
 .l-wrapper .l-top__keyvisual .c-scroll-text:hover {
   opacity: 0.6;
 }
@@ -559,6 +565,7 @@
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA {
+    pointer-events: none;
     font-size: 0.6em;
   }
 }
@@ -808,6 +815,7 @@
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__classbox .custom-buttonB {
+    pointer-events: none;
     font-size: 0.6em;
   }
 }
@@ -1043,6 +1051,7 @@
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2 {
+    pointer-events: none;
     font-size: 0.6em;
   }
 }

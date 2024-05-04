@@ -77,7 +77,8 @@
 }
 .l-wrapper .custom-button {
   position: relative;
-  text-align: right;
+  display: inline;
+  float: right;
   font-family: "Lato", sans-serif;
   font-size: 0.7em;
 }
@@ -86,37 +87,30 @@
     font-size: 0.6em;
   }
 }
+.l-wrapper #l-main__workshop .p-workshop__button.custom-button {
+  transform: translateY(-600%);
+}
 .l-wrapper .custom-button::before {
   content: "+";
   position: absolute;
-  right: 5%;
-  bottom: -15%;
+  top: 20%;
+  left: -40%;
   transform-origin: top left; /* 下線の起点を左上に設定 */
   transform: scaleX(1); /* 最初は＋がある */
   color: #333333;
   font-size: 1.3em;
   transition: transform 0.5s ease;
 }
-@media screen and (max-width: 610px) {
-  .l-wrapper .custom-button::before {
-    right: 10%;
-  }
-}
 .l-wrapper .custom-button::after {
   content: "";
   position: absolute;
+  top: 85%;
   right: 0;
-  bottom: 10%;
-  width: 3.5%;
+  width: 100%;
   border-bottom: 1px solid #333333;
   transform-origin: bottom left; /* 下線の起点を左下に設定 */
   transform: scaleX(1); /* 最初は下線がある状態 */
   transition: transform 0.5s ease;
-}
-@media screen and (max-width: 610px) {
-  .l-wrapper .custom-button::after {
-    width: 8%;
-  }
 }
 .l-wrapper .custom-button:hover::before,
 .l-wrapper .custom-button:hover::after {
@@ -612,20 +606,23 @@
 }
 .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA {
   position: relative;
+  display: inline;
+  left: 5%;
   font-family: "Lato", sans-serif;
   font-size: 0.7em;
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA {
-    text-align: right;
+    float: right;
+    left: 0;
     font-size: 0.6em;
   }
 }
 .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA::before {
   content: "+";
   position: absolute;
-  left: -5%;
-  bottom: -15%;
+  top: 0;
+  left: -40%;
   transform-origin: top left; /* 下線の起点を左上に設定 */
   transform: scaleX(1); /* 最初は＋がある */
   color: #333333;
@@ -634,15 +631,16 @@
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA::before {
+    top: 20%;
     right: 10%;
   }
 }
 .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 10%;
-  width: 7%;
+  top: 150%;
+  left: 0%;
+  width: 100%;
   border-bottom: 1px solid #333333;
   transform-origin: bottom left; /* 下線の起点を左下に設定 */
   transform: scaleX(1); /* 最初は下線がある状態 */
@@ -650,8 +648,7 @@
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA::after {
-    left: 92%;
-    width: 8%;
+    top: 85%;
   }
 }
 .l-wrapper .l-main .p-about__container .p-about__information .custom-buttonA:hover::before,
@@ -674,7 +671,7 @@
   .l-wrapper .l-main .p-about__container .p-about__img {
     position: relative;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 15%;
   }
 }
 .l-wrapper .l-main .p-about__container .p-about__img .p-about__imgTop {
@@ -770,14 +767,8 @@
 .l-wrapper .l-main h2 {
   margin-bottom: 4%;
 }
-@media screen and (max-width: 610px) {
-  .l-wrapper .l-main h2 {
-    margin-bottom: 8%;
-  }
-}
 .l-wrapper .l-main__classBottom {
   position: relative;
-  margin-top: -2%;
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__classBottom {
@@ -805,6 +796,7 @@
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__classImg img {
+    margin-top: 5%;
     aspect-ratio: 1.875/1;
   }
 }
@@ -874,20 +866,23 @@
 }
 .l-wrapper .l-main__classbox .custom-buttonB {
   position: relative;
+  display: inline;
+  left: 5%;
   font-family: "Lato", sans-serif;
   font-size: 0.7em;
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__classbox .custom-buttonB {
-    text-align: right;
+    float: right;
+    left: 0;
     font-size: 0.6em;
   }
 }
 .l-wrapper .l-main__classbox .custom-buttonB::before {
   content: "+";
   position: absolute;
-  left: -5%;
-  bottom: -15%;
+  top: 0;
+  left: -20%;
   transform-origin: top left; /* 下線の起点を左上に設定 */
   transform: scaleX(1); /* 最初は＋がある */
   color: #333333;
@@ -896,15 +891,16 @@
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__classbox .custom-buttonB::before {
-    left: 80%;
+    top: 20%;
+    left: -20%;
   }
 }
 .l-wrapper .l-main__classbox .custom-buttonB::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 10%;
-  width: 20%;
+  top: 150%;
+  left: 0%;
+  width: 100%;
   border-bottom: 1px solid #333333;
   transform-origin: bottom left; /* 下線の起点を左下に設定 */
   transform: scaleX(1); /* 最初は下線がある状態 */
@@ -912,8 +908,7 @@
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__classbox .custom-buttonB::after {
-    left: 85%;
-    width: 15%;
+    top: 85%;
   }
 }
 .l-wrapper .l-main__classbox .custom-buttonB:hover::before,
@@ -939,7 +934,7 @@
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main #l-main__workshop {
     width: 85%;
-    padding-bottom: 15%;
+    padding-bottom: 18%;
   }
 }
 @media screen and (max-width: 610px) {
@@ -1129,21 +1124,25 @@
 }
 .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2 {
   position: relative;
+  display: inline;
+  left: 5%;
   margin-top: 10%;
   font-family: "Lato", sans-serif;
   font-size: 0.7em;
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2 {
-    text-align: right;
+    float: right;
+    left: 0;
+    margin-top: 0%;
     font-size: 0.6em;
   }
 }
 .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2::before {
   content: "+";
   position: absolute;
-  left: -5%;
-  bottom: -15%;
+  top: 0;
+  left: -20%;
   transform-origin: top left; /* 下線の起点を左上に設定 */
   transform: scaleX(1); /* 最初は＋がある */
   color: #333333;
@@ -1152,15 +1151,16 @@
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2::before {
-    left: 80%;
+    top: 20%;
+    left: -20%;
   }
 }
 .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 10%;
-  width: 15.5%;
+  top: 150%;
+  left: 0%;
+  width: 100%;
   border-bottom: 1px solid #333333;
   transform-origin: bottom left; /* 下線の起点を左下に設定 */
   transform: scaleX(1); /* 最初は下線がある状態 */
@@ -1168,8 +1168,7 @@
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2::after {
-    left: 85%;
-    width: 15%;
+    top: 85%;
   }
 }
 .l-wrapper .l-main__workshopList .p-workshop__List .custom-buttonB2:hover::before,
@@ -1193,11 +1192,19 @@
     margin-top: 18%;
   }
 }
+.l-wrapper .l-main__workshopList .p-box__detail:nth-last-child(2) {
+  margin-bottom: 15%;
+}
+@media screen and (max-width: 610px) {
+  .l-wrapper .l-main__workshopList .p-box__detail:nth-last-child(2) {
+    margin-bottom: 6%;
+  }
+}
 .l-wrapper .l-main #l-main__blog {
   width: 80%;
   height: 10%;
   margin: 0 auto;
-  padding-bottom: 11%;
+  padding-bottom: 15%;
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main #l-main__blog {

@@ -44,6 +44,12 @@ $lg: 1024px;
     font-size: 1.3em;
     font-weight: 400;
     letter-spacing: 0.15em;
+    @include lg {
+      font-size: 1.1em;
+    }
+    @include md {
+      font-size: 1.1em;
+    }
     @include sp {
       font-size: 0.95em;
     }
@@ -54,6 +60,9 @@ $lg: 1024px;
     padding: 0 0 3% 1%;
     font-size: 2.2em;
     font-weight: 200;
+    @include md {
+      font-size: 2.15em;
+    }
     @include sp {
       padding: 0 0 2% 1%;
       font-size: 2.1em;
@@ -66,6 +75,9 @@ $lg: 1024px;
     font-weight: 300;
     @include lg {
       font-size: 0.95em;
+    }
+    @include md {
+      font-size: 0.9em;
     }
     @include sp {
       font-size: 0.85em;
@@ -402,7 +414,7 @@ $lg: 1024px;
     @include md {
       top: 44%;
       left: 29%;
-      font-size: 2.3em;
+      font-size: 1.6em;
       line-height: 1.4em;
     }
     @include sp {
@@ -520,6 +532,9 @@ $lg: 1024px;
           font-size: 1.3em;
           line-height: 1.9em;
           letter-spacing: 0.15em;
+          @include lg {
+              font-size: 1.2em;
+            }
           @include sp {
             margin-bottom: 8%;
             font-size: 1.1em;
@@ -532,8 +547,12 @@ $lg: 1024px;
           margin-bottom: 25%;
           font-size: 0.8em;
           line-height: 2.8em;
-          @include md {
+          @include lg {
+            width: 80%;
             font-size: 0.75em;
+          }
+          @include md {
+            font-size: 0.7em;
             line-height: 2.5em;
             letter-spacing: 0.09em;
           }
@@ -704,7 +723,7 @@ $lg: 1024px;
     margin: 0 auto;
     padding-bottom: 28%;
     @include md {
-      padding-bottom: 58%;
+      padding-bottom: 40%;
     }
     @include sp {
       width: 100%;
@@ -823,12 +842,13 @@ $lg: 1024px;
         padding: 5%;
         background-color: #FFFFFF;
         @include lg {
+          top: 120%;
           left: 70%;
-          padding: 8%;
+          padding: 7%;
         }
         @include md {
           top: 140%;
-          width: 70%;
+          width: 60%;
         }
         @include sp {
           position: static;
@@ -850,10 +870,11 @@ $lg: 1024px;
           line-height: 2.8em;
           @include lg {
             margin-bottom: 10%;
+            font-size: 0.75em;
             line-height: 2.4em;
           }
           @include md {
-            font-size: 0.75em;
+            font-size: 0.7em;
             letter-spacing: 0.09em;
           }
           @include sp {
@@ -991,9 +1012,11 @@ $lg: 1024px;
         @include lg {
           width: 75%;
           margin-bottom: 10%;
+          font-size: 0.75em;
         }
         @include md {
           margin-bottom: 12%;
+          font-size: 0.7em;
         }
         @include sp {
           width: 100%;
@@ -1090,6 +1113,9 @@ $lg: 1024px;
         font-size: 0.7em;
         line-height: 2.5em;
         letter-spacing: 0.15em;
+        @include lg {
+          font-size: 0.68em;
+        }
         @include md {
           margin-bottom: 12%;
           font-size: 0.65em;
@@ -1112,6 +1138,7 @@ $lg: 1024px;
           width: 25%;
           @include lg {
             line-height: 2.3em;
+            font-size: 0.78em;
           }
           @include md {
             font-size: 0.75em;
@@ -1126,6 +1153,7 @@ $lg: 1024px;
           width: 75%;
           @include lg {
             line-height: 2.3em;
+            font-size: 0.78em;
           }
           @include md {
             font-size: 0.75em;
@@ -1280,7 +1308,6 @@ $lg: 1024px;
                 object-fit: cover;
                 aspect-ratio: 1;
                 @include lg {
-                  top: 20px;
                   width: 140%;
                 }
                 @include md {
@@ -1308,7 +1335,9 @@ $lg: 1024px;
                 @include lg {
                   margin-bottom: 2%;
                 }
-
+                @include lg {
+                  margin-bottom: 1.5%;
+                }
                 @include sp {
                   display: block;
                 }
@@ -1458,6 +1487,9 @@ $lg: 1024px;
           margin-bottom: 7%;
           .fa-regular.fa-calendar-check{
             font-size: 200%;
+            @include md {
+              font-size: 180%;
+            }
           }
         }
 
@@ -1465,8 +1497,13 @@ $lg: 1024px;
           margin-bottom: 7%;
           font-size: 0.8em;
           text-align: center;
+          @include md {
+            font-size: 0.7em;
+          }
           @include sp {
+            margin-bottom: 10%;
             font-size: 0.75em;
+            line-height: 1.95em;
           }
         }
 
@@ -1635,6 +1672,9 @@ $lg: 1024px;
             @include lg {
               font-size: 150%;
             }
+            @include md {
+              font-size: 125%;
+            }
             @include sp {
               font-size: 100%;
             }
@@ -1646,6 +1686,10 @@ $lg: 1024px;
             font-size: 0.8em;
             font-weight: 600;
             letter-spacing: 0.25em;
+            @include md {
+              margin-left: 0;
+              font-size: 0.65em;
+            }
             @include sp {
               font-size: 0.6em;
               margin: 0;
@@ -1654,7 +1698,6 @@ $lg: 1024px;
           p:hover {
             opacity: 0.6;
           }
-
         }
       }
     }

@@ -22,6 +22,16 @@
   font-weight: 400;
   letter-spacing: 0.15em;
 }
+@media screen and (max-width: 1024px) {
+  .l-wrapper h2 {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-wrapper h2 {
+    font-size: 1.1em;
+  }
+}
 @media screen and (max-width: 610px) {
   .l-wrapper h2 {
     font-size: 0.95em;
@@ -33,6 +43,11 @@
   padding: 0 0 3% 1%;
   font-size: 2.2em;
   font-weight: 200;
+}
+@media screen and (max-width: 768px) {
+  .l-wrapper h2::before {
+    font-size: 2.15em;
+  }
 }
 @media screen and (max-width: 610px) {
   .l-wrapper h2::before {
@@ -48,6 +63,11 @@
 @media screen and (max-width: 1024px) {
   .l-wrapper h3 {
     font-size: 0.95em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-wrapper h3 {
+    font-size: 0.9em;
   }
 }
 @media screen and (max-width: 610px) {
@@ -418,7 +438,7 @@
   .l-wrapper .l-top__keyvisual .c-top__subTitle {
     top: 44%;
     left: 29%;
-    font-size: 2.3em;
+    font-size: 1.6em;
     line-height: 1.4em;
   }
 }
@@ -550,6 +570,11 @@
   line-height: 1.9em;
   letter-spacing: 0.15em;
 }
+@media screen and (max-width: 1024px) {
+  .l-wrapper .l-main .p-about__container .p-about__information .p-about__description {
+    font-size: 1.2em;
+  }
+}
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main .p-about__container .p-about__information .p-about__description {
     margin-bottom: 8%;
@@ -563,9 +588,15 @@
   font-size: 0.8em;
   line-height: 2.8em;
 }
+@media screen and (max-width: 1024px) {
+  .l-wrapper .l-main .p-about__container .p-about__information .p-about__text {
+    width: 80%;
+    font-size: 0.75em;
+  }
+}
 @media screen and (max-width: 768px) {
   .l-wrapper .l-main .p-about__container .p-about__information .p-about__text {
-    font-size: 0.75em;
+    font-size: 0.7em;
     line-height: 2.5em;
     letter-spacing: 0.09em;
   }
@@ -720,7 +751,7 @@
 }
 @media screen and (max-width: 768px) {
   .l-wrapper .l-main #l-main__class {
-    padding-bottom: 58%;
+    padding-bottom: 40%;
   }
 }
 @media screen and (max-width: 610px) {
@@ -789,14 +820,15 @@
 }
 @media screen and (max-width: 1024px) {
   .l-wrapper .l-main__classbox {
+    top: 120%;
     left: 70%;
-    padding: 8%;
+    padding: 7%;
   }
 }
 @media screen and (max-width: 768px) {
   .l-wrapper .l-main__classbox {
     top: 140%;
-    width: 70%;
+    width: 60%;
   }
 }
 @media screen and (max-width: 610px) {
@@ -825,12 +857,13 @@
 @media screen and (max-width: 1024px) {
   .l-wrapper .l-main__classbox .p-class__text {
     margin-bottom: 10%;
+    font-size: 0.75em;
     line-height: 2.4em;
   }
 }
 @media screen and (max-width: 768px) {
   .l-wrapper .l-main__classbox .p-class__text {
-    font-size: 0.75em;
+    font-size: 0.7em;
     letter-spacing: 0.09em;
   }
 }
@@ -958,11 +991,13 @@
   .l-wrapper .l-main .p-workshop__description .p-workshop__text {
     width: 75%;
     margin-bottom: 10%;
+    font-size: 0.75em;
   }
 }
 @media screen and (max-width: 768px) {
   .l-wrapper .l-main .p-workshop__description .p-workshop__text {
     margin-bottom: 12%;
+    font-size: 0.7em;
   }
 }
 @media screen and (max-width: 610px) {
@@ -1023,6 +1058,11 @@
   line-height: 2.5em;
   letter-spacing: 0.15em;
 }
+@media screen and (max-width: 1024px) {
+  .l-wrapper .l-main__workshopList .p-workshop__List .p-box__text {
+    font-size: 0.68em;
+  }
+}
 @media screen and (max-width: 768px) {
   .l-wrapper .l-main__workshopList .p-workshop__List .p-box__text {
     margin-bottom: 12%;
@@ -1051,6 +1091,7 @@
 @media screen and (max-width: 1024px) {
   .l-wrapper .l-main__workshopList .p-workshop__List .p-box__detail li .p-box__item {
     line-height: 2.3em;
+    font-size: 0.78em;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1071,6 +1112,7 @@
 @media screen and (max-width: 1024px) {
   .l-wrapper .l-main__workshopList .p-workshop__List .p-box__detail li .p-box__content {
     line-height: 2.3em;
+    font-size: 0.78em;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1219,7 +1261,6 @@
 }
 @media screen and (max-width: 1024px) {
   .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__left img {
-    top: 20px;
     width: 140%;
   }
 }
@@ -1252,6 +1293,11 @@
 @media screen and (max-width: 1024px) {
   .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__head {
     margin-bottom: 2%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .l-wrapper .l-main__blogBottom .p-blog__information li .p-blog__list .p-blog__right .c-blog__head {
+    margin-bottom: 1.5%;
   }
 }
 @media screen and (max-width: 610px) {
@@ -1404,14 +1450,26 @@
 .l-wrapper .l-main__bookingBottom .p-booking__inner .c-booking__icon .fa-regular.fa-calendar-check {
   font-size: 200%;
 }
+@media screen and (max-width: 768px) {
+  .l-wrapper .l-main__bookingBottom .p-booking__inner .c-booking__icon .fa-regular.fa-calendar-check {
+    font-size: 180%;
+  }
+}
 .l-wrapper .l-main__bookingBottom .p-booking__inner .c-booking__text {
   margin-bottom: 7%;
   font-size: 0.8em;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .l-wrapper .l-main__bookingBottom .p-booking__inner .c-booking__text {
+    font-size: 0.7em;
+  }
+}
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__bookingBottom .p-booking__inner .c-booking__text {
+    margin-bottom: 10%;
     font-size: 0.75em;
+    line-height: 1.95em;
   }
 }
 .l-wrapper .l-main__bookingBottom .p-booking__inner .c-booking__button {
@@ -1596,6 +1654,11 @@
     font-size: 150%;
   }
 }
+@media screen and (max-width: 768px) {
+  .l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__icon .fa-brands.fa-facebook-f, .l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__icon .fa-brands.fa-instagram {
+    font-size: 125%;
+  }
+}
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__icon .fa-brands.fa-facebook-f, .l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__icon .fa-brands.fa-instagram {
     font-size: 100%;
@@ -1608,6 +1671,12 @@
   font-size: 0.8em;
   font-weight: 600;
   letter-spacing: 0.25em;
+}
+@media screen and (max-width: 768px) {
+  .l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__icon p {
+    margin-left: 0;
+    font-size: 0.65em;
+  }
 }
 @media screen and (max-width: 610px) {
   .l-wrapper .l-main__snsBottom .p-sns__inner .c-sns__icon p {

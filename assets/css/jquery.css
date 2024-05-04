@@ -3,7 +3,7 @@
 } */
 
 /* ローディング画面 */
-#loading-screen {
+/* #loading-screen {
   position: fixed;
   top: 0;
   left: 0;
@@ -33,7 +33,7 @@
     transform: translate(-50%, -50%) translateY(0);
   }
 }
-
+ */
 /* フェードインする要素の初期設定 */
 ._scrollFadeIn {
   opacity: 0;
